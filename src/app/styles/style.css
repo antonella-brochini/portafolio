@@ -1,8 +1,12 @@
-/**************** extend css start ****************/
-/**************** extend css start ****************/
-/**************** common css start ****************/
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
 /* line 3, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_common.scss */
+.mi-container {
+  max-width: 1150px;
+  margin: 0 auto;    
+ padding: 0 15px; 
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   padding: 0;
@@ -2395,7 +2399,7 @@ ul {
 /**************** banner part css start ****************/
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_banner.scss */
 .banner_part {
-  height: 1075px;
+  height: 900px;
   position: relative;
   background-image: url(/img/banner_bg_1.png);
   background-repeat: no-repeat;
@@ -2772,20 +2776,37 @@ ul {
 
 /******** portfolio part css start **********/
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part {
-  position: relative;
-  z-index: 1;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(180px, auto); /* altura flexible */
+ 
 }
+.gallery-image {
+  cursor: pointer;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 
+}
 /* line 5, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part .grid-item {
+ .grid-item {
   position: relative;
   z-index: 1;
   text-align: center;
+ 
 }
 
+/* Media queries para pantallas pequeñas */
+@media (max-width: 576px) {
+  /* Cada imagen ocupa toda la fila */
+  .gallery-grid a {
+    grid-column: span 4 !important;
+    grid-row: auto !important;
+  }
+}
 /* line 9, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part .grid-item:after {
+.grid-item:after {
   position: absolute;
   left: 0;
   top: 0;
@@ -2800,7 +2821,7 @@ ul {
 }
 
 /* line 22, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part .grid-item .portfolio_hover_text i {
+.grid-item .portfolio_hover_text i {
   color: #fff;
   font-size: 25px;
   position: absolute;
@@ -2816,101 +2837,16 @@ ul {
 }
 
 /* line 37, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part .grid-item:hover:after {
+.grid-item:hover:after {
   opacity: .5;
   padding: 10px;
 }
 
 /* line 42, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part .grid-item:hover .portfolio_hover_text i {
+ .grid-item:hover .portfolio_hover_text i {
   opacity: 1;
 }
 
-/* line 49, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part .grid-sizer,
-.portfolio_part .grid-item {
-  width: 33.33%;
-}
-
-@media (max-width: 991px) {
-  /* line 49, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-  .portfolio_part .grid-sizer,
-  .portfolio_part .grid-item {
-    width: 50%;
-  }
-}
-
-@media (max-width: 575px) {
-  /* line 49, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-  .portfolio_part .grid-sizer,
-  .portfolio_part .grid-item {
-    width: 100%;
-  }
-}
-
-/* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part .grid-item {
-  float: left;
-  height: 350px;
-}
-
-@media (max-width: 991px) {
-  /* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-  .portfolio_part .grid-item {
-    height: auto;
-  }
-}
-
-@media (max-width: 575px) {
-  /* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-  .portfolio_part .grid-item {
-    height: auto;
-  }
-}
-
-/* line 69, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part .big_weight {
-  width: 66.66%;
-}
-
-@media (max-width: 991px) {
-  /* line 69, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-  .portfolio_part .big_weight {
-    width: 50%;
-  }
-}
-
-@media (max-width: 575px) {
-  /* line 69, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-  .portfolio_part .big_weight {
-    width: 100%;
-  }
-}
-
-/* line 78, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part .big_height {
-  height: 700px;
-}
-
-@media (max-width: 991px) {
-  /* line 78, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-  .portfolio_part .big_height {
-    height: auto;
-  }
-}
-
-@media (max-width: 575px) {
-  /* line 78, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-  .portfolio_part .big_height {
-    height: auto;
-  }
-}
-
-/* line 87, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
-.portfolio_part img {
-  width: 100%;
-  height: 100%;
-}
 
 @media (max-width: 575px) {
   /* line 92, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_portfolio_part.scss */
@@ -2950,100 +2886,6 @@ ul {
   font-weight: 500;
 }
 
-/**************** review_part css start ****************/
-/* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-.review_part {
-  background-color: #0d0f5b;
-}
-
-/* line 5, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-.review_part .client_review_part .client_review_img {
-  position: relative;
-  padding-left: 70px;
-  margin-top: 40px;
-}
-
-/* line 9, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-.review_part .client_review_part .client_review_img img {
-  max-width: 50px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* line 19, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-.review_part .client_review_single .client_review_text p {
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 300;
-}
-
-/* line 24, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-.review_part .client_review_single .client_review_text h4 {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #fff;
-  padding-top: 6px;
-  line-height: 15px;
-  margin-bottom: 0;
-}
-
-@media (max-width: 575px) {
-  /* line 24, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-  .review_part .client_review_single .client_review_text h4 {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 24, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-  .review_part .client_review_single .client_review_text h4 {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 24, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-  .review_part .client_review_single .client_review_text h4 {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-}
-
-/* line 46, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-.review_part .client_review_single .client_review_text h4 span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #555555;
-}
-
-/* line 55, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-.review_part .review_icon i {
-  color: #0a0b4d;
-}
-
-/* line 60, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-.review_part .owl-dots {
-  text-align: center;
-  margin-top: 75px;
-}
-
-/* line 63, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-.review_part .owl-dots button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: transparent;
-  margin: 5px;
-  border: 1px solid #fff;
-}
-
-/* line 71, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_review.scss */
-.review_part .owl-dots .active {
-  background-color: #fff;
-}
 
 /********** philosophy part css start************/
 /* line 4, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_philosophy_part.scss */
@@ -4179,393 +4021,7 @@ h6 {
   background: #4cd3e3;
 }
 
-/* line 776, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.primary-checkbox {
-  width: 16px;
-  height: 16px;
-  border-radius: 3px;
-  background: #f9f9ff;
-  position: relative;
-  cursor: pointer;
-}
 
-/* line 783, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.primary-checkbox input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-/* line 792, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.primary-checkbox input + label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  border: 1px solid #f1f1f1;
-}
-
-/* line 805, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.primary-checkbox input:checked + label {
-  background: url(/img/elements/primary-check.png) no-repeat center center/cover;
-  border: none;
-}
-
-/* line 813, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.confirm-checkbox {
-  width: 16px;
-  height: 16px;
-  border-radius: 3px;
-  background: #f9f9ff;
-  position: relative;
-  cursor: pointer;
-}
-
-/* line 820, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.confirm-checkbox input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-/* line 829, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.confirm-checkbox input + label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  border: 1px solid #f1f1f1;
-}
-
-/* line 842, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.confirm-checkbox input:checked + label {
-  background: url(/img/elements/success-check.png) no-repeat center center/cover;
-  border: none;
-}
-
-/* line 850, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.disabled-checkbox {
-  width: 16px;
-  height: 16px;
-  border-radius: 3px;
-  background: #f9f9ff;
-  position: relative;
-  cursor: pointer;
-}
-
-/* line 857, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.disabled-checkbox input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-/* line 866, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.disabled-checkbox input + label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  border: 1px solid #f1f1f1;
-}
-
-/* line 878, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.disabled-checkbox input:disabled {
-  cursor: not-allowed;
-  z-index: 3;
-}
-
-/* line 883, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.disabled-checkbox input:checked + label {
-  background: url(/img/elements/disabled-check.png) no-repeat center center/cover;
-  border: none;
-}
-
-/* line 891, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.primary-radio {
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  background: #f9f9ff;
-  position: relative;
-  cursor: pointer;
-}
-
-/* line 898, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.primary-radio input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-/* line 907, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.primary-radio input + label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  cursor: pointer;
-  border: 1px solid #f1f1f1;
-}
-
-/* line 920, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.primary-radio input:checked + label {
-  background: url(/img/elements/primary-radio.png) no-repeat center center/cover;
-  border: none;
-}
-
-/* line 928, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.confirm-radio {
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  background: #f9f9ff;
-  position: relative;
-  cursor: pointer;
-}
-
-/* line 935, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.confirm-radio input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-/* line 944, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.confirm-radio input + label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  cursor: pointer;
-  border: 1px solid #f1f1f1;
-}
-
-/* line 957, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.confirm-radio input:checked + label {
-  background: url(/elements/success-radio.png) no-repeat center center/cover;
-  border: none;
-}
-
-/* line 965, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.disabled-radio {
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  background: #f9f9ff;
-  position: relative;
-  cursor: pointer;
-}
-
-/* line 972, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.disabled-radio input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-/* line 981, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.disabled-radio input + label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  cursor: pointer;
-  border: 1px solid #f1f1f1;
-}
-
-/* line 993, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.disabled-radio input:disabled {
-  cursor: not-allowed;
-  z-index: 3;
-}
-
-/* line 998, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.disabled-radio input:checked + label {
-  background: url(/img/elements/disabled-radio.png) no-repeat center center/cover;
-  border: none;
-}
-
-/* line 1006, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.default-select {
-  height: 40px;
-}
-
-/* line 1008, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.default-select .nice-select {
-  border: none;
-  border-radius: 0px;
-  height: 40px;
-  background: #f9f9ff;
-  padding-left: 20px;
-  padding-right: 40px;
-}
-
-/* line 1015, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.default-select .nice-select .list {
-  margin-top: 0;
-  border: none;
-  border-radius: 0px;
-  box-shadow: none;
-  width: 100%;
-  padding: 10px 0 10px 0px;
-}
-
-/* line 1022, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.default-select .nice-select .list .option {
-  font-weight: 300;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  line-height: 28px;
-  min-height: 28px;
-  font-size: 12px;
-  padding-left: 20px;
-}
-
-/* line 1029, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.default-select .nice-select .list .option.selected {
-  color: #ea5267;
-  background: transparent;
-}
-
-/* line 1033, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.default-select .nice-select .list .option:hover {
-  color: #ea5267;
-  background: transparent;
-}
-
-/* line 1040, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.default-select .current {
-  margin-right: 50px;
-  font-weight: 300;
-}
-
-/* line 1044, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.default-select .nice-select::after {
-  right: 20px;
-}
-
-/* line 1049, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.form-select {
-  height: 40px;
-  width: 100%;
-}
-
-/* line 1052, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.form-select .nice-select {
-  border: none;
-  border-radius: 0px;
-  height: 40px;
-  background: #f9f9ff;
-  padding-left: 45px;
-  padding-right: 40px;
-  width: 100%;
-}
-
-/* line 1060, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.form-select .nice-select .list {
-  margin-top: 0;
-  border: none;
-  border-radius: 0px;
-  box-shadow: none;
-  width: 100%;
-  padding: 10px 0 10px 0px;
-}
-
-/* line 1067, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.form-select .nice-select .list .option {
-  font-weight: 300;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  line-height: 28px;
-  min-height: 28px;
-  font-size: 12px;
-  padding-left: 45px;
-}
-
-/* line 1074, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.form-select .nice-select .list .option.selected {
-  color: #ea5267;
-  background: transparent;
-}
-
-/* line 1078, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.form-select .nice-select .list .option:hover {
-  color: #ea5267;
-  background: transparent;
-}
-
-/* line 1085, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.form-select .current {
-  margin-right: 50px;
-  font-weight: 300;
-}
-
-/* line 1089, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
-.form-select .nice-select::after {
-  right: 20px;
-}
 
 /* line 1093, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_elements.scss */
 .mt-10 {
@@ -4595,7 +4051,7 @@ h6 {
 
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_footer.scss */
 .footer_Part {
-  background-color: #0a0b4d;
+  background-color: #494f9c;
   position: relative;
   z-index: 1;
 }
@@ -4623,7 +4079,7 @@ h6 {
   background-size: contain;
   top: 0;
   z-index: -1;
-  background: url(/footer_overlay_1.png) top right no-repeat;
+  background: url(/img/footer_overlay_1.png) top right no-repeat;
 }
 
 /* line 30, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_footer.scss */
@@ -4695,6 +4151,7 @@ h6 {
 /* line 68, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_footer.scss */
 .footer_Part .social_icon {
   text-align: right;
+  font-size: 25px;
 }
 
 @media (max-width: 991px) {
@@ -4702,6 +4159,7 @@ h6 {
   .footer_Part .social_icon {
     text-align: center;
     margin-top: 30px;
+    font-size: 15px;
   }
 }
 
@@ -4723,99 +4181,142 @@ h6 {
   }
 }
 
-/* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-.breadcrumb {
-  position: relative;
-  z-index: 1;
+/*mi css card portfoil*/
+  .project-card {
+          background: #fff;
+          border-radius: 12px;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+          transition: transform 0.15s, box-shadow 0.15s;
+          overflow: hidden;
+          color: inherit;
+        }
+        .project-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+        .project-content .h5 {
+          margin: 0;
+        }
+        .view-link {
+          color: #2563eb;
+          font-weight: 600;
+        }
+
+        /* móvil: thumb ocupa todo el ancho */
+        @media (max-width: 767px) {
+          .thumb {
+            width: 100% !important;
+            height: 200px !important;
+            margin-bottom: 0.75rem;
+          }
+        }
+
+
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.skills-grid > div {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+/* Tecnologías */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column; /* ahora vertical */
+  align-items: center;    /* centrado horizontal */
+  gap: 8px;               /* espacio entre icono y nombre */
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+
+.tech-card:hover {
+  transform: scale(1.05);
+}
+
+.tech-icon {
+  font-size: 50px;
+}
+
+.tech-name {
+  font-weight: 300; 
+  color: #0a0b4d;  
+  text-align: center; 
+}
+
+/* Idiomas */
+.languages-list {
+  list-style: none;
   padding: 0;
-  background-color: #0d0f5b;
 }
 
-/* line 7, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-.breadcrumb:after {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  content: "";
-  left: 0;
-  background-size: contain;
-  top: 0;
-  z-index: -1;
-  background: url(/img/banner_overlay_1.png) top left no-repeat;
-}
-
-/* line 19, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-.breadcrumb:before {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  content: "";
-  left: 0;
-  background-size: contain;
-  top: 0;
-  z-index: -1;
-  background: url(/img/banner_overlay_2.png) top left no-repeat;
-}
-
-/* line 31, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-.breadcrumb .breadcrumb_iner {
-  height: 450px;
-  width: 100%;
-  display: table;
-}
-
-/* line 36, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-.breadcrumb .breadcrumb_iner .breadcrumb_iner_item {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* line 40, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-.breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
-  color: #fff;
-  font-size: 80px;
-  font-weight: 500;
+.languages-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 8px;
   margin-bottom: 10px;
-  text-transform: capitalize;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
 }
 
-@media (max-width: 575px) {
-  /* line 40, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-  .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
-    font-size: 35px;
-  }
+.level {
+  font-weight: bold;
+  color: #333;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 40, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-  .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
-    font-size: 35px;
-  }
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 40, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-  .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
-    font-size: 40px;
-  }
+.pagination button {
+  padding: 8px 16px;        /* botones más grandes */
+  border: none;              /* sin borde */
+   background-color: white;  /* fondo blanco */
+  color: #5B63C3; 
+
+  cursor: pointer;
+  border-radius: 5px;        /* bordes redondeados opcional */
+  transition: transform 0.2s, background-color 0.2s; /* animación suave */
 }
 
-/* line 62, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-.breadcrumb .breadcrumb_iner .breadcrumb_iner_item p {
-  font-size: 15px;
-  color: #000;
-  text-transform: capitalize;
+/* Efecto hover */
+.pagination button:hover {
+  transform: scale(1.5);   
+ 
 }
-
-/* line 68, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-.breadcrumb .breadcrumb_iner .breadcrumb_iner_item span {
-  margin: 0px 5px;
-  font-size: 12px;
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
-
-/* line 78, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
-.breadcrumb {
-  margin-bottom: 0px !important;
+.pagination button:disabled {
+  opacity: 0.5;             /* semi-transparente para indicar que está deshabilitado */
+  cursor: default;          /* cursor normal */
+  background-color: white;  /* mantener fondo blanco */
+  color: #ccc;              /* opcional: texto más tenue */
+  border: none;             /* quitar bordes */
 }
-
-/*# sourceMappingURL=../css/style.map */
+.pagination span {
+  font-size: 16px;
+}

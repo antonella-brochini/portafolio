@@ -4326,3 +4326,27 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+
+.section_btn a {
+  text-decoration: none;
+}
+ .banner_btn a {
+  text-decoration: none;
+}
+.footer_btn a {
+  text-decoration: none;
+}
+
+.footer_menu a{
+ text-decoration: none;
+}
+li a {
+  text-decoration: none;
+}
+.description {
+  overflow: hidden;             /* corta el texto que sobra */
+  display: -webkit-box;         /* modo caja para limitar líneas */
+  -webkit-line-clamp: 4;        /* cantidad de líneas visibles */
+  -webkit-box-orient: vertical; /* orientación vertical */
+}

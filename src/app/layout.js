@@ -3,19 +3,9 @@ import Header from "./header"
 import Footer from "./footer"
 
 
-import './styles/bootstrap.min.css'
-import './styles/animate.css'
-import './styles/owl.carousel.min.css'
-import './styles/themify-icons.css'
-import './styles/flaticon.css'
-import './styles/magnific-popup.css'
-import './styles/slick.css'
-import './styles/gijgo.min.css'
-import './styles/nice-select.css'
-import './styles/all.css'
-import './styles/style.css'
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/all.css'
+import '../styles/style.css'
 
 
 

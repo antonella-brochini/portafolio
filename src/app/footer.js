@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin  } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -26,7 +26,7 @@ export default function Footer() {
                  <div className="col-lg-6">
                     <div className="social_icon">  
                     <a href="https://www.linkedin.com/in/antonella-brochini/" target="_blank">
-                    <i className="fab fa-linkedin"></i>
+                     <FaLinkedin />
                     </a>
                      <a href="https://github.com/antonella-brochini" target="_blank" rel="noopener noreferrer">
                         <FaGithub  />

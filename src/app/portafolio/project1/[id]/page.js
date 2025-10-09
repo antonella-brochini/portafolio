@@ -1,10 +1,13 @@
-"use client"
 import { projectsData } from "../../../data/projects";
-import { useParams } from "next/navigation";
 
-export default function Project1Page() {
-  
-  const params = useParams();  
+export async function generateStaticParams() {
+
+  return projectsData.map(project => ({
+    id: project.id
+  }));
+}
+
+export default function Project1Page({ params }) {
   const project = projectsData.find(p => p.id === params.id);
   if (!project) return <p>Project not found</p>;
   

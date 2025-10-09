@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from 'next/link'
 
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact ,FaJava, FaDatabase, FaAws , FaCloud ,FaDocker, FaGithub, FaBootstrap } from "react-icons/fa";
 import { SiNextdotjs, SiSpringboot , SiDotnet ,SiTerraform, SiTailwindcss} from "react-icons/si";
@@ -50,7 +51,7 @@ export default function Home() {
                             <h1>Software Developer
                             </h1>
                             <div className="banner_btn">
-                                <a href="/contact" className="btn_1">Contact me</a>
+                                <Link href="/contact" className="btn_1">Contact me</Link>
                             </div>
                         </div>
                     </div>
@@ -103,14 +104,14 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <div className="section_btn text-right">
-                        <a href="/portafolio" className="btn_2">More works</a>
+                    <div className="section_btn text-end">
+                        <Link href="/portafolio" className="btn_2">More works</Link>
                     </div>
                 </div>
             </div>
            
         <div  className="gallery-grid " >
-        <a href="" className="grid-item "  style={{ gridColumn: "1 / 2", gridRow: "1 / 2" }}>
+        <Link href="/portafolio/project1/project3" className="grid-item "  style={{ gridColumn: "1 / 2", gridRow: "1 / 2" }}>
         <Image
           src="/img/deploy-app-github.jpg"
           width="1917"
@@ -122,8 +123,8 @@ export default function Home() {
         <div className="portfolio_hover_text">
           <i className="ti-plus"></i>
         </div>
-        </a>
-        <a href="" className="grid-item "  style={{ gridColumn: "2 / 5", gridRow: "1 / 3" }}>
+        </Link>
+        <Link href="/portafolio/project1/project1" className="grid-item "  style={{ gridColumn: "2 / 5", gridRow: "1 / 3" }}>
         <Image
           src="/img/port_1.png"
           width="1920"
@@ -135,8 +136,8 @@ export default function Home() {
         <div className="portfolio_hover_text">
           <i className="ti-plus"></i>
         </div>
-        </a>
-        <a href="" className="grid-item">
+        </Link>
+        <Link href="/portafolio/project1/project4" className="grid-item">
         <Image
           src="/img/infra-github.jpg"
           width="1919"
@@ -148,8 +149,8 @@ export default function Home() {
         <div className="portfolio_hover_text">
           <i className="ti-plus"></i>
         </div>
-        </a>
-         <a href="" className="grid-item "  style={{ gridColumn: "1 / 3", gridRow: "3 / 4" }}>
+        </Link>
+         <Link href="/portafolio/project1/project2" className="grid-item "  style={{ gridColumn: "1 / 3", gridRow: "3 / 4" }}>
         <Image
           src="/img/port_2.png"
           width="1912"
@@ -161,8 +162,8 @@ export default function Home() {
          <div className="portfolio_hover_text">
           <i className="ti-plus"></i>
           </div>
-        </a>
-         <a href="" className="grid-item "  style={{ gridColumn: "3 / 5", gridRow: "3 / 4" }}>
+        </Link>
+         <Link href="/portafolio/project1/project5" className="grid-item "  style={{ gridColumn: "3 / 5", gridRow: "3 / 4" }}>
         <Image
           src="/img/porfolio.jpg"
           width="1808"
@@ -174,7 +175,7 @@ export default function Home() {
         <div className="portfolio_hover_text">
           <i className="ti-plus"></i>
         </div>
-        </a>
+        </Link>
         </div>
 
     </div>

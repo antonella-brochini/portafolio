@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+  "build": "next build",
     "start": "next start",
     "lint": "eslint"
+   
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
@@ -23,4 +24,6 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.4"
   }
+ 
+
 }

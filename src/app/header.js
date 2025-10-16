@@ -25,7 +25,7 @@ export default function Header() {
           <div className="col-lg-12">
             <nav className="navbar navbar-expand-lg navbar-light">
               <Link className="navbar-brand" href="/">
-                <Image src="/deploy-portafolio/img/logo.png" alt="logo" width={250} height={30} />
+                <Image src="/img/logo.png" alt="logo" width={250} height={30} />
               </Link>
 
               <button

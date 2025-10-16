@@ -73,8 +73,7 @@ const currentProjects = projectsData.slice(indexOfFirst, indexOfLast);
             src={p.image}
             alt={p.title}
             fill
-            sizes="(max-width: 768px) 100vw, 360px"
-            style={{ objectFit: "cover" }}
+            className="imagen"
           />
         </div>
 

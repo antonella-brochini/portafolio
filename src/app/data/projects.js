@@ -6,7 +6,7 @@ export const projectsData = [
     La plataforma incluye: Pasarela de pagos con Mercado Pago para compras seguras. 
     Envío de emails promocionales para fidelizar clientes y comunicar ofertas. Panel de métricas y estadísticas para analizar ventas, identificar productos más vendidos y tomar decisiones basadas en datos.`,
     image: "/img/port_1.png",
-    repo: "https://fe-montebravo-7kum.onrender.com"
+    repo: "https://ecommerce.antonellabrochini.com/"
   },
  {
     id:"project2",
@@ -21,14 +21,14 @@ export const projectsData = [
 {
     id:"project3",
     title: "Deploy de App de Votación en AWS",
-    description: ` `,
+    description: `Workflow de deploy de applicacion con kubernet en rama master, worflow de testing con SonarCloud y test de carga usando Docker Compose para levantar los servicios y Apache Benchmark para evaluar su rendimiento. workflow de test de carga con k6`,
     image: "/img/deploy-app-github.jpg",
     repo: "https://github.com/antonella-brochini/example-voting-app"
   },
  {
     id:"project4",
     title: "Infraestructura con Terraform en AWS",
-    description: ``,
+    description: `Creacion de dos cluster de iguales carcateristicas pero reder distintas. Un cluster es de produccion y el otro esta dividido por namespace para desarrollo y testing`,
     image: "/img/infra-github.jpg",
     repo: "https://github.com/antonella-brochini/voting-app-infra"
   },

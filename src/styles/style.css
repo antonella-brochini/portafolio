@@ -2279,7 +2279,6 @@ ul {
   }
 }
 
-/* line 108, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_menu.scss */
 .dropdown .dropdown-menu {
   transition: all 0.5s;
   overflow: hidden;
@@ -2287,16 +2286,17 @@ ul {
   transform: scale(1, 0);
   display: block;
   border: 0px solid transparent;
-  background-color: #ea5267;
+  background-color: #fff;
 }
 
-/* line 117, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_menu.scss */
+
 .dropdown .dropdown-menu .dropdown-item {
   font-size: 14px;
-  padding: 8px 20px !important;
-  color: #fff !important;
-  background-color: #ea5267;
-  text-transform: capitalize;
+  padding: 8px 30px !important;
+  color: #020202 !important;
+  background-color: #FFFFFF;
+   text-transform: capitalize;
+ 
 }
 
 /* line 128, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_menu.scss */
@@ -2304,13 +2304,15 @@ ul {
   transform: scale(1);
 }
 
-
+  .dropdown .dropdown-item:hover {
+    color: #ea5267 !important;
+  }
 @media (max-width: 991px) {
-  /* line 137, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_menu.scss */
+ 
   .main_menu {
     padding: 20px 0px;
   }
-  /* line 141, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_menu.scss */
+  
   .home_menu .main-menu-item {
     padding-left: 0px;
   }
@@ -2337,12 +2339,11 @@ ul {
     background-color: #fff ;
     text-align: center !important;
   }
-  /* line 169, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_menu.scss */
+ 
   .dropdown .dropdown-menu {
     transform: scale(1, 0);
     display: none;
     margin-top: 10px;
-  
   }
   /* line 176, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_menu.scss */
   .dropdown:hover .dropdown-menu {
@@ -2350,13 +2351,12 @@ ul {
     display: block;
     color: #ea5267;
   }
-  /* line 183, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_menu.scss */
-  .dropdown .dropdown-item:hover {
+   .dropdown .dropdown-item:hover {
     color: #ea5267 !important;
   }
   /* line 188, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_menu.scss */
   .navbar-brand img {
-    max-width: 100px;
+    max-width: 150px;
     margin: 0 auto;
     position: absolute;
     left: 0;
@@ -2377,7 +2377,7 @@ ul {
 @media (max-width: 575px) {
   /* line 207, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_menu.scss */
   .navbar-brand img {
-    max-width: 100px;
+    max-width: 150px;
     right: auto;
     left: 0;
     top: 0px;
@@ -2387,7 +2387,7 @@ ul {
     border: none;      
     box-shadow: none ;
     position: absolute;
-    right: 0;
+    right: 15px;
     top: -2px;
     left: auto;
   }
@@ -4189,35 +4189,65 @@ h6 {
   }
 }
 
-/*mi css card portfoil*/
-  .project-card {
-          background: #fff;
-          border-radius: 12px;
-          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-          transition: transform 0.15s, box-shadow 0.15s;
-          overflow: hidden;
-          color: inherit;
-        }
-        .project-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-        }
-        .project-content .h5 {
-          margin: 0;
-        }
-        .view-link {
-          color: #2563eb;
-          font-weight: 600;
-        }
+/* Estilos generales de la card */
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s, box-shadow 0.15s;
+  overflow: hidden;
+  color: inherit;
+  cursor: pointer;
+}
 
-        /* móvil: thumb ocupa todo el ancho */
-        @media (max-width: 767px) {
-          .thumb {
-            width: 100% !important;
-            height: 200px !important;
-            margin-bottom: 0.75rem;
-          }
-        }
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+  /* Ocultar contenido textual */
+  .project-content {
+    display: none !important;
+  }
+
+  /* Contenedor principal centrado vertical y horizontalmente */
+  .project-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;     /* centra horizontalmente */
+    justify-content: center !important;
+    margin: 0 80px
+  }
+
+  /* Link apila hijos y centra */
+  .project-card > a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+
+  /* Contenedor de la imagen */
+  .thumb {
+    width: 100% !important;          /* ancho deseado */
+    height: 30vh !important;        /* altura visible */
+    position: relative !important;  /* necesario para Image fill */
+    overflow: hidden !important;
+    flex: none !important;
+    border-radius: 8px;             /* opcional */
+  }
+
+  /* Imagen con fill */
+  .thumb .imagen {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;   /* llena el contenedor */
+  }
+}
+
+
 
 
 

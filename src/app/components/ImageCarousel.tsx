@@ -1,0 +1,89 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import styles from './ImageCarousel.module.css';
+
+interface ImageCarouselProps {
+  images: string[];
+  title: string;
+}
+
+export default function ImageCarousel({ images, title }: ImageCarouselProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
+  };
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000);
+
+    return () => clearInterval(intervalId);
+  }, [images]);
+
+  return (
+    <div className={styles.carousel}>
+      <div className={styles.carouselContainer}>
+        <img
+          src={images[currentIndex]}
+          alt={`${title} - Imagen ${currentIndex + 1}`}
+          width={800}
+          height={450}
+          className={styles.carouselImage}
+        />
+        
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={goToPrevious}
+              className={`${styles.carouselButton} ${styles.prevButton}`}
+              aria-label="Imagen anterior"
+            >
+              &#10094;
+            </button>
+            <button
+              onClick={goToNext}
+              className={`${styles.carouselButton} ${styles.nextButton}`}
+              aria-label="Siguiente imagen"
+            >
+              &#10095;
+            </button>
+          </>
+        )}
+      </div>
+
+      {images.length > 1 && (
+        <div className={styles.dotsContainer}>
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`${styles.dot} ${
+                index === currentIndex ? styles.activeDot : ''
+              }`}
+              aria-label={`Ir a imagen ${index + 1}`}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

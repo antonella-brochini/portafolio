@@ -1,0 +1,314 @@
+.header-modern {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 18px 0;
+  background: transparent;
+  transition: 0.4s ease;
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: headerDrop 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 1.7s;
+  will-change: transform, opacity;
+}
+
+.header-modern.scrolled {
+  background-image:
+    radial-gradient(900px 500px at 20% 30%, rgba(152,65,255,.22), transparent 60%),
+    radial-gradient(900px 520px at 80% 20%, rgba(0,212,255,.16), transparent 55%),
+    linear-gradient(180deg, rgba(16,10,31,.55), rgba(16,10,31,.92)),
+    url("/img/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  display: inline-block; 
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: 'Oxanium', cursive;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: var(--purple);
+  text-shadow: 0 0 8px rgba(152, 65, 255, 0.8);
+}
+
+/* Hamburger Menu - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(12px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-12px);
+}
+
+.btn-gaming {
+  position: relative;
+  padding: 12px 28px;
+  font-family: 'Oxanium', cursive;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-image: linear-gradient(#0f0b1a, #0f0b1a),
+                    linear-gradient(90deg, #ff00cc, #9841ff, #00d4ff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: 0.4s ease;
+  text-decoration: none;
+}
+
+.btn-gaming:hover {
+  box-shadow: 0 0 15px rgba(152, 65, 255, 0.7);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--text-primary);
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  border: none;        
+  outline: none;    
+  background: transparent; 
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    order: 2;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .logo img {
+    max-width: 160px;
+    height: auto;
+  }
+}
+
+/* Tablet responsive */
+@media (max-width: 768px) {
+  .header-container {
+    position: relative;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background-image:
+      radial-gradient(900px 500px at 20% 30%, rgba(152,65,255,.15), transparent 60%),
+      radial-gradient(900px 520px at 80% 20%, rgba(0,212,255,.10), transparent 55%),
+      linear-gradient(180deg, rgba(16,10,31,.85), rgba(16,10,31,.95));
+    backdrop-filter: blur(12px);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    max-height: 280px;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 14px 20px;
+    border-radius: 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--purple);
+  }
+
+  .hamburger {
+    display: flex;
+    order: 3;
+  }
+
+
+  .logo img {
+    max-width: 140px;
+    height: auto;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .header-modern {
+    padding: 14px 0;
+  }
+
+  .header-container {
+    padding: 0 15px;
+  }
+
+  .logo img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .hamburger span {
+    width: 20px;
+    height: 1.5px;
+  }
+
+  .header-modern {
+    animation-duration: 0.8s;
+  }
+  .nav-links.active {
+    max-height: 250px;
+  }
+
+  .nav-links a {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+
+}
+
+@keyframes headerDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-gaming:hover {
+  box-shadow: 0 0 15px rgba(152, 65, 255, 0.7);
+}
+
+/* ===== HEADER LIGHT ===== */
+.light .header-modern {
+  background: #ffffff;
+  color: #1a1a1a; /* texto oscuro */
+}
+
+/* ✅ MOBILE MENU: panel blanco + items negros */
+@media (max-width: 768px) {
+  .light .nav-links {
+    background: #ffffff !important;     /* pisa el background-image oscuro */
+    backdrop-filter: none;
+    border-top: 1px solid rgba(0,0,0,0.08);
+  }
+
+  .light .nav-links a {
+    color: #1a1a1a;
+    border-bottom: 1px solid rgba(0,0,0,0.08); /* en vez de blanco */
+  }
+
+  .light .nav-links a:hover {
+    background: rgba(0,0,0,0.05);
+    color: var(--purple);
+    text-shadow: none;
+  }
+}
+.logo-light {
+  display: none;
+}
+
+.logo-dark {
+  display: block;
+}
+
+/* Cuando está en modo claro */
+.light .logo-dark {
+  display: none;
+}
+
+.light .logo-light {
+  display: block;
+}

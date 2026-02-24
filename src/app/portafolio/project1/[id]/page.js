@@ -1,4 +1,9 @@
+import FallingStars from "../../../components/FallingStars";
 import { projectsData } from "../../../data/projects";
+import ImageCarousel from "../../../components/ImageCarousel";
+import ProjectHero from "./ProjectHero";
+import styles from "./ProjectDetail.module.css";
+
 
 export async function generateStaticParams() {
 
@@ -10,36 +15,28 @@ export async function generateStaticParams() {
 export default function Project1Page({ params }) {
   const project = projectsData.find(p => p.id === params.id);
   if (!project) return <p>Project not found</p>;
+
   
   return (
     <div>
-      <section className="banner_part">
-        <div className="mi-container">
-                <div className="row align-items-center">
-                    <div className="col-lg-8">
-                        <div className="banner_text">
-                            <div className="banner_text_iner">
-                                <h1>My Portfolios </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
+      <FallingStars />
+      <ProjectHero
+        title={project.title}
+        technologies={project.technologies}
+        repo={project.repo}
+        projectUrl={project.projectUrl}
+      />
    <section className="portfolio_part section_padding">
   <div className="mi-container">
     <div>
-      <h1 className="pb-3">{project.title}</h1>
-      <img src={project.image} alt={project.title} width={800} height={450} />
-    <p className="text-dark pt-3 pb-3">{project.description}</p>
-      <a
-        href={project.repo}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="view-link mt-2"
-      >
-        Ver proyecto →
-      </a>
+      <ImageCarousel images={project.images} title={project.title} />
+        <h2 className="pb-3">Description:</h2>
+   {project.description.map((paragraph, index) => (
+  <p key={index} className={styles.projectDescription}>
+    {paragraph}
+  </p>
+))}
+    
     </div>
   </div>
 </section>

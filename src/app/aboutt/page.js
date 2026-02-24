@@ -1,87 +1,118 @@
+"use client";
 
-import Image from "next/image";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact ,FaJava, FaDatabase, FaAws , FaCloud ,FaDocker, FaGithub, FaBootstrap, FaToolbox, FaCode } from "react-icons/fa";
+import { SiNextdotjs, SiSpringboot , SiDotnet ,SiTerraform, SiTailwindcss } from "react-icons/si";
+import FallingStars from "../components/FallingStars";
+import HeroReveal from "../components/HeroReveal";
+import '../../styles/about.css'
+import Btn from "../components/boton3d";
 
 export default function Aboutt() {
 
+     const technologies = [
+    { name: "HTML", icon: <FaHtml5   /> },
+    { name: "CSS", icon: <FaCss3Alt    /> },
+    { name: "JavaScript", icon: <FaJsSquare    /> },
+    { name: "Bootstrap", icon: <FaBootstrap /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+    { name: "React", icon: <FaReact  /> },
+    { name: "Next.js", icon: <SiNextdotjs   /> },
+    { name: "Java", icon: <FaJava   />   },
+    { name: "Spring Boot", icon: <SiSpringboot   /> },
+    { name: ".NET", icon: <SiDotnet  /> },
+    { name: "C#", icon: <FaCode /> },
+    { name: "SQL", icon: <FaDatabase   /> },
+    { name: "Salesforce", icon: <FaCloud /> },
+    { name: "GeneXus", icon: <FaToolbox /> },
+    { name: "AWS", icon: <FaAws  /> },
+    { name: "Docker", icon: <FaDocker /> },
+    { name: "Terraform", icon: <SiTerraform /> },
+    { name: "GitHub Actions", icon: <FaGithub /> },
+ 
+  ];
 
-
-
+  const languages = [
+    { name: "Spanish", level: "Native" },
+    { name: "English", level: "Upper-Intermediate / B2" },
+  ];
 
   return (
       <div>
+      <FallingStars />
       <section className="banner_part">
             <div className="mi-container">
                 <div className="row align-items-center">
                     <div className="col-lg-8">
                         <div className="banner_text">
-                            <div className="banner_text_iner">
-                                <h1> Hi, I’m Antonella </h1>
-                                <h1>Brochini</h1>
-                            </div>
+                          <HeroReveal className="banner_text_iner">
+                            <h1 className="fall-title-item"><span className="gradient-text">{"Hi, I'm Antonella Brochini"}</span></h1>
+                            <p className="about_hero_text">{"I'm a Fullstack Developer, passionate about creating modern web applications and designing seamless digital experiences."}</p>
+                            <p className="about_hero_text">{"With strong skills in Next.js, Spring Boot, and databases, I love turning ideas into functional and elegant solutions. I'm always eager to learn and take on new challenges."}</p>
+            
+                            <a href="https://www.linkedin.com/in/antonella-brochini/" className="btn-gaming" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                          </HeroReveal>
+                           
                         </div>
+                           <Btn titulo="LinkedIn" url="https://www.linkedin.com/in/antonella-brochini/" />
                     </div>
                 </div>
             </div>
         </section>
-        <section className="about_part section_padding">
-            <div className="mi-container">
-                <div className="row">
-                    <div className="col-lg-6">
-                        <div className="about_text">
-                            <h4>about me</h4>
-                        <p>I’m a Fullstack Developer, passionate about creating modern web applications and designing seamless digital experiences. 
-                        </p>
-                         <p> With strong skills in Next.js, Spring Boot, and databases, I love turning ideas into functional and elegant solutions. I’m always eager to learn and take on new challenges.
-                        </p>
-                        <br/>
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="experiance_list">
-                            <h4>Experiences</h4>
-                            <div className="experiance_list_iner">
-                               <div className="single_experiance_list">
-      <h5>Academic Projects</h5>
-      <p>Developed several web applications as part of my software development degree.</p>
-    </div>
-    <div className="single_experiance_list">
-      <h5>Team Collaboration</h5>
-      <p>Worked with classmates to design and build full-stack applications using Java and JavaScript.</p>
-    </div>
-    <div className="single_experiance_list">
-      <h5>Final Degree Project</h5>
-      <p>Developed a web platform for a vineyard, integrating Spring Boot and Next.js.</p>
-    </div>
-    <div className="single_experiance_list">
-      <h5>Technical Support Practice</h5>
-      <p>Gained experience assisting users and solving technical issues in academic projects.</p>
-    </div>
-                            </div>
-                        </div>
-                    </div>
+
+ <section className="section_padding mi-container">
+      <div className="container">
+        <div className="skills-grid">
+          <div className="tech-column">
+            <div className="section_tittle">
+               <h4>Technologies and Frameworks</h4>
+            </div>
+            <div className="tech-grid">
+              {technologies.map((tech, i) => (
+                <div key={i} className="tech-card">
+                  <span className="tech-icon">{tech.icon}</span>
+                  <span className="tech-name">{tech.name}</span>
                 </div>
+              ))}
             </div>
-        </section>
-        <section className="philosophy_part section_padding">
-            <div className="mi-container">
-                <div className="row align-items-center justify-content-between">
-                    <div className="col-lg-6 col-md-6">
-                        <div className="philophy_text">
-                           <h5>My philosophy</h5>
-<h2>Hard work, persistence, and learning always pay off</h2>
-<p>I firmly believe that putting in consistent effort and never being afraid to try is the key to achieving meaningful results. Every challenge is an opportunity to grow, and even small steps forward count towards success.</p>
-<p>By embracing persistence and a willingness to learn, I strive to turn every project into a chance to improve, innovate, and create something valuable. I trust that dedication and resilience ultimately lead to rewarding outcomes.</p>
-<p>For me, the process matters as much as the result. Staying curious, giving my best, and continuously pushing my limits allows me to grow both personally and professionally while delivering quality work.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-5 col-md-6">
-                        <div className="philophy_img">
-                            <Image src="/img/philosophy.png" alt="#" width={487} height={514}/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-            </div>
+          </div>
+
+          {/* Languages */}
+          <div className="languages-column">
+            <h4 className="pb-4" >Languages</h4>
+            <ul className="languages-list">
+              {languages.map((lang, i) => (
+                <li key={i}>
+                  <span>{lang.name}</span>
+                  <span className="level">{lang.level}</span>
+                </li>
+              ))}
+            </ul>
+            <h4 className="pb-4 pt-4" >Salesforce Profile</h4>
+          <ul className="list-unstyled languages-list">
+  <li className="d-flex align-items-center justify-content-between mb-2">
+    {/* Icono y texto en columna */}
+    <a
+      href="https://www.salesforce.com/trailblazer/antonellabrochini"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ textDecoration: 'none', color: 'white' }}
+    >
+    <div className="d-flex flex-column align-items-center">
+      <FaCloud style={{ fontSize: '2rem' }} />
+      <span >Profile</span>
+    </div>
+      </a>
+
+    {/* Texto a la derecha */}
+    <span className="fw-bold level">57 Badges</span>
+  </li>
+</ul>
+
+</div>
+        </div>
+      </div>
+    </section>
+</div>
+       
   );
 }

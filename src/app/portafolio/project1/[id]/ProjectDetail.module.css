@@ -1,0 +1,121 @@
+.projectDescription {
+  color: var(--text-primary);
+  font-size: 1.125rem;
+  line-height: 1.2;
+  
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.heroContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroBanner {
+  justify-content: center;
+}
+
+.heroTitle {
+  opacity: 0;
+  transform: translateY(6px);
+  filter: blur(8px);
+  animation: heroBlurReveal 1.3s ease forwards;
+  animation-delay: 0s;
+}
+
+.heroTechAnim {
+  opacity: 0;
+  transform: translateY(6px);
+  filter: blur(8px);
+  animation: heroBlurReveal 1.3s ease forwards;
+  animation-delay: 1.3s;
+}
+
+.heroLinksAnim {
+  opacity: 0;
+  transform: translateY(6px);
+  filter: blur(8px);
+  animation: heroBlurReveal 1.3s ease forwards;
+  animation-delay: 2.6s;
+}
+
+@keyframes heroBlurReveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroTitle,
+  .heroTechAnim,
+  .heroLinksAnim {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.heroTech {
+  color: var(--text-primary);
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 16px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: transparent;
+    color: var(--text-primary);
+  text-decoration: none;
+  font-family: "Oxanium", cursive;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.projectLink:hover {
+  color: var(--purple);
+  text-shadow: 0 0 8px rgba(152, 65, 255, 0.8);
+}
+
+.linkIcon {
+  font-size: 1.05rem;
+}
+
+@media (max-width: 576px) {
+  .projectDescription {
+    font-size: 1rem;
+  }
+
+  .projectLink {
+    width: 100%;
+    justify-content: center;
+    font-size: 13px;
+  }
+}

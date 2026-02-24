@@ -1,0 +1,291 @@
+
+
+/* ====== Container ====== */
+.mi-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ====== HERO ====== */
+.banner_part{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 90px;
+  overflow: hidden;
+  background-image:
+    radial-gradient(900px 500px at 20% 30%, rgba(152,65,255,.22), transparent 60%),
+    radial-gradient(900px 520px at 80% 20%, rgba(0,212,255,.16), transparent 55%),
+    linear-gradient(180deg, rgba(16,10,31,.55), rgba(16,10,31,.92)),
+    url("/img/hero.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.banner_part::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: radial-gradient(900px 500px at 50% 45%, rgba(255,255,255,.06), transparent 65%),
+              linear-gradient(90deg, rgba(16,10,31,.85), rgba(16,10,31,.28), rgba(16,10,31,.85));
+  pointer-events:none;
+  z-index: 2;
+}
+
+/* ====== HERO WRAPPER ====== */
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  z-index: 3;
+}
+
+/* ====== CENTER CONTENT ====== */
+.hero-center{
+  position: relative;
+ z-index: 3;
+  text-align: center;
+  max-width: 920px;
+  margin: auto;
+}
+
+.hero-subtitle{
+  font-size: clamp(14px, 1.2vw, 18px);
+  color: rgba(255,255,255,.78);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+
+/* Title */
+.hero-title{
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(36px, 6.2vw, 78px);
+  font-weight: 900;
+  line-height: 1.03;
+  margin: 0 0 36px;
+  text-shadow: 0 18px 55px rgba(0,0,0,.35);
+}
+
+/* Gradient animated text */
+.gradient-text{
+  background: var(--gradient);
+  background-size: 260% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4.5s ease-in-out infinite;
+  padding-bottom: 10px;
+}
+.pading{
+    padding-bottom: 10px;
+}
+@keyframes gradientMove{
+  0%{ background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{ background-position: 0% 50%; }
+}
+
+/* ====== Button with shine ====== */
+.btn-gaming{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 12px 30px;
+  font-family: 'Oxanium', cursive;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(#0f0b1a, #0f0b1a),
+                    linear-gradient(90deg, #ff00cc, #9841ff, #00d4ff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: transform .25s ease, box-shadow .25s ease;
+  text-decoration: none;
+}
+
+.btn-gaming::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-75%;
+  width:50%;
+  height:100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.45) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  transition: left .65s ease;
+}
+
+.btn-gaming:hover::before{ left: 130%; }
+
+.btn-gaming:hover{
+  box-shadow: 0 0 22px rgba(152, 65, 255, 0.75);
+}
+
+/* ====== Reduced motion ====== */
+@media (prefers-reduced-motion: reduce){
+  .stars-layer, .nebula-layer, .gradient-text{
+    animation: none !important;
+  }
+  .stars-layer, .nebula-layer{
+    transition: none !important;
+  }
+}
+
+/* ====== Unified Title Styles for All Pages ====== */
+.banner_text{
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.banner_text_iner{
+  width: 100%;
+}
+
+.banner_text_iner h1{
+  font-size: clamp(36px, 6.2vw, 78px);
+  font-weight: 900;
+  line-height: 1.03;
+  margin: 0 0 16px;
+  text-shadow: 0 18px 55px rgba(0,0,0,.35);
+  font-family: 'Oxanium', cursive;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.banner_text_iner .gradient-text{
+  background: var(--gradient);
+  background-size: 260% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4.5s ease-in-out infinite;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+/* ===== HERO LIGHT: sin imagen ni overlays ===== */
+.light .banner_part{
+  background: #ffffff !important;     /* o var(--bg) si querés usar variable */
+  background-image: none !important;
+}
+
+/* Apaga el overlay del hero en light */
+.light .banner_part::after{
+  display: none !important;
+}
+
+/* Textos del hero en light (para que no queden blanquitos) */
+.light .hero-subtitle{
+  color: rgba(0,0,0,.70);
+}
+
+.light .hero-title{
+  text-shadow: none;
+  color: var(--text-primary); /* en light esto ya es oscuro según tus variables */
+}
+
+/* Ordenar elementos en hero-wrapper */
+.hero-center {
+  order: 1;
+}
+
+.btn-gaming {
+  order: 2;
+  margin-top: 20px;
+  display: inline-block !important;
+}
+
+.btn-3d {
+  order: 3;
+}
+
+.light .btn-3d {
+  display: flex !important;
+}
+/* ===== 3D BUTTON LIGHT  */
+
+.light .btn-3d {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(0deg);
+  transition: transform 2.5s ease;
+
+  text-decoration: none;
+}
+
+.light .btn-3d:hover {
+  transform: perspective(1000px) rotateX(360deg);
+}
+
+.light .btn-3d span {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Oxanium', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+
+  border: 2px solid #000;
+  box-sizing: border-box;
+
+  transition: 0.4s ease;
+  /* IMPORTANTE: NO ocultar backface si querés el efecto del ejemplo */
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+
+.light .btn-3d:hover span {
+  color: #fff;
+  background: var(--purple);
+  border-color: #000;
+}
+
+.light .btn-3d span:nth-child(1) {
+  transform: rotateX(360deg) translateZ(30px);
+}
+
+.light .btn-3d span:nth-child(2) {
+  transform: rotateX(270deg) translateZ(30px);
+}
+
+.light .btn-3d span:nth-child(3) {
+  transform: rotateX(180deg) translateZ(30px);
+}
+
+.light .btn-3d span:nth-child(4) {
+  transform: rotateX(90deg) translateZ(30px);
+}
+/* Ocultar botón 3D en dark */
+.btn-3d {
+  display: none !important;
+}
+
+/* Mostrarlo solo en light */
+.light .btn-3d {
+  display: flex !important;
+}
+.light .btn-gaming {
+  display: none !important;
+}

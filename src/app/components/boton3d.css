@@ -1,0 +1,70 @@
+/* ===== 3D BUTTON LIGHT  */
+
+.light .btn-3d {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(0deg);
+  transition: transform 2.5s ease;
+  text-decoration: none;
+}
+
+.light .btn-3d:hover {
+  transform: perspective(1000px) rotateX(360deg);
+}
+
+.light .btn-3d span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Oxanium', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  transition: 0.4s ease;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+
+.light .btn-3d:hover span {
+  color: #fff;
+  background: var(--purple);
+  border-color: #000;
+}
+
+.light .btn-3d span:nth-child(1) {
+  transform: rotateX(360deg) translateZ(30px);
+}
+
+.light .btn-3d span:nth-child(2) {
+  transform: rotateX(270deg) translateZ(30px);
+}
+
+.light .btn-3d span:nth-child(3) {
+  transform: rotateX(180deg) translateZ(30px);
+}
+
+.light .btn-3d span:nth-child(4) {
+  transform: rotateX(90deg) translateZ(30px);
+}
+
+/* Ocultar botón 3D en dark */
+.btn-3d {
+  display: none !important;
+}
+
+/* Mostrarlo solo en light */
+.light .btn-3d {
+  display: flex !important;
+}
+.light .btn-gaming {
+  display: none !important;
+}

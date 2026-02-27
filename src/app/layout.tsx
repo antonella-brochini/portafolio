@@ -22,13 +22,16 @@ export default function RootLayout({ children }) {
   return (
 
     <html lang="en" className={oxanium.className} suppressHydrationWarning>
+     
       <body>
-        <ThemeProvider>
+         <ThemeProvider>
   <Header />
   {children}
-</ThemeProvider>
+ </ThemeProvider>
       </body>
+         
     </html>
+
 
   );
 }

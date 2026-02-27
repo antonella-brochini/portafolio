@@ -2,6 +2,7 @@
 
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import styles from "./ProjectDetail.module.css";
+import Titulo from "../../../components/Titulo";
 
 interface ProjectHeroProps {
   title: string;
@@ -26,9 +27,7 @@ export default function ProjectHero({
           <div className="col-lg-8 mx-auto">
             <div className={`banner_text ${styles.heroBanner}`}>
               <div className={`banner_text_iner ${styles.heroContent}`}>
-                <h1 className={styles.heroTitle}>
-                  <span className="gradient-text">{title}</span>
-                </h1>
+                <Titulo className={styles.heroTitle}>{title}</Titulo>
                 {technologies ? (
                   <h3 className={`${styles.heroTech} ${styles.heroTechAnim}`}>
                     {technologies}

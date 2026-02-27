@@ -2,7 +2,7 @@
 .contact-section {
   background:transparent;
   margin-bottom: 40px;
-  margin-top: 80px;
+
   position: relative;
   z-index: 3;
 }
@@ -10,15 +10,6 @@
 .banner_part .contact-section {
   position: relative;
   z-index: 3;
-}
-
-.contact-title {
-  font-size: 20px;
-  font-weight: 900;
-  color: var(--text-primary);
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 /* ====== FORM STYLES ====== */
@@ -182,11 +173,6 @@ textarea.form-control {
     padding: 20px;
   }
 
-  .contact-title {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-
   .contact-info {
     padding: 18px;
   }
@@ -214,41 +200,4 @@ textarea.form-control {
   textarea.form-control {
     min-height: 100px;
   }
-}
-/* ===== TITLES LIGHT MODE - OUTLINE STYLE ===== */
-
-.light .stroke-title,
-.light .page-title {
-
-  font-family: 'Oxanium', sans-serif;
-  font-size: clamp(40px, 6vw, 72px);
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1;
-
-  color: transparent;
--webkit-text-stroke: 2px #38bdf8;
-text-shadow: 0 0 0  #9841ff;       /* celeste */
-  transition: all 250ms ease;
-}
-
-/* Hover opcional (si querés efecto dinámico) */
-.light .stroke-title:hover,
-.light .page-title:hover {
-text-shadow: 4px 4px 0 #9841ff;
-  transform: translate(-3px, -3px);
-}
-
-/* Por defecto (dark) */
-.title-light {
-  display: none;
-}
-
-/* En modo claro */
-.light .title-dark {
-  display: none;
-}
-
-.light .title-light {
-  display: block;
 }

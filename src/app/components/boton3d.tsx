@@ -4,6 +4,7 @@
 type BtnProps = {
   titulo: string;
   url?: string;
+
 };
 
  export default function FallingStars({ titulo, url }: BtnProps) {
@@ -16,7 +17,7 @@ if (!url) return null;
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn-3d"
+        className="btn-3d "
       >
         <span>{titulo}</span>
         <span>{titulo}</span>

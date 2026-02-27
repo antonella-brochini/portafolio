@@ -5,6 +5,8 @@ import emailjs from "@emailjs/browser";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import HeroReveal from "../components/HeroReveal";
 import '../../styles/contact.css'
+import Titulo from '../components/Titulo';
+
 export default function PortfolioPage() {
 
 
@@ -85,13 +87,7 @@ export default function PortfolioPage() {
  <div className="col-12">
           <div className="banner_text">
             <HeroReveal className="banner_text_iner">
-             <h1 className="title-dark">
-  <span className="gradient-text">Contact</span>
-</h1>
-
-<h1 className="title-light stroke-title">
-  Contact
-</h1>
+             <Titulo>Contact</Titulo>
             </HeroReveal>
           </div>
         </div>

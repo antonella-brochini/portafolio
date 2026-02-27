@@ -119,3 +119,56 @@
     font-size: 13px;
   }
 }
+
+.imageContainer{
+  width: 70%;
+  margin: 0 auto; 
+}
+@media (max-width: 768px) {
+  .imageContainer {
+    width: 90%;
+  }
+}
+.descriptionCard {
+  margin-top: 40px;
+  padding: 28px;
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.descriptionCard:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(152, 65, 255, 0.2);
+}
+
+.sectionTitle {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  opacity: 0.85;
+}
+
+.descriptionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.projectDescription {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.92;
+}
+
+@media (max-width: 768px) {
+  .descriptionCard {
+    padding: 20px;
+  }
+
+  .projectDescription {
+    font-size: 1rem;
+  }
+}

@@ -1,11 +1,12 @@
 "use client";
 
 import "../styles/header.css";
-import Image from "next/image";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggle from "./components/ThemeToggle";
 
+import LogoChico from "./components/logo-header";
 
 export default function Header() {
 
@@ -25,26 +26,12 @@ export default function Header() {
 
   return (
     <header className={`header-modern ${scroll ? "scrolled" : ""}`}>
-      <div className="header-container">
 
+      <div className="header-container">
+       <LogoChico />
   {/* Logo */}
 <Link href="/" className="logo">
-  <Image
-    src="/img/logo-dark.png"
-    alt="logo"
-    width={350}
-    height={70}
-    priority
-    className="logo-dark"
-  />
-  <Image
-    src="/img/logo.png"
-    alt="logo"
-    width={350}
-    height={70}
-    priority
-    className="logo-light"
-  />
+
 </Link>
         {/* Navigation */}
         <nav className={`nav-links ${isOpen ? "active" : ""}`}>
@@ -57,7 +44,7 @@ export default function Header() {
         {/* Theme Toggle */}
         <ThemeToggle />
 
-      
+
         {/* Hamburger Menu */}
         <button 
           className={`hamburger ${isOpen ? "active" : ""}`}

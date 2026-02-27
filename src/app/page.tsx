@@ -6,7 +6,9 @@ import FallingStars from "./components/FallingStars";
 import HeroReveal from "./components/HeroReveal";
 import Btn from "./components/boton3d";
 
+
 export default function Home() {
+
 
   return (
     <main>
@@ -26,7 +28,7 @@ export default function Home() {
             View My Work
           </Link>
 <Btn titulo="View My Work" url="/portafolio" />
-          
+        
         </div>
       </section>
     </main>

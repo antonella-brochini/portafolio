@@ -1,96 +1,5 @@
-.portfolio_part {
-background: linear-gradient(135deg, rgba(152,65,255,.04) 0%, rgba(0,212,255,.02) 100%);
-  margin-bottom: 40px;
-}
 
-.section_tittle h4 {
-  font-size: 24px;
-  font-weight: 900;
-  color: var(--white);
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
 
-/* ====== PROJECT CARDS ====== */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.project-card {
-  background: rgba(255, 255, 255, 0.02);
-  padding: 16px;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-card:hover {
-  background: rgba(152, 65, 255, 0.08);
-  border-color: rgba(152, 65, 255, 0.3);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(152, 65, 255, 0.15);
-}
-
-.project-card .thumb {
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover .thumb {
-  transform: scale(1.05);
-}
-
-.project-content {
-  flex: 1;
-}
-
-.project-card h3 {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: 8px;
-}
-
-.project-card .description {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.75);
-  line-height: 1.6;
-  margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-@media (max-width: 992px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .project-card {
-    padding: 12px;
-  }
-
-  .project-card h3 {
-    font-size: 15px;
-  }
-
-  .project-card .description {
-    font-size: 12px;
-  }
-}
 
 /* ====== PAGINATION ====== */
 .pagination {
@@ -99,7 +8,6 @@ background: linear-gradient(135deg, rgba(152,65,255,.04) 0%, rgba(0,212,255,.02)
   align-items: center;
   gap: 16px;
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .pagination button {
@@ -150,6 +58,116 @@ background: linear-gradient(135deg, rgba(152,65,255,.04) 0%, rgba(0,212,255,.02)
     font-size: 14px;
   }
 }
-.light .portfolio_part {
-  background: #ffffff;
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 50px;
+  z-index: 3;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.portfolio-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.portfolio-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  flex: 1;              /* ocupa el espacio disponible */
+  min-width: 0;         /* permite truncar si es largo */
+}
+.portfolio-icons {
+  display: flex;
+  gap: 14px;
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-left: 12px;   /* separación del título */
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.portfolio-card-footer {
+  
+  padding-top: 1.0rem;
+}
+.portfolio-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.portfolio-title {
+  margin: 0;
+  flex: 1;
+}
+
+.portfolio-icons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.portfolio-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.portfolio-icons a:hover {
+  color: #38BDF8;
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .portfolio-img {
+    height: 200px;
+  }
+}
+
+.back-to-top {
+position: fixed;
+bottom: 20px;
+ right: 20px;
+ font-size: 100px;
+ color: white;
+ cursor: pointer;
+ border-radius: 50%; 
+border: none;
+ transition: transform 0.2s;
+background: var(--purple) ;
+ width: 50px;
+ height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 3;
+                        
 }

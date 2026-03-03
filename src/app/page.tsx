@@ -4,7 +4,7 @@ import Link from "next/link";
 import "../styles/landing.css";
 import FallingStars from "./components/FallingStars";
 import HeroReveal from "./components/HeroReveal";
-import Btn from "./components/boton3d";
+import Boton3d from "./components/boton3d";
 
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
           <Link href="/portafolio" className="btn-gaming">
             View My Work
           </Link>
-<Btn titulo="View My Work" url="/portafolio" />
+          <Boton3d titulo="View My Work" url="/portafolio" className="manejarVisibilidad" />
         
         </div>
       </section>

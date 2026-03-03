@@ -22,10 +22,7 @@ module.exports = nextConfig;
  * Versión sin prefijo ni basePath
  */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
+  images: { unoptimized: true },
 };
 
 module.exports = nextConfig;

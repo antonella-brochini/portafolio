@@ -4,7 +4,7 @@ import FallingStars from '../components/FallingStars';
 import emailjs from "@emailjs/browser";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import HeroReveal from "../components/HeroReveal";
-import '../../styles/contact.css'
+import styles from './contact.module.css'
 import Titulo from '../components/Titulo';
 
 export default function PortfolioPage() {
@@ -83,65 +83,65 @@ export default function PortfolioPage() {
 <section className="banner_part">
         <div className="mi-container">
             </div>
-    <div className="mi-container contact-section section_padding">
+    <div className={` ${styles.contactSection} `}>
  <div className="col-12">
-          <div className="banner_text">
-            <HeroReveal className="banner_text_iner">
+        
+            <HeroReveal >
              <Titulo>Contact</Titulo>
             </HeroReveal>
-          </div>
+         
         </div>
       <div className="row g-5">
       
         <div className="col-lg-6">
-            <form className="form-contact contact_form" onSubmit={handleSubmit} noValidate>
+       <form className={`${styles.formContact} `} onSubmit={handleSubmit} noValidate>
       <div className="row">
         <div className="col-sm-6">
-          <div className="form-group contact-reveal" style={{ "--reveal-delay": "1.3s" }}>
+          <div className={`${styles.formGroup} ${styles.contactReveal}`} style={{ "--reveal-delay": "1.3s" }}>
             <input
-              className="form-control"
+              className={` ${styles.formControl}`}
               name="name"
               type="text"
               placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
             />
-            {errors.name && <p className="text-danger">{errors.name}</p>}
+            {errors.name && <p className={`${styles.textDanger}`}>{errors.name}</p>}
           </div>
         </div>
 
         <div className="col-sm-6">
-          <div className="form-group contact-reveal" style={{ "--reveal-delay": "1.55s" }}>
+          <div className={` ${styles.contactReveal}`} style={{ "--reveal-delay": "1.55s" }}>
             <input
-              className="form-control"
+              className={` ${styles.formControl}`}
               name="email"
               type="email"
               placeholder="Your email"
               value={formData.email}
               onChange={handleChange}
             />
-            {errors.email && <p className="text-danger">{errors.email}</p>}
+            {errors.email && <p className={`${styles.textDanger}`}>{errors.email}</p>}
           </div>
         </div>
 
         <div className="col-12">
-          <div className="form-group contact-reveal" style={{ "--reveal-delay": "1.8s" }}>
+          <div className={`${styles.formGroup} ${styles.contactReveal}`} style={{ "--reveal-delay": "1.8s" }}>
             <input
-              className="form-control"
+              className={`${styles.formControl}`}
               name="subject"
               type="text"
               placeholder="Subject"
               value={formData.subject}
               onChange={handleChange}
             />
-            {errors.subject && <p className="text-danger">{errors.subject}</p>}
+            {errors.subject && <p className={`${styles.textDanger}`}>{errors.subject}</p>}
           </div>
         </div>
 
         <div className="col-12">
-          <div className="form-group contact-reveal" style={{ "--reveal-delay": "2.05s" }}>
+          <div className={`${styles.formGroup} ${styles.contactReveal}`} style={{ "--reveal-delay": "2.05s" }}>
             <textarea
-              className="form-control w-100"
+              className={` ${styles.formControl}`}
               name="message"
               cols="30"
               rows="3"
@@ -149,42 +149,42 @@ export default function PortfolioPage() {
               value={formData.message}
               onChange={handleChange}
             ></textarea>
-            {errors.message && <p className="text-danger">{errors.message}</p>}
+            {errors.message && <p className={`${styles.textDanger}`}>{errors.message}</p>}
           </div>
         </div>
       </div>
 
-      <div className="form-group mt-3 contact-reveal" style={{ "--reveal-delay": "2.3s" }}>
-        <button type="submit" className="button button-contactForm btn_4">
+      <div className={` ${styles.formGroup} ${styles.contactReveal} mt-3`} style={{ "--reveal-delay": "2.3s" }}>
+        <button type="submit" className={` ${styles.buttonContactForm} `}>
           Send Message
         </button>
       </div>
 
       {success && (
-        <p className="text-success mt-2 contact-reveal" style={{ "--reveal-delay": "2.45s" }}>
+        <p className={` ${styles.textSuccess} mt-2 ${styles.contactReveal}`} style={{ "--reveal-delay": "2.45s" }}>
           {success}
         </p>
       )}
     </form>
         </div>
         <div className="col-lg-6">
-            <div className="media contact-info contact-reveal" style={{ "--reveal-delay": "2.7s" }}>
-              <span className="contact-info__icon"><FaMapMarkerAlt /></span>
-              <div className="media-body">
+            <div className={` ${styles.media} ${styles.contactInfo} ${styles.contactReveal}`} style={{ "--reveal-delay": "2.7s" }}>
+              <span className={` ${styles.contactInfoIcon}`}><FaMapMarkerAlt /></span>
+              <div className={styles.mediaBody}>
                 <h3>Montevideo, Uruguay.</h3>
                 <p>Av. Italia 1234, Montevideo 11600</p>
               </div>
             </div>
-            <div className="media contact-info contact-reveal" style={{ "--reveal-delay": "2.95s" }}>
-              <span className="contact-info__icon"><FaPhone /></span>
-              <div className="media-body">
+            <div className={` ${styles.media} ${styles.contactInfo} ${styles.contactReveal}`} style={{ "--reveal-delay": "2.95s" }}>
+              <span className={` ${styles.contactInfoIcon}`}><FaPhone /></span>
+              <div className={styles.mediaBody}>
                 <h3>+598 94094405</h3>
                 <p>Mon to Fri 9am to 6pm</p>
               </div>
             </div>
-            <div className="media contact-info contact-reveal" style={{ "--reveal-delay": "3.2s" }}>
-              <span className="contact-info__icon"><FaEnvelope /></span>
-              <div className="media-body">
+            <div className={` ${styles.media} ${styles.contactInfo} ${styles.contactReveal}`} style={{ "--reveal-delay": "3.2s" }}>
+              <span className={` ${styles.contactInfoIcon}`}><FaEnvelope /></span>
+              <div className={styles.mediaBody}>
                 <h3>antobrochini97@gmail.com</h3>
                 <p>Send us your query anytime!</p>
               </div>

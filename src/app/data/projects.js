@@ -1,7 +1,7 @@
 export const projectsData = [
 
   {
-    id: "project1",
+    id: "1",
     title: "Wine E-commerce",
     description: [
      "End-to-end e-commerce solution developed for a winery, focused on delivering a seamless purchasing experience and driving business growth.",
@@ -26,53 +26,8 @@ export const projectsData = [
     repo: "https://github.com/antonella-brochini/be-MonteBravo",
     technologies: "Spring Boot, Next.js, PostgreSQL, Tailwind CSS",
   },
-
-  {
-    id: "project2",
-    title: "Reservation Management System ",
-    description: [
-     "Developed a reservation management application using GeneXus.",
-     "Designed and structured business logic for booking workflows.",
-     "Managed database interactions and transactional processes.",
-     "Focused on functional correctness and structured data handling.",
-     "Implemented validation rules and user interaction flows."
-    ],
-    images: ["/img/appReservasGX/page1.png", "/img/appReservasGX/page2.png", "/img/appReservasGX/page3.png"],
-    projectUrl: "https://github.com/antonella-brochini/GestorReservasGX",
-    repo: "https://github.com/antonella-brochini/GestorReservasGX",
-    technologies: "Genexus",
-  },
-
-  {
-    id: "project3",
-    title: "Application Deployment on AWS",
-    description: [
-      "Application deployment workflow using Kubernetes on the master branch.",
-      "Testing workflow integrated with SonarCloud.",
-      "Load testing using Docker Compose to spin up services and Apache Benchmark to evaluate performance.",
-      "Load testing workflow with k6.",
-    ],
-    images: ["/img/deploy-app-github.jpg"],
-    projectUrl: "https://github.com/antonella-brochini/example-voting-app",
-    repo: "https://github.com/antonella-brochini/example-voting-app",
-    technologies: "Kubernetes, Docker, SonarCloud, Apache Benchmark, k6",
-  },
-
-  {
-    id: "project4",
-  title: "Infrastructure as Code with Terraform on AWS",
-description: [
-  "Provisioned two Kubernetes clusters with identical configurations across isolated networks.",
-  "Configured one cluster for production workloads.",
-  "Segmented the second cluster using namespaces for development and testing environments."
-],
-    images: ["/img/infra-github.jpg"],
-    projectUrl: "https://github.com/antonella-brochini/voting-app-infra",
-    repo: "https://github.com/antonella-brochini/voting-app-infra",
-    technologies: "Terraform, AWS, Kubernetes",
-  },
 {
-id: "project11",
+id: "2",
 title: "E-commerce Backend with Keycloak",
 description: [
    "Developed a secure e-commerce REST API integrated with Keycloak for authentication and role-based access control (RBAC).",
@@ -88,21 +43,52 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
 
 },
   {
-    id: "project5",
-    title: "Portfolio v1",
+    id: "3",
+    title: "Reservation Management System GX",
     description: [
-      "Designed and developed my first personal portfolio using Next.js.",
-      "Built with a clean, responsive layout and a sober, professional design approach.",
-      "Statically exported for deployment on GitHub Pages.",  
-    "This project represents the foundation of my frontend development journey and was later rebuilt with improved scalability and architectural thinking."
+     "Developed a reservation management application using GeneXus.",
+     "Designed and structured business logic for booking workflows.",
+     "Managed database interactions and transactional processes.",
+     "Focused on functional correctness and structured data handling.",
+     "Implemented validation rules and user interaction flows."
     ],
-    images: ["/img/porfolioV1/page1.png", "/img/porfolioV1/page2.png", "/img/porfolioV1/page3.png" , "/img/porfolioV1/page4.png", "/img/porfolioV1/page5.png", "/img/porfolioV1/page6.png", "/img/porfolioV1/page7.png", "/img/porfolioV1/page8.png"],
-    projectUrl: "https://github.com/antonella-brochini/deploy-portafolio",
-    repo: "https://github.com/antonella-brochini/deploy-portafolio",
-    technologies: "Next.js, Bootstrap, HTML",
+    images: ["/img/appReservasGX/page1.png", "/img/appReservasGX/page2.png", "/img/appReservasGX/page3.png"],
+    projectUrl: "https://github.com/antonella-brochini/GestorReservasGX",
+    repo: "https://github.com/antonella-brochini/GestorReservasGX",
+    technologies: "Genexus",
   },
+
   {
-    id: "project6",
+    id: "4",
+    title: "Application Deployment on AWS",
+    description: [
+      "Application deployment workflow using Kubernetes on the master branch.",
+      "Testing workflow integrated with SonarCloud.",
+      "Load testing using Docker Compose to spin up services and Apache Benchmark to evaluate performance.",
+      "Load testing workflow with k6.",
+    ],
+    images: ["/img/deploy-app-github.jpg"],
+    projectUrl: "https://github.com/antonella-brochini/example-voting-app",
+    repo: "https://github.com/antonella-brochini/example-voting-app",
+    technologies: "Kubernetes, Docker, SonarCloud, Apache Benchmark, k6",
+  },
+
+  {
+    id: "5",
+  title: "IaC with Terraform on AWS",
+  description: [
+  "Provisioned two Kubernetes clusters with identical configurations across isolated networks.",
+  "Configured one cluster for production workloads.",
+  "Segmented the second cluster using namespaces for development and testing environments."
+  ],
+    images: ["/img/infra-github.jpg"],
+    projectUrl: "https://github.com/antonella-brochini/voting-app-infra",
+    repo: "https://github.com/antonella-brochini/voting-app-infra",
+    technologies: "Terraform, AWS, Kubernetes",
+  },
+
+{
+    id: "6",
     title: "Digital Wallet",
     description: [
      "Developed a mobile digital wallet application using React Native with Expo.",
@@ -118,8 +104,9 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
     repo: "https://github.com/antonella-brochini/FEsimuladorWallet",
     technologies: "React Native, Expo, Tailwind CSS",
   },
+  
   {
-   id: "project7",
+   id: "7",
     title: "Nice Design",
     description: [
     ""
@@ -131,7 +118,22 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
     
   },
   {
-    id: "project8",
+    id: "8",
+    title: "Portfolio v1",
+    description: [
+      "Designed and developed my first personal portfolio using Next.js.",
+      "Built with a clean, responsive layout and a sober, professional design approach.",
+      "Statically exported for deployment on GitHub Pages.",  
+    "This project represents the foundation of my frontend development journey and was later rebuilt with improved scalability and architectural thinking."
+    ],
+    images: ["/img/porfolioV1/page1.png", "/img/porfolioV1/page2.png", "/img/porfolioV1/page3.png" , "/img/porfolioV1/page4.png", "/img/porfolioV1/page5.png", "/img/porfolioV1/page6.png", "/img/porfolioV1/page7.png", "/img/porfolioV1/page8.png"],
+    projectUrl: "https://github.com/antonella-brochini/deploy-portafolio",
+    repo: "https://github.com/antonella-brochini/deploy-portafolio",
+    technologies: "Next.js, Bootstrap, HTML",
+  },
+  
+  {
+    id: "9",
     title: "New Portfolio",
     description: [
     "Designed and developed a modern personal portfolio using Next.js.",
@@ -141,13 +143,13 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
     "Optimized performance and responsiveness across devices.",
     "Deployed using modern frontend best practices."
     ],
-    images: ["/img/newPorfolio/page1.png", "/img/newPortfolio/page2.png", "/img/newPortfolio/page3.png", "/img/newPortfolio/page4.png", "/img/newPortfolio/page5.png", "/img/newPortfolio/page6.png", "/img/newPortfolio/page7.png", "/img/newPortfolio/page8.png"],
+    images: ["/img/newPortfolio/page1.png", "/img/newPortfolio/page2.png", "/img/newPortfolio/page3.png", "/img/newPortfolio/page4.png", "/img/newPortfolio/page5.png", "/img/newPortfolio/page6.png", "/img/newPortfolio/page7.png", "/img/newPortfolio/page8.png"],
     projectUrl: "https://github.com/antonella-brochini/portafolio",
     repo: "https://github.com/antonella-brochini/portafolio",
     technologies: "Next.js, Bootstrap, HTML",
   },
   {
-    id: "project9",
+    id: "10",
     title: "News Website",
     description: [
       "Developed and customized a news website using Joomla CMS.",
@@ -162,7 +164,7 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
     technologies: "Next.js, Bootstrap, HTML",
   },
    {
-    id: "project10",
+    id: "11",
     title: "Reservation Management App",
     description: [
       "First academic project developed using pure HTML, CSS, and JavaScript.",

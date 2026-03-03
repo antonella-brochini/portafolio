@@ -1,13 +1,14 @@
  import Link from "next/link";
- import "./boton3d.css";
+import styles from "./Boton3d.module.css";
  
 type BtnProps = {
   titulo: string;
   url?: string;
+  className?: string;
 
 };
 
- export default function FallingStars({ titulo, url }: BtnProps) {
+ export default function FallingStars({ titulo, url, className }: BtnProps) {
 
     const isExternal = url?.startsWith("http");
 if (!url) return null;
@@ -17,7 +18,7 @@ if (!url) return null;
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn-3d "
+        className={`${styles.btn3d} ${className || ""}`}
       >
         <span>{titulo}</span>
         <span>{titulo}</span>
@@ -27,7 +28,7 @@ if (!url) return null;
     );
   }
     return (
- <Link href={url} className="btn-3d">
+ <Link href={url} className={`${styles.btn3d} ${className || ""}`}>
             <span>{titulo}</span>
             <span>{titulo}</span>
             <span>{titulo}</span>

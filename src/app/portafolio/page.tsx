@@ -7,7 +7,7 @@ import Link from "next/link";
 import FallingStars from '../components/FallingStars';
 import { projectsData } from "../data/projects"
 import HeroReveal from "../components/HeroReveal";
-import '../../styles/portafolio.css'
+import styles from './portafolio.module.css';
 import Titulo from "../components/Titulo";
 import { FaExternalLinkAlt, FaGithub, FaArrowUp } from "react-icons/fa";
 
@@ -55,31 +55,31 @@ export default function PortfolioPage() {
   initial="hidden"
   animate="visible"
   variants={list}
-  className="portfolio-grid"
+  className={styles.portfolioGrid}
 >
   {projectsData.map(({ id, title, images, projectUrl, repo }) => (
     <motion.div
       variants={itemSlideUp}
       key={id}
-      className="portfolio-card"
+      className={styles.portfolioCard}
     >
-      <Link href={`/portafolio/project1/${id}`}>
+      <Link href={`/portafolio/project/${id}`}>
         <Image
           src={images[0]}
           width={500}
           height={300}
-          className="portfolio-img"
+          className={styles.portfolioImg}
           alt={title}
         />
       </Link>
 
-      <div className="portfolio-card-footer">
-        <div className="portfolio-header">
-          <h4 className="portfolio-title">
+      <div className={styles.portfolioCardFooter}>
+        <div className={styles.portfolioHeader}>
+          <h4 className={styles.portfolioTitle}>
             {title}
           </h4>
 
-          <div className="portfolio-icons">
+          <div className={styles.portfolioIcons}>
             {projectUrl && (
               <a href={projectUrl} target="_blank" rel="noopener noreferrer">
                 <FaExternalLinkAlt />
@@ -103,7 +103,7 @@ export default function PortfolioPage() {
              {showButton && (
             <button
               onClick={scrollToTop}
-              className="back-to-top"
+              className={styles.backToTop}
 
             >
               <FaArrowUp

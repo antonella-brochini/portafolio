@@ -8,17 +8,18 @@
 }
 
 /* DARK MODE: gradiente en el span */
-.dark-title .gradient-text {
+.darkTitle .gradientText {
   background: var(--gradient);
   background-size: 260% 100%;
   -webkit-background-clip: text;
+  background-clip: text; 
   -webkit-text-fill-color: transparent;
   animation: gradientMove 4.5s ease-in-out infinite;
   display: inline-block;
 }
 
 /* LIGHT MODE: stroke en el span (no en el h1) */
-.light-title span {
+.lightTitle span {
    font-size: clamp(38px, 5.5vw, 68px);
   text-transform: uppercase;
   color: transparent;
@@ -28,11 +29,11 @@
 }
 
 /* Hover en el contenedor, afecta al span */
-.light-title:hover span {
+.lightTitle:hover span {
   text-shadow: 4px 4px 0 #9841ff;
 }
 
-.light-title:hover {
+.lightTitle:hover {
   transform: translate(-3px, -3px);
 }
 

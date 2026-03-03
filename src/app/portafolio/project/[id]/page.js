@@ -12,7 +12,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function Project1Page({ params }) {
+export default async function ProjectPage({ params }) {
    const { id } = await params; 
   const project = projectsData.find(p => String(p.id) === id);
   if (!project) return <p>Project not found</p>;

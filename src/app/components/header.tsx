@@ -1,12 +1,11 @@
 "use client";
 
-import "../styles/header.css";
-
+import styles from "./header.module.css"
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import ThemeToggle from "./components/ThemeToggle";
+import ThemeToggle from "./ThemeToggle";
 
-import LogoChico from "./components/logo-header";
+import LogoChico from "./logo-header";
 
 export default function Header() {
 
@@ -25,29 +24,23 @@ export default function Header() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className={`header-modern ${scroll ? "scrolled" : ""}`}>
+    <header className={`${styles.headerModern} ${scroll ? styles.scrolled : ""}`}>
 
-      <div className="header-container">
-       <LogoChico />
-  {/* Logo */}
-<Link href="/" className="logo">
+      <div className={styles.headerContainer}>
+  <LogoChico />
 
-</Link>
         {/* Navigation */}
-        <nav className={`nav-links ${isOpen ? "active" : ""}`}>
+        <nav className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
           <Link href="/" onClick={closeMenu}>Home</Link>
           <Link href="/portafolio" onClick={closeMenu}>Projects</Link>
           <Link href="/aboutt" onClick={closeMenu}>About me</Link>
           <Link href="/contact" onClick={closeMenu}>Contact</Link>
         </nav>
-
         {/* Theme Toggle */}
         <ThemeToggle />
-
-
         {/* Hamburger Menu */}
         <button 
-          className={`hamburger ${isOpen ? "active" : ""}`}
+          className={`${styles.hamburger} ${isOpen ? styles.active : ""}`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >

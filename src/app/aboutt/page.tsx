@@ -1,19 +1,14 @@
 "use client";
 
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact ,FaJava, FaDatabase, FaAws , FaCloud ,FaDocker, FaGithub, FaBootstrap, FaToolbox, FaCode } from "react-icons/fa";
-import { SiNextdotjs, SiSpringboot , SiDotnet ,SiTerraform, SiTailwindcss  } from "react-icons/si";
 import {  FaArrowUp } from "react-icons/fa";
 import FallingStars from "../components/FallingStars";
 import HeroReveal from "../components/HeroReveal";
-import '../../styles/about.css'
-import Btn from "../components/boton3d";
+import styles from "./about.module.css";
+import Boton3d from "../components/boton3d";
 import Titulo from "../components/Titulo";
 import {
-  item,
-  list,
-  slideDown,
   slideToLeft,
-  slideUp,
+
 } from "../../helpers/animation";
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
@@ -23,7 +18,7 @@ export default function Aboutt() {
   
 
 
-  type Stat = { label: string; value: string };
+type Stat = { label: string; value: string };
 type Pill = { icon: string; text: string };
 type TimelineItem = { title: string; desc: string };
 
@@ -53,31 +48,34 @@ type TimelineItem = { title: string; desc: string };
     { title: "I engineer for excellence", desc: "Clean architecture, reusable components, testing, and best practices are not optional — they are the foundation for sustainable growth." },
   ];
 
-  // Partículas (random) solo 1 vez
-  const particles = useMemo(() => {
-    return Array.from({ length: 10 }).map((_, i) => ({
+
+
+  const [mounted, setMounted] = useState(false);
+  type Particle = { id: number; cx: string; cy: string; r: number; dur: number; delay: string };
+
+const [particles, setParticles] = useState<Particle[]>([]);
+  useEffect(() => setMounted(true), []);
+
+   const [showButton, setShowButton] = useState(false);
+ useEffect(() => {
+  setParticles(
+    Array.from({ length: 10 }).map((_, i) => ({
       id: i,
       cx: `${Math.floor(Math.random() * 100)}%`,
       cy: `${Math.floor(Math.random() * 100)}%`,
       r: 2 + Math.floor(Math.random() * 2),
       dur: 6 + Math.floor(Math.random() * 5),
-      delay: (Math.random() * 2).toFixed(2),
-    }));
-  }, []);
+      delay: `${(Math.random() * 2).toFixed(2)}s`,
+    }))
+  );
+}, []);
 
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-
-   const [showButton, setShowButton] = useState(false);
-    useEffect(() => {
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-          setShowButton(true);
-        } else {
-          setShowButton(false);
-        }
-      });
-    }, []);
+useEffect(() => {
+  const onScroll = () => setShowButton(window.pageYOffset > 300);
+  window.addEventListener("scroll", onScroll);
+  onScroll();
+  return () => window.removeEventListener("scroll", onScroll);
+}, []);
    // This function will scroll the window to the top 
     const scrollToTop = () => {
       window.scrollTo({
@@ -91,13 +89,11 @@ type TimelineItem = { title: string; desc: string };
   return (
   <div>
     <FallingStars />
-
-    <section className="banner_part mi-container">
+    <section className={`banner_part mi-container ${styles.aboutHeroSection}`}>
       <div className="row align-items-center">
         <div className="banner_text">
           <HeroReveal className="banner_text_iner">
-<div className="contenedorTituloTexto">
-
+<div className={styles.contenedorTituloTexto}>
   {/* COLUMNA IZQUIERDA — TITULO */}
   <div>
     <motion.h1
@@ -123,14 +119,14 @@ type TimelineItem = { title: string; desc: string };
             initial={{ width: 0 }}
             animate={{ width: "4rem" }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="about-line-short"
+            className={styles.aboutLineShort}
           />
 
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: "7rem" }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="about-line-long"
+            className={styles.aboutLineLong}
           />
         </div>
 
@@ -139,7 +135,7 @@ type TimelineItem = { title: string; desc: string };
     </motion.h1>
   </div>
 
- <div className="mi-contenedor">
+ <div className="mi-container">
 
   <motion.p
     initial="hidden"
@@ -147,7 +143,7 @@ type TimelineItem = { title: string; desc: string };
     variants={slideToLeft}
     custom={0.2}
     style={{ textAlign: "justify" }}
-    className="about_hero_text"
+    className={styles.aboutHeroText}
   >
     I’m a Software Developer with hands-on experience building scalable web applications using Next.js, Spring Boot, and relational databases.
   </motion.p>
@@ -158,7 +154,7 @@ type TimelineItem = { title: string; desc: string };
     variants={slideToLeft}
     custom={0.4}
     style={{ textAlign: "justify" }}
-    className="about_hero_text"
+    className={styles.aboutHeroText}  
   >
     I work across both frontend and backend, with a strong focus on writing clean, maintainable code and designing efficient system architectures.
   </motion.p>
@@ -169,7 +165,7 @@ type TimelineItem = { title: string; desc: string };
     variants={slideToLeft}
     custom={0.6}
     style={{ textAlign: "justify" }}
-    className="about_hero_text"
+    className={styles.aboutHeroText}
   >
     I enjoy understanding how systems work end-to-end and continuously improving my technical foundations while building solutions that are functional, efficient, and scalable.
   </motion.p>
@@ -179,7 +175,7 @@ type TimelineItem = { title: string; desc: string };
           
             <a
               href="https://www.linkedin.com/in/antonella-brochini/"
-              className="btn-gaming"
+              className={styles.btnGaming}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -188,72 +184,79 @@ type TimelineItem = { title: string; desc: string };
           </HeroReveal>
         </div>
 
-        <Btn titulo="LinkedIn" url="https://www.linkedin.com/in/antonella-brochini/" />
+        <Boton3d titulo="LinkedIn" url="https://www.linkedin.com/in/antonella-brochini/" className={styles.manejarVisibilidadAbout} />
       </div>
     </section>
 
- <section className="about-root">
+ <section className={styles.aboutRoot}>
       {/* Background blobs */}
-      <div className="about-bg" aria-hidden="true">
-        <div className="blob blob-1" />
-        <div className="blob blob-2" />
-        <div className="blob blob-3" />
+      <div className={styles.aboutBg} aria-hidden="true">
+        <div className={`${styles.blob} ${styles.blob1}`} />
+        <div className={`${styles.blob} ${styles.blob2}`} />
+        <div className={`${styles.blob} ${styles.blob3}`} />
 
-        {/* particles */}
-        <svg className="particles" viewBox="0 0 100 100" preserveAspectRatio="none">
-          {particles.map((p) => (
-            <circle
-              key={p.id}
-              className="particle"
-              cx={p.cx}
-              cy={p.cy}
-              r={p.r}
-              style={{ animation: `float ${p.dur}s ease-in-out infinite ${p.delay}s` }}
-            />
-          ))}
-        </svg>
+   {/* particles */}
+{mounted && (
+  <svg className={styles.particles} viewBox="0 0 100 100"  preserveAspectRatio="xMidYMid meet">
+    {particles.map((p) => (
+      <circle
+  key={p.id}
+  className={styles.particle}
+  cx={p.cx}
+  cy={p.cy}
+  r={p.r}
+  style={
+    {
+      ["--dur" as any]: `${p.dur}s`,
+      ["--delay" as any]: p.delay, // ya viene con "s"
+    } as React.CSSProperties
+  }
+/>
+    ))}
+  </svg>
+)}
       </div>
 
-      <div className="about-container">
+      <div className={styles.aboutContainer}>
         {/* Header */}
-        <header className="about-header">
-          <div className="mono tag">&lt;skills&gt;</div>
+        <div className={styles.aboutHeader}>
+          <div className={`${styles.mono} ${styles.tag}`}>&lt;skills&gt;</div>
 
-          <h2 className={`about-title ${mounted ? "slide-in" : ""}`}>
-            <span className="gradient-text">My stack</span>
+          <h2 className={`${styles.aboutTitle} ${mounted ? styles.slideIn : ""}`}>
+            <span className={styles.gradientText}>My stack</span>
           </h2>
 
-          <p className={`about-subtitle ${mounted ? "slide-in" : ""}`} style={{ animationDelay: "0.08s" }}>
+          <p className={`${styles.aboutSubtitle} ${mounted ? styles.slideIn : ""}`} style={{ animationDelay: "0.08s" }}>
            Fullstack Developer focused on building products with design, performance, and clarity.
           </p>
 
-          <div className="mono tag">&lt;/skills&gt;</div>
-        </header>
+          <div className={`${styles.mono} ${styles.tag}`}>&lt;/skills&gt;</div>
+        </div>
 
         {/* Main grid */}
-        <div className="about-grid">
+        <div className={styles.aboutGrid}>
           {/* Left: profile card */}
-          <div className={`glass card profile ${mounted ? "scale-in" : ""}`} style={{ animationDelay: "0.08s" }}>
-            <div className="profile-top">
-              <div className="hexagon glow-effect">
-                <div className="hex-inner">
-                  <span className="emoji">👩‍💻</span>
+          <div className={`${styles.glass} ${styles.card} ${styles.profile} ${mounted ? styles.scaleIn : ""}`} style={{ animationDelay: "0.08s" }}>
+            <div className={styles.profileTop}>
+              <div className={`${styles.hexagon} ${styles.glowEffect}`}>
+                <div className={styles.hexInner}>
+                  <span className={styles.emoji}>👩‍💻</span>
                 </div>
               </div>
 
-              <div className="profile-meta">
-                <p className="mono small">Antonella Brochini</p>
-                <h3 className="profile-role">Full Stack Developer</h3>
-                <p className="profile-note">
+              <div className={styles.profileMeta}>
+                <p className={`${styles.mono} ${styles.small}`}>Antonella Brochini</p>
+                <h3 className={styles.profileRole}>Full Stack Developer</h3>
+                <p className={styles.profileNote}>
                  I aim to specialize in developing scalable digital systems that combine strong engineering principles with data-driven decision making.
                 </p>
               </div>
             </div>
 
-            <div className="pill-row">
+            <div className={styles.pillRow}>
               {pills.map((p, i) => (
-                <span key={i} className="pill float-item" style={{ animationDelay: `${i * 0.15}s` }}>
-                  <span className="pill-ic">{p.icon}</span>
+                <span key={i} className={styles.pill} style={{ animationDelay: `${i * 0.15}s` }}>
+                  <span className={styles.pillIcon}>{p.icon}</span>
                   <span>{p.text}</span>
                 </span>
               ))}
@@ -261,51 +264,51 @@ type TimelineItem = { title: string; desc: string };
           </div>
 
         
-          <div className="right-col">
-            <div className="stats-grid">
+          <div className={styles.rightCol}>
+            <div className={styles.statsGrid}>
               {stats.map((s, i) => (
                 <div
                   key={i}
-                  className={`glass stat ${mounted ? "scale-in" : ""}`}
+                  className={`${styles.glass} ${styles.stat} ${mounted ? styles.scaleIn : ""}`}
                   style={{ animationDelay: `${0.12 + i * 0.06}s` }}
                 >
-                  <div className="stat-value gradient-text">{s.value}</div>
-                  <div className="stat-label">{s.label}</div>
+                  <div className={styles.statValue}>{s.value}</div>
+                  <div className={styles.statLabel}>{s.label}</div>
                 </div>
               ))}
             </div>
 
-            <div className={`glass card timeline ${mounted ? "slide-in" : ""}`} style={{ animationDelay: "0.18s" }}>
-              <div className="timeline-head">
-                <span className="mono small">&lt;Mindset /&gt;</span>
-                <h4 className="timeline-title">How I Work</h4>
+            <div className={`${styles.glass} ${styles.card} ${styles.timeline} ${mounted ? styles.slideIn : ""}`} style={{ animationDelay: "0.18s" }}>
+              <div className={styles.timelineHead}>
+                <span className={`${styles.mono} ${styles.small}`}>&lt;Mindset /&gt;</span>
+                <h4 className={styles.timelineTitle}>How I Work</h4>
               </div>
 
-              <div className="timeline-list">
+              <div className={styles.timelineList}>
                 {timeline.map((t, i) => (
-                  <div key={i} className="timeline-item">
-                    <div className="dot" />
+                  <div key={i} className={styles.timelineItem}>
+                    <div className={styles.dot} />
                     <div >
-                      <p className="timeline-item-title">{t.title}</p>
-                      <p className="timeline-item-desc">{t.desc}</p>
+                      <p className={styles.timelineItemTitle}>{t.title}</p>
+                      <p className={styles.timelineItemDesc}>{t.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mono footer-note">
-                <span className="gradient-text">{/* siempre aprendiendo */}</span>
+              <div className={`${styles.mono} ${styles.footerNote}`}>
+                <span className={styles.gradientText}>{/* siempre aprendiendo */}</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* little footer */}
-        <footer className="about-footer mono">
+        <footer className={`${styles.aboutFooter} ${styles.mono}`}>
     {showButton && (
                 <button
                   onClick={scrollToTop}
-                  className="back-to-top"
+                  className={styles.backToTop}
     
                 >
                   <FaArrowUp

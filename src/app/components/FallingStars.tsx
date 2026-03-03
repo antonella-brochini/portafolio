@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import "../../styles/falling-stars.css";
+import styles from "./FallingStars.module.css";
 
 interface Star {
   id: number;
@@ -50,11 +50,11 @@ export default function FallingStars() {
   }, []);
 
   return (
-    <div className="falling-stars-container">
+    <div className={styles.fallingStarsContainer}>
       {stars.map((star) => (
         <div
           key={star.id}
-          className="falling-star"
+          className={styles.fallingStar}
           style={{
             right: `${star.right}%`,
             "--delay": `${star.delay}s`,

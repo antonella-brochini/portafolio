@@ -1,4 +1,4 @@
-import Header from "./header"
+import Header from "./components/header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/style.css'
 import { Oxanium } from "next/font/google";
@@ -7,7 +7,7 @@ import { ThemeProvider } from "./components/ThemeProvider";
 
 export const metadata = {
   title: 'Anto | TechLover',
-  description: 'Portafolio profesional de Antonella Brochini',
+  description: 'Personal Antonella Brochini\'s portfolio',
 }
 
   const oxanium = Oxanium({
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={oxanium.className} suppressHydrationWarning>
      
       <body>
-         <ThemeProvider>
+  <ThemeProvider>
   <Header />
   {children}
  </ThemeProvider>

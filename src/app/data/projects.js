@@ -107,18 +107,35 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
   
   {
    id: "7",
-    title: "Nice Design",
+    title: "One page Nice Design",
     description: [
-    ""
+    "Modern responsive one-page website built with Next.js and TypeScript. ",
+    "It features a clean component-based architecture, smooth UI animations, and optimized performance. ",
+    "The project focuses on modern frontend practices, reusable components, and scalable styling for building elegant web interfaces."
     ],
     images: ["/img/juegos/page1.png", "/img/juegos/page2.png", "/img/juegos/page3.png", "/img/juegos/page4.png", ],
-    projectUrl: "https://www.noticiasydestinos.com/index.php/es",
-    repo: "https://www.noticiasydestinos.com/index.php/es",
-    technologies: "Next.js, Bootstrap, HTML",
+    projectUrl: "https://one-page-rust.vercel.app/",
+    repo: "https://github.com/antonella-brochini/one-page",
+    technologies: "Next.js, TypeScript, CSS, HTML",
     
   },
   {
     id: "8",
+    title: "News Website",
+    description: [
+      "Developed and customized a news website using Joomla CMS.",
+      "Configured content structures, categories, and dynamic article management.",
+      "Implemented responsive templates and layout adjustments.",   
+      "Managed plugins and extensions to enhance functionality and performance.",
+      "Handled deployment and configuration for production environment."
+    ],
+    images: ["/img/noticiasWebsite/page1.png", "/img/noticiasWebsite/page2.png", "/img/noticiasWebsite/page3.png", "/img/noticiasWebsite/page4.png", "/img/noticiasWebsite/page5.png"],
+     projectUrl: "https://www.noticiasydestinos.com/index.php/es/",
+    repo: "https://www.noticiasydestinos.com/index.php/es/",
+    technologies: "Joomla, Bootstrap, CSS, HTML",
+  },
+  {
+    id: "9",
     title: "Portfolio v1",
     description: [
       "Designed and developed my first personal portfolio using Next.js.",
@@ -133,7 +150,7 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
   },
   
   {
-    id: "9",
+    id: "10",
     title: "New Portfolio",
     description: [
     "Designed and developed a modern personal portfolio using Next.js.",
@@ -148,42 +165,6 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
     repo: "https://github.com/antonella-brochini/portafolio",
     technologies: "Next.js, Bootstrap, HTML",
   },
-  {
-    id: "10",
-    title: "News Website",
-    description: [
-      "Developed and customized a news website using Joomla CMS.",
-      "Configured content structures, categories, and dynamic article management.",
-      "Implemented responsive templates and layout adjustments.",   
-      "Managed plugins and extensions to enhance functionality and performance.",
-      "Handled deployment and configuration for production environment."
-    ],
-    images: ["/img/noticiasWebsite/page1.png", "/img/noticiasWebsite/page2.png", "/img/noticiasWebsite/page3.png", "/img/noticiasWebsite/page4.png", "/img/noticiasWebsite/page5.png"],
-     projectUrl: "https://www.noticiasydestinos.com/index.php/es/",
-    repo: "https://www.noticiasydestinos.com/index.php/es/",
-    technologies: "Next.js, Bootstrap, HTML",
-  },
-   {
-    id: "11",
-    title: "Reservation Management App",
-    description: [
-      "First academic project developed using pure HTML, CSS, and JavaScript.",
-    "Web application designed to manage reservations across different venues (restaurants, theaters, or museums).",
-    "Includes two user roles: Venue and Customer.",
-    "Venue role: login with preloaded credentials; enable or disable reservations based on maximum capacity.",
-    'Venue role: update reservation status from "pending" to "completed", search reservations by customer name, and modify maximum capacity (if no pending reservations exist).',
-    "Venue role: view statistics including occupancy rate, ratings, and total reservations.",
-    "Customer role: register and log in with a unique username and secure password.",
-    "Customer role: request and cancel reservations at available venues, rate completed reservations, and view personal statistics."
-    ],
-    images: ["/img/port_2.png"],
-    projectUrl: "https://antonella-brochini.github.io/app-reservas/",
-    repo: "https://antonella-brochini.github.io/app-reservas/",
-    technologies: "HTML, CSS, JavaScript",
-  },
-
-
-
-
-
+  
+  
 ];

@@ -86,9 +86,25 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
     repo: "https://github.com/antonella-brochini/voting-app-infra",
     technologies: "Terraform, AWS, Kubernetes",
   },
-
 {
     id: "6",
+    title: "Order Food App",
+    description: [
+      "Food ordering web application that allows users to browse a menu, customize food items, manage a shopping cart and complete orders through a checkout process.",
+
+      "The application includes user authentication, so users must register or log in before placing an order. Once authenticated, they can personalize their food by selecting ingredients, add items to the cart and complete the purchase.",
+      "The checkout system supports multiple payment options including credit card, PayPal or cash payment at the store.",
+      "user : demo@pizzeria.com  and Password: 12345678 to test the app",
+    ],
+    images: ["/img/pizzeria/page1.png", "/img/pizzeria/page2.png", "/img/pizzeria/page3.png", "/img/pizzeria/page4.png", "/img/pizzeria/page5.png", "/img/pizzeria/page6.png", "/img/pizzeria/page7.png", "/img/pizzeria/page8.png", "/img/pizzeria/page9.png", "/img/pizzeria/page10.png"],
+    projectUrl: "https://pizzeria-omega-khaki.vercel.app/",
+    repo: "https://github.com/antonella-brochini/pizzeria",
+    technologies: "Next.js, React, Redux y Tailwind CSS",
+  },
+
+  
+{
+    id: "7",
     title: "Digital Wallet",
     description: [
      "Developed a mobile digital wallet application using React Native with Expo.",
@@ -106,7 +122,7 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
   },
   
   {
-   id: "7",
+   id: "8",
     title: "One page Nice Design",
     description: [
     "Modern responsive one-page website built with Next.js and TypeScript. ",
@@ -120,7 +136,7 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
     
   },
   {
-    id: "8",
+    id: "9",
     title: "News Website",
     description: [
       "Developed and customized a news website using Joomla CMS.",
@@ -135,7 +151,7 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
     technologies: "Joomla, Bootstrap, CSS, HTML",
   },
   {
-    id: "9",
+    id: "10",
     title: "Portfolio v1",
     description: [
       "Designed and developed my first personal portfolio using Next.js.",
@@ -150,7 +166,7 @@ technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
   },
   
   {
-    id: "10",
+    id: "11",
     title: "New Portfolio",
     description: [
     "Designed and developed a modern personal portfolio using Next.js.",

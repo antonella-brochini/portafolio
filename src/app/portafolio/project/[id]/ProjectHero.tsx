@@ -9,6 +9,8 @@ interface ProjectHeroProps {
   technologies?: string;
   repo?: string;
   projectUrl?: string;
+  githubLabel?: string;
+  viewProjectLabel?: string;
 }
 
 export default function ProjectHero({
@@ -16,6 +18,8 @@ export default function ProjectHero({
   technologies,
   repo,
   projectUrl,
+  githubLabel = "GitHub",
+  viewProjectLabel = "View Project",
 }: ProjectHeroProps) {
   const githubUrl = repo || projectUrl;
   const liveUrl = projectUrl || repo;
@@ -42,7 +46,7 @@ export default function ProjectHero({
                       className={styles.projectLink}
                     >
                       <FaGithub className={styles.linkIcon} />
-                      GitHub
+                      {githubLabel}
                     </a>
                   ) : null}
                   {liveUrl ? (
@@ -53,7 +57,7 @@ export default function ProjectHero({
                       className={styles.projectLink}
                     >
                       <FaExternalLinkAlt className={styles.linkIcon} />
-                      View Project
+                      {viewProjectLabel}
                     </a>
                   ) : null}
                 </div>

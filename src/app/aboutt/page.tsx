@@ -11,42 +11,11 @@ import {
 
 } from "../../helpers/animation";
 import { motion } from "framer-motion";
-import { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "../../hooks/useTranslation";
 
 export default function Aboutt() {
-
-  
-
-
-type Stat = { label: string; value: string };
-type Pill = { icon: string; text: string };
-type TimelineItem = { title: string; desc: string };
-
-
-  const stats: Stat[] = [
-    { value: "Full Stack", label: "Profile" },
-    { value: "Next.js", label: "Frontend" },
-    { value: "Spring Boot", label: "Backend" },
-    { value: "PostgreSQL", label: "DB" },
-  ];
-
-  const pills: Pill[] = [
-    { icon: "⚛️", text: "React / Next.js" },
-    { icon: "🍃", text: "Spring Boot" },
-    { icon: "🗄️", text: "SQL / PostgreSQL" },
-    { icon: "🐳", text: "Docker / Git" },
-    { icon: "☁️", text: "AWS / Cloud" },
-    { icon: "☁️", text: "Salesforce",},
-    { icon: "🎨", text: "Tailwind / Bootstrap" },
-    {icon:"🌍", text: "English"},
-    { icon: "🇪🇸", text: "Spanish (Native)" },
-  ];
-
-  const timeline: TimelineItem[] = [
-    { title: "I think in systems, not features", desc: "Before writing code, I analyze the problem, the business context, and the long-term impact. I build solutions that align technology with strategy." },
-    { title: "I build with intention", desc: "I design modern, accessible, high-performance experiences that are built to scale — not just to ship." },
-    { title: "I engineer for excellence", desc: "Clean architecture, reusable components, testing, and best practices are not optional — they are the foundation for sustainable growth." },
-  ];
+  const { t } = useTranslation();
 
 
 
@@ -105,7 +74,7 @@ useEffect(() => {
         flexDirection: "column",
       }}
     >
-      <Titulo>About</Titulo>
+      <Titulo>{t.about.titleAbout}</Titulo>
 
       <div
         style={{
@@ -130,45 +99,26 @@ useEffect(() => {
           />
         </div>
 
-        <Titulo>Me</Titulo>
+        <Titulo>{t.about.titleMe}</Titulo>
       </div>
     </motion.h1>
   </div>
 
  <div className="mi-container">
 
+  {t.about.heroParagraphs.map((text, i) => (
   <motion.p
+    key={i}
     initial="hidden"
     animate="visible"
     variants={slideToLeft}
-    custom={0.2}
+    custom={0.2 + i * 0.2}
     style={{ textAlign: "justify" }}
     className={styles.aboutHeroText}
   >
-    I’m a Software Developer with hands-on experience building scalable web applications using Next.js, Spring Boot, and relational databases.
+    {text}
   </motion.p>
-
-  <motion.p
-    initial="hidden"
-    animate="visible"
-    variants={slideToLeft}
-    custom={0.4}
-    style={{ textAlign: "justify" }}
-    className={styles.aboutHeroText}  
-  >
-    I work across both frontend and backend, with a strong focus on writing clean, maintainable code and designing efficient system architectures.
-  </motion.p>
-
-  <motion.p
-    initial="hidden"
-    animate="visible"
-    variants={slideToLeft}
-    custom={0.6}
-    style={{ textAlign: "justify" }}
-    className={styles.aboutHeroText}
-  >
-    I enjoy understanding how systems work end-to-end and continuously improving my technical foundations while building solutions that are functional, efficient, and scalable.
-  </motion.p>
+  ))}
 
 </div>
 </div>
@@ -179,12 +129,12 @@ useEffect(() => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              {t.about.linkedIn}
             </a>
           </HeroReveal>
         </div>
 
-        <Boton3d titulo="LinkedIn" url="https://www.linkedin.com/in/antonella-brochini/" className={styles.manejarVisibilidadAbout} />
+        <Boton3d titulo={t.about.linkedIn} url="https://www.linkedin.com/in/antonella-brochini/" className={styles.manejarVisibilidadAbout} />
       </div>
     </section>
 
@@ -220,17 +170,17 @@ useEffect(() => {
       <div className={styles.aboutContainer}>
         {/* Header */}
         <div className={styles.aboutHeader}>
-          <div className={`${styles.mono} ${styles.tag}`}>&lt;skills&gt;</div>
+          <div className={`${styles.mono} ${styles.tag}`}>{t.about.skillsOpen}</div>
 
           <h2 className={`${styles.aboutTitle} ${mounted ? styles.slideIn : ""}`}>
-            <span className={styles.gradientText}>My stack</span>
+            <span className={styles.gradientText}>{t.about.stackTitle}</span>
           </h2>
 
           <p className={`${styles.aboutSubtitle} ${mounted ? styles.slideIn : ""}`} style={{ animationDelay: "0.08s" }}>
-           Fullstack Developer focused on building products with design, performance, and clarity.
+           {t.about.stackSubtitle}
           </p>
 
-          <div className={`${styles.mono} ${styles.tag}`}>&lt;/skills&gt;</div>
+          <div className={`${styles.mono} ${styles.tag}`}>{t.about.skillsClose}</div>
         </div>
 
         {/* Main grid */}
@@ -245,16 +195,16 @@ useEffect(() => {
               </div>
 
               <div className={styles.profileMeta}>
-                <p className={`${styles.mono} ${styles.small}`}>Antonella Brochini</p>
-                <h3 className={styles.profileRole}>Full Stack Developer</h3>
+                <p className={`${styles.mono} ${styles.small}`}>{t.about.profileName}</p>
+                <h3 className={styles.profileRole}>{t.about.profileRole}</h3>
                 <p className={styles.profileNote}>
-                 I aim to specialize in developing scalable digital systems that combine strong engineering principles with data-driven decision making.
+                 {t.about.profileNote}
                 </p>
               </div>
             </div>
 
             <div className={styles.pillRow}>
-              {pills.map((p, i) => (
+              {t.about.pills.map((p, i) => (
                 <span key={i} className={styles.pill} style={{ animationDelay: `${i * 0.15}s` }}>
                   <span className={styles.pillIcon}>{p.icon}</span>
                   <span>{p.text}</span>
@@ -266,7 +216,7 @@ useEffect(() => {
         
           <div className={styles.rightCol}>
             <div className={styles.statsGrid}>
-              {stats.map((s, i) => (
+              {t.about.stats.map((s, i) => (
                 <div
                   key={i}
                   className={`${styles.glass} ${styles.stat} ${mounted ? styles.scaleIn : ""}`}
@@ -280,17 +230,17 @@ useEffect(() => {
 
             <div className={`${styles.glass} ${styles.card} ${styles.timeline} ${mounted ? styles.slideIn : ""}`} style={{ animationDelay: "0.18s" }}>
               <div className={styles.timelineHead}>
-                <span className={`${styles.mono} ${styles.small}`}>&lt;Mindset /&gt;</span>
-                <h4 className={styles.timelineTitle}>How I Work</h4>
+                <span className={`${styles.mono} ${styles.small}`}>{t.about.mindsetLabel}</span>
+                <h4 className={styles.timelineTitle}>{t.about.howIWork}</h4>
               </div>
 
               <div className={styles.timelineList}>
-                {timeline.map((t, i) => (
+                {t.about.timeline.map((item, i) => (
                   <div key={i} className={styles.timelineItem}>
                     <div className={styles.dot} />
                     <div >
-                      <p className={styles.timelineItemTitle}>{t.title}</p>
-                      <p className={styles.timelineItemDesc}>{t.desc}</p>
+                      <p className={styles.timelineItemTitle}>{item.title}</p>
+                      <p className={styles.timelineItemDesc}>{item.desc}</p>
                     </div>
                   </div>
                 ))}

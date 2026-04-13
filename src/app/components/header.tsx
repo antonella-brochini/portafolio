@@ -4,10 +4,13 @@ import styles from "./header.module.css"
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import LanguageToggle from "./LanguageToggle";
 
 import LogoChico from "./logo-header";
+import { useTranslation } from "../../hooks/useTranslation";
 
 export default function Header() {
+  const { t } = useTranslation();
 
   const [scroll, setScroll] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -31,18 +34,20 @@ export default function Header() {
 
         {/* Navigation */}
         <nav className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
-          <Link href="/" onClick={closeMenu}>Home</Link>
-          <Link href="/portafolio" onClick={closeMenu}>Projects</Link>
-          <Link href="/aboutt" onClick={closeMenu}>About me</Link>
-          <Link href="/contact" onClick={closeMenu}>Contact</Link>
+          <Link href="/" onClick={closeMenu}>{t.nav.home}</Link>
+          <Link href="/portafolio" onClick={closeMenu}>{t.nav.projects}</Link>
+          <Link href="/aboutt" onClick={closeMenu}>{t.nav.about}</Link>
+          <Link href="/contact" onClick={closeMenu}>{t.nav.contact}</Link>
         </nav>
-        {/* Theme Toggle */}
-        <ThemeToggle />
+        <div className={styles.headerActions}>
+          <LanguageToggle />
+          <ThemeToggle />
+        </div>
         {/* Hamburger Menu */}
         <button 
           className={`${styles.hamburger} ${isOpen ? styles.active : ""}`}
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
+          aria-label={t.header.menuToggle}
         >
           <span></span>
           <span></span>

@@ -56,6 +56,12 @@
   text-shadow: 0 0 8px rgba(152, 65, 255, 0.8);
 }
 
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
 /* Hamburger Menu - hidden on desktop */
 .hamburger {
   display: none;
@@ -150,6 +156,10 @@
   .navLinks a:hover {
     background: rgba(255, 255, 255, 0.08);
     color: var(--purple);
+  }
+
+  .headerActions {
+    order: 2;
   }
 
   .hamburger {

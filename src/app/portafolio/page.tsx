@@ -5,7 +5,8 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import FallingStars from '../components/FallingStars';
-import { projectsData } from "../data/projects"
+import { projectsMeta } from "../data/projects"
+import { useTranslation } from "../../hooks/useTranslation";
 import HeroReveal from "../components/HeroReveal";
 import styles from './portafolio.module.css';
 import Titulo from "../components/Titulo";
@@ -13,6 +14,7 @@ import { FaExternalLinkAlt, FaGithub, FaArrowUp } from "react-icons/fa";
 
 
 export default function PortfolioPage() {
+  const { t } = useTranslation();
   const [showButton, setShowButton] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -43,7 +45,7 @@ export default function PortfolioPage() {
                         <div className="banner_text">
                           <HeroReveal className="banner_text_iner">
                            
-                            <Titulo className="pt-5">Selected Projects</Titulo>
+                            <Titulo className="pt-5">{t.portfolio.selectedProjects}</Titulo>
                           </HeroReveal>
                         </div>
                     </div>
@@ -57,7 +59,9 @@ export default function PortfolioPage() {
   variants={list}
   className={styles.portfolioGrid}
 >
-  {projectsData.map(({ id, title, images, projectUrl, repo }) => (
+  {projectsMeta.map(({ id, images, projectUrl, repo }) => {
+    const title = t.projects[id as keyof typeof t.projects]?.title ?? id;
+    return (
     <motion.div
       variants={itemSlideUp}
       key={id}
@@ -94,7 +98,8 @@ export default function PortfolioPage() {
         </div>
       </div>
     </motion.div>
-  ))}
+  );
+  })}
 </motion.div>
         </div>
       </div>

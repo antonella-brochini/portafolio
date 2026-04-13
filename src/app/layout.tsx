@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/style.css'
 import { Oxanium } from "next/font/google";
 import { ThemeProvider } from "./components/ThemeProvider";
+import { LanguageProvider } from "../context/LanguageContext";
 
 
 export const metadata = {
@@ -25,9 +26,11 @@ export default function RootLayout({ children }) {
      
       <body>
   <ThemeProvider>
-  <Header />
-  {children}
- </ThemeProvider>
+        <LanguageProvider>
+          <Header />
+          {children}
+        </LanguageProvider>
+      </ThemeProvider>
       </body>
          
     </html>

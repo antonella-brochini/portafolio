@@ -5,10 +5,11 @@ import "../styles/landing.css";
 import FallingStars from "./components/FallingStars";
 import HeroReveal from "./components/HeroReveal";
 import Boton3d from "./components/boton3d";
+import { useTranslation } from "../hooks/useTranslation";
 
 
 export default function Home() {
-
+  const { t } = useTranslation();
 
   return (
     <main>
@@ -16,18 +17,18 @@ export default function Home() {
       <section className="banner_part">
         <div className="hero-wrapper">
           <HeroReveal className="hero-center" >
-            <p className="hero-subtitle">Designing digital experiences beyond limits.</p>
+            <p className="hero-subtitle">{t.home.subtitle}</p>
 
             <h1 className="hero-title">
-              <span className="pading">Building Today.</span>
-              <span className="gradient-text">Leading Tomorrow.</span>
+              <span className="pading">{t.home.titleLine1}</span>
+              <span className="gradient-text">{t.home.titleLine2}</span>
             </h1>
           </HeroReveal>
 
           <Link href="/portafolio" className="btn-gaming">
-            View My Work
+            {t.home.cta}
           </Link>
-          <Boton3d titulo="View My Work" url="/portafolio" className="manejarVisibilidad" />
+          <Boton3d titulo={t.home.cta} url="/portafolio" className="manejarVisibilidad" />
         
         </div>
       </section>

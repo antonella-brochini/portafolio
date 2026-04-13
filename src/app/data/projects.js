@@ -1,15 +1,7 @@
-export const projectsData = [
+/** Metadatos compartidos por proyecto (sin textos traducibles). Los títulos y descripciones viven en /translations. */
+export const projectsMeta = [
   {
     id: "1",
-    title: "Wine E-commerce",
-    description: [
-      "End-to-end e-commerce solution developed for a winery, focused on delivering a seamless purchasing experience and driving business growth.",
-      "The platform integrates Mercado Pago for secure payment processing and SendGrid for automated transactional and marketing email campaigns. Social authentication and JWT-based authentication were implemented to ensure secure user access and session management.",
-      "On the frontend, Redux was used for centralized state management, enabling efficient handling of user sessions, cart state, and application data flow.",
-      "Additionally, the system includes an analytics dashboard to monitor sales performance, identify top-selling products, and support data-driven decision-making.",
-      "Backend deployed on AWS with Docker",
-      "https://api.antonellabrochini.com/swagger-ui/index.html for API documentation and testing. Rol user: user1 and password1",
-    ],
     images: [
       "/img/ecomerce/landing1.png",
       "/img/ecomerce/landing2.png",
@@ -39,14 +31,6 @@ export const projectsData = [
   },
   {
     id: "2",
-    title: "Order Food App",
-    description: [
-      "Food ordering web application that allows users to browse a menu, customize food items, manage a shopping cart and complete orders through a checkout process.",
-
-      "The application includes user authentication, so users must register or log in before placing an order. Once authenticated, they can personalize their food by selecting ingredients, add items to the cart and complete the purchase.",
-      "The checkout system supports multiple payment options including credit card, PayPal or cash payment to the delivery person. ",
-      "user : demo@pizzeria.com  and Password: 12345678 to test the app",
-    ],
     images: [
       "/img/pizzeria/page1.png",
       "/img/pizzeria/page2.png",
@@ -65,21 +49,14 @@ export const projectsData = [
   },
   {
     id: "3",
-    title: "Restaurant Order & Delivery Management System",
-    description: [
-      "Web-based platform designed to centralize and optimize restaurant order management, including in-house delivery operations.",
-      "Allows multiple restaurants to use the system, each managing their own orders, products, and workflows independently.",
-      "Unifies orders from different channels (WhatsApp, phone, and in-person) into a single system, improving organization and efficiency.",
-      "Includes a QR-based digital menu where customers can place orders directly, sending them instantly to the kitchen.",
-      "Provides data tracking and reporting features to analyze sales, orders, and business performance.",
-      "Currently in development and being validated with real users (restaurants).",
-    ],
     images: [
       "/img/delivery/page1.png",
       "/img/delivery/page2.png",
       "/img/delivery/page3.png",
       "/img/delivery/page4.png",
       "/img/delivery/page5.png",
+      "/img/delivery/page6.png",
+   
     ],
     projectUrl: "https://delivery-app-to-sell.vercel.app/",
     repo: "https://delivery-app-to-sell.vercel.app/",
@@ -87,16 +64,6 @@ export const projectsData = [
   },
   {
     id: "4",
-    title: "Digital Wallet",
-    description: [
-      "Developed a mobile digital wallet application using React Native with Expo.",
-      "Integrated a custom REST API built with Node.js and Express for transaction and account management.",
-      "Implemented local storage for user session persistence and offline data handling.",
-      "Designed a modern and intuitive UI focused on usability and smooth user experience.",
-      "Implemented transaction management, balance tracking, and structured financial data handling.",
-      "Applied component-based architecture to ensure scalability and maintainability.",
-      "Optimized performance across mobile devices.",
-    ],
     images: [
       "/img/digitalWallet/page1.png",
       "/img/digitalWallet/page2.png",
@@ -113,13 +80,6 @@ export const projectsData = [
   },
   {
     id: "5",
-    title: "Application Deployment on AWS",
-    description: [
-      "Application deployment workflow using Kubernetes on the master branch.",
-      "Testing workflow integrated with SonarCloud.",
-      "Load testing using Docker Compose to spin up services and Apache Benchmark to evaluate performance.",
-      "Load testing workflow with k6.",
-    ],
     images: [
       "/img/deploy-app-github.png",
       "/img/deploy1.png",
@@ -129,30 +89,15 @@ export const projectsData = [
     repo: "https://github.com/antonella-brochini/example-voting-app",
     technologies: "Kubernetes, Docker, SonarCloud, Apache Benchmark, k6",
   },
-
   {
     id: "6",
-    title: "IaC with Terraform on AWS",
-    description: [
-      "Provisioned two Kubernetes clusters with identical configurations across isolated networks.",
-      "Configured one cluster for production workloads.",
-      "Segmented the second cluster using namespaces for development and testing environments.",
-    ],
     images: ["/img/infra-github.png"],
     projectUrl: "https://github.com/antonella-brochini/voting-app-infra",
     repo: "https://github.com/antonella-brochini/voting-app-infra",
     technologies: "Terraform, AWS, Kubernetes",
   },
-
   {
     id: "7",
-    title: "E-commerce Backend with Keycloak",
-    description: [
-      "Developed a secure e-commerce REST API integrated with Keycloak for authentication and role-based access control (RBAC).",
-      "Implemented protected endpoints and authorization rules for different user roles (e.g., admin/customer).",
-      "Designed scalable backend architecture for core e-commerce flows (products, orders, and users).",
-      "Documented setup and deployment workflow to run locally with environment-based configuration (Docker-ready if applicable).",
-    ],
     images: ["/img/keycloak.png"],
     projectUrl:
       "https://github.com/antonella-brochini/ecommerce-api-portafolio",
@@ -161,12 +106,6 @@ export const projectsData = [
   },
   {
     id: "8",
-    title: "One page Nice Design",
-    description: [
-      "Modern responsive one-page website built with Next.js and TypeScript. ",
-      "It features a clean component-based architecture, smooth UI animations, and optimized performance. ",
-      "The project focuses on modern frontend practices, reusable components, and scalable styling for building elegant web interfaces.",
-    ],
     images: [
       "/img/juegos/page1.png",
       "/img/juegos/page2.png",
@@ -180,14 +119,6 @@ export const projectsData = [
   },
   {
     id: "9",
-    title: "Reservation Management System GX",
-    description: [
-      "Developed a reservation management application using GeneXus.",
-      "Designed and structured business logic for booking workflows.",
-      "Managed database interactions and transactional processes.",
-      "Focused on functional correctness and structured data handling.",
-      "Implemented validation rules and user interaction flows.",
-    ],
     images: [
       "/img/appReservasGX/page1.png",
       "/img/appReservasGX/page2.png",
@@ -199,14 +130,6 @@ export const projectsData = [
   },
   {
     id: "10",
-    title: "News Website",
-    description: [
-      "Developed and customized a news website using Joomla CMS.",
-      "Configured content structures, categories, and dynamic article management.",
-      "Implemented responsive templates and layout adjustments.",
-      "Managed plugins and extensions to enhance functionality and performance.",
-      "Handled deployment and configuration for production environment.",
-    ],
     images: [
       "/img/noticiasWebsite/page1.png",
       "/img/noticiasWebsite/page2.png",
@@ -220,15 +143,6 @@ export const projectsData = [
   },
   {
     id: "11",
-    title: "New Portfolio",
-    description: [
-      "Designed and developed a modern personal portfolio using Next.js.",
-      "Implemented advanced animations with Framer Motion to enhance user interaction and visual flow.",
-      "Created custom SVG graphics and animated elements to deliver a distinctive and dynamic user experience.",
-      "Focused on component reusability, clean architecture, and scalable structure.",
-      "Optimized performance and responsiveness across devices.",
-      "Deployed using modern frontend best practices.",
-    ],
     images: [
       "/img/newPortfolio/page1.png",
       "/img/newPortfolio/page2.png",
@@ -245,13 +159,6 @@ export const projectsData = [
   },
   {
     id: "12",
-    title: "Portfolio v1",
-    description: [
-      "Designed and developed my first personal portfolio using Next.js.",
-      "Built with a clean, responsive layout and a sober, professional design approach.",
-      "Statically exported for deployment on GitHub Pages.",
-      "This project represents the foundation of my frontend development journey and was later rebuilt with improved scalability and architectural thinking.",
-    ],
     images: [
       "/img/porfolioV1/page1.png",
       "/img/porfolioV1/page2.png",
@@ -266,3 +173,7 @@ export const projectsData = [
     technologies: "Next.js, Bootstrap, HTML",
   },
 ];
+
+export function getProjectMeta(id) {
+  return projectsMeta.find((p) => String(p.id) === String(id));
+}

@@ -6,9 +6,10 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import HeroReveal from "../components/HeroReveal";
 import styles from './contact.module.css'
 import Titulo from '../components/Titulo';
+import { useTranslation } from '../../hooks/useTranslation';
 
 export default function PortfolioPage() {
-
+  const { t } = useTranslation();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -29,16 +30,16 @@ export default function PortfolioPage() {
 
   const validate = () => {
     const newErrors = {};
-    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.name.trim()) newErrors.name = t.contact.errors.name;
     if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
+      newErrors.email = t.contact.errors.emailRequired;
     } else if (
       !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)
     ) {
-      newErrors.email = "Email is invalid";
+      newErrors.email = t.contact.errors.emailInvalid;
     }
-    if (!formData.subject.trim()) newErrors.subject = "Subject is required";
-    if (!formData.message.trim()) newErrors.message = "Message is required";
+    if (!formData.subject.trim()) newErrors.subject = t.contact.errors.subject;
+    if (!formData.message.trim()) newErrors.message = t.contact.errors.message;
 
     return newErrors;
   };
@@ -66,13 +67,13 @@ export default function PortfolioPage() {
       },
       "y6HZ_Yn1sR0Dji-xr"
       ).then(() => {
-      setSuccess("Message sent successfully!");
+      setSuccess(t.contact.success);
       setFormData({ name: "", email: "", subject: "", message: "" });
     })
   }catch(error) {
       console.error(error);
       setSuccess("");
-      alert("Failed to send message");
+      alert(t.contact.sendError);
     };
   };
 
@@ -87,7 +88,7 @@ export default function PortfolioPage() {
  <div className="col-12">
         
             <HeroReveal >
-             <Titulo>Contact</Titulo>
+             <Titulo>{t.contact.title}</Titulo>
             </HeroReveal>
          
         </div>
@@ -102,7 +103,7 @@ export default function PortfolioPage() {
               className={` ${styles.formControl}`}
               name="name"
               type="text"
-              placeholder="Your name"
+              placeholder={t.contact.placeholders.name}
               value={formData.name}
               onChange={handleChange}
             />
@@ -116,7 +117,7 @@ export default function PortfolioPage() {
               className={` ${styles.formControl}`}
               name="email"
               type="email"
-              placeholder="Your email"
+              placeholder={t.contact.placeholders.email}
               value={formData.email}
               onChange={handleChange}
             />
@@ -130,7 +131,7 @@ export default function PortfolioPage() {
               className={`${styles.formControl}`}
               name="subject"
               type="text"
-              placeholder="Subject"
+              placeholder={t.contact.placeholders.subject}
               value={formData.subject}
               onChange={handleChange}
             />
@@ -145,7 +146,7 @@ export default function PortfolioPage() {
               name="message"
               cols="30"
               rows="3"
-              placeholder="Your message"
+              placeholder={t.contact.placeholders.message}
               value={formData.message}
               onChange={handleChange}
             ></textarea>
@@ -156,7 +157,7 @@ export default function PortfolioPage() {
 
       <div className={` ${styles.formGroup} ${styles.contactReveal} mt-3`} style={{ "--reveal-delay": "2.3s" }}>
         <button type="submit" className={` ${styles.buttonContactForm} `}>
-          Send Message
+          {t.contact.submit}
         </button>
       </div>
 
@@ -171,22 +172,22 @@ export default function PortfolioPage() {
             <div className={` ${styles.media} ${styles.contactInfo} ${styles.contactReveal}`} style={{ "--reveal-delay": "2.7s" }}>
               <span className={` ${styles.contactInfoIcon}`}><FaMapMarkerAlt /></span>
               <div className={styles.mediaBody}>
-                <h3>Montevideo, Uruguay.</h3>
-                <p>Av. Italia 1234, Montevideo 11600</p>
+                <h3>{t.contact.locationTitle}</h3>
+                <p>{t.contact.locationAddress}</p>
               </div>
             </div>
             <div className={` ${styles.media} ${styles.contactInfo} ${styles.contactReveal}`} style={{ "--reveal-delay": "2.95s" }}>
               <span className={` ${styles.contactInfoIcon}`}><FaPhone /></span>
               <div className={styles.mediaBody}>
                 <h3>+598 94094405</h3>
-                <p>Mon to Fri 9am to 6pm</p>
+                <p>{t.contact.phoneHours}</p>
               </div>
             </div>
             <div className={` ${styles.media} ${styles.contactInfo} ${styles.contactReveal}`} style={{ "--reveal-delay": "3.2s" }}>
               <span className={` ${styles.contactInfoIcon}`}><FaEnvelope /></span>
               <div className={styles.mediaBody}>
                 <h3>antobrochini97@gmail.com</h3>
-                <p>Send us your query anytime!</p>
+                <p>{t.contact.emailPrompt}</p>
               </div>
             </div>
         </div>

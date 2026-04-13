@@ -31,11 +31,13 @@ export default function ProjectHero({
           <div className="col-lg-8 mx-auto">
             <div className={`banner_text ${styles.heroBanner}`}>
               <div className={`banner_text_iner ${styles.heroContent}`}>
-                <Titulo className={styles.heroTitle}>{title}</Titulo>
+                <Titulo as="h1" className={styles.heroTitle}>
+                  {title}
+                </Titulo>
                 {technologies ? (
-                  <h3 className={`${styles.heroTech} ${styles.heroTechAnim}`}>
+                  <p className={`${styles.heroTech} ${styles.heroTechAnim}`}>
                     {technologies}
-                  </h3>
+                  </p>
                 ) : null}
                 <div className={`${styles.links} ${styles.heroLinksAnim}`}>
                   {githubUrl ? (

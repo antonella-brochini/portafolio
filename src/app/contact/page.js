@@ -88,7 +88,7 @@ export default function PortfolioPage() {
  <div className="col-12">
         
             <HeroReveal >
-             <Titulo>{t.contact.title}</Titulo>
+             <Titulo as="h1">{t.contact.title}</Titulo>
             </HeroReveal>
          
         </div>

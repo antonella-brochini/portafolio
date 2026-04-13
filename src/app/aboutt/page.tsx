@@ -74,33 +74,35 @@ useEffect(() => {
         flexDirection: "column",
       }}
     >
-      <Titulo>{t.about.titleAbout}</Titulo>
+      <Titulo as="span">{t.about.titleAbout}</Titulo>
 
-      <div
+      <span
         style={{
           display: "flex",
           alignItems: "center",
           gap: "10px",
         }}
       >
-        <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-          <motion.div
+        <span style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+          <motion.span
             initial={{ width: 0 }}
             animate={{ width: "4rem" }}
             transition={{ duration: 0.6, delay: 0.8 }}
             className={styles.aboutLineShort}
+            style={{ display: "block", overflow: "hidden" }}
           />
 
-          <motion.div
+          <motion.span
             initial={{ width: 0 }}
             animate={{ width: "7rem" }}
             transition={{ duration: 0.6, delay: 0.6 }}
             className={styles.aboutLineLong}
+            style={{ display: "block", overflow: "hidden" }}
           />
-        </div>
+        </span>
 
-        <Titulo>{t.about.titleMe}</Titulo>
-      </div>
+        <Titulo as="span">{t.about.titleMe}</Titulo>
+      </span>
     </motion.h1>
   </div>
 

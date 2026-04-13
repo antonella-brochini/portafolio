@@ -193,9 +193,18 @@
   }
 }
 
+/* Móvil: más aire entre cards para separar visualmente cada proyecto */
+@media (max-width: 768px) {
+  .portfolioGrid {
+    row-gap: 2.25rem;
+    column-gap: 1.25rem;
+  }
+}
+
 @media (max-width: 640px) {
   .portfolioGrid {
     grid-template-columns: 1fr;
+    row-gap: 2.75rem;
   }
 }
 .portfolioCardFooter {

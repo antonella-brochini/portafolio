@@ -161,3 +161,19 @@
 .light .manejarVisibilidad {
   display: flex !important;
 }
+
+/* Home: en móvil el hero sube (sin centrar verticalmente en toda la pantalla) */
+@media (max-width: 768px) {
+  .home-landing-hero.banner_part {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 200px;
+    padding-bottom: 64px;
+  }
+
+  .home-landing-hero .hero-wrapper {
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 8px;
+  }
+}

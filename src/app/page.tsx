@@ -1,37 +1,45 @@
-"use client";
+import type { Metadata } from "next";
+import HomeClient from "./HomeClient";
+import { SITE_NAME, SITE_URL } from "./seo-constants";
 
-import Link from "next/link";
-import "../styles/landing.css";
-import FallingStars from "./components/FallingStars";
-import HeroReveal from "./components/HeroReveal";
-import Boton3d from "./components/boton3d";
-import { useTranslation } from "../hooks/useTranslation";
-
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Portfolio of Antonella Brochini — full-stack developer building modern web apps with Next.js, React, and cloud technologies.",
+  keywords: [
+    SITE_NAME,
+    "developer portfolio",
+    "full-stack developer",
+    "Next.js",
+    "React",
+    "web development",
+  ],
+  alternates: {
+    canonical: SITE_URL,
+  },
+  openGraph: {
+    title: `${SITE_NAME} — Portfolio`,
+    description:
+      "Designing digital experiences beyond limits. Building today, leading tomorrow.",
+    url: SITE_URL,
+    images: [
+      {
+        url: "/img/hero.png",
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} portfolio hero`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_NAME} — Portfolio`,
+    description:
+      "Designing digital experiences beyond limits. Full-stack developer portfolio.",
+    images: [`${SITE_URL}/img/hero.png`],
+  },
+};
 
 export default function Home() {
-  const { t } = useTranslation();
-
-  return (
-    <main>
-      <FallingStars />
-      <section className="banner_part">
-        <div className="hero-wrapper">
-          <HeroReveal className="hero-center" >
-            <p className="hero-subtitle">{t.home.subtitle}</p>
-
-            <h1 className="hero-title">
-              <span className="pading">{t.home.titleLine1}</span>
-              <span className="gradient-text">{t.home.titleLine2}</span>
-            </h1>
-          </HeroReveal>
-
-          <Link href="/portafolio" className="btn-gaming">
-            {t.home.cta}
-          </Link>
-          <Boton3d titulo={t.home.cta} url="/portafolio" className="manejarVisibilidad" />
-        
-        </div>
-      </section>
-    </main>
-  );
+  return <HomeClient />;
 }

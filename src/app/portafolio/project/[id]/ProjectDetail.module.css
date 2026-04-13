@@ -18,6 +18,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0;
 }
 
 .heroBanner {
@@ -77,9 +81,53 @@
   font-weight: 500;
   letter-spacing: 0.5px;
   margin: 16px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.5;
+  white-space: normal;
+  overflow: visible;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Móvil: título y stack técnico en varias líneas, sin recortes */
+@media (max-width: 768px) {
+  .heroContent .heroTitle {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+    line-height: 1.18;
+    font-size: clamp(1.35rem, 6.2vw + 0.6rem, 2.65rem);
+    box-sizing: border-box;
+  }
+
+  .heroContent .heroTitle span {
+    white-space: normal;
+    overflow: visible;
+    max-width: 100%;
+    display: inline;
+    font-size: clamp(1.35rem, 6.2vw + 0.6rem, 2.65rem);
+    line-height: 1.18;
+  }
+
+  .heroTech {
+    padding-inline: 12px;
+    line-height: 1.45;
+    font-size: clamp(14px, 3.8vw, 18px);
+  }
+
+  .heroContent {
+    padding-inline: 12px;
+  }
+
+  .links {
+    margin-top: 18px;
+  }
 }
 
 .projectLink {

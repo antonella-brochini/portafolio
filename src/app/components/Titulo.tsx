@@ -4,13 +4,18 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import styles from "./Titulo.module.css";
 
+type TituloProps = {
+  children: React.ReactNode;
+  className?: string;
+  /** Etiqueta semántica (p. ej. h1 en heroes para SEO). Por defecto div. */
+  as?: React.ElementType;
+};
+
 export default function AnimatedTitle({
   children,
   className = "",
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
+  as: Component = "div",
+}: TituloProps) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -22,8 +27,10 @@ export default function AnimatedTitle({
   const isDark = resolvedTheme === "dark";
 
   return (
-    <div className={`${styles.title} ${isDark ? styles.darkTitle : styles.lightTitle} ${className}`}>
+    <Component
+      className={`${styles.title} ${isDark ? styles.darkTitle : styles.lightTitle} ${className}`}
+    >
       {isDark ? <span className={styles.gradientText}>{children}</span> : <span>{children}</span>}
-    </div>
+    </Component>
   );
 }

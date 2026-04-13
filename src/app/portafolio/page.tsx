@@ -12,6 +12,13 @@ import styles from './portafolio.module.css';
 import Titulo from "../components/Titulo";
 import { FaExternalLinkAlt, FaGithub, FaArrowUp } from "react-icons/fa";
 
+const PREVIEW_MAX_LEN = 100;
+
+function truncateProjectPreview(text: string, max = PREVIEW_MAX_LEN): string {
+  const t = text?.trim() ?? "";
+  if (t.length <= max) return t;
+  return `${t.slice(0, max)}...`;
+}
 
 export default function PortfolioPage() {
   const { t } = useTranslation();
@@ -45,7 +52,9 @@ export default function PortfolioPage() {
                         <div className="banner_text">
                           <HeroReveal className="banner_text_iner">
                            
-                            <Titulo className="pt-5">{t.portfolio.selectedProjects}</Titulo>
+                            <Titulo as="h1" className="pt-5">
+                              {t.portfolio.selectedProjects}
+                            </Titulo>
                           </HeroReveal>
                         </div>
                     </div>
@@ -61,21 +70,38 @@ export default function PortfolioPage() {
 >
   {projectsMeta.map(({ id, images, projectUrl, repo }) => {
     const title = t.projects[id as keyof typeof t.projects]?.title ?? id;
+    const firstParagraph =
+      t.projects[id as keyof typeof t.projects]?.description?.[0] ?? "";
+    const previewText = truncateProjectPreview(firstParagraph, PREVIEW_MAX_LEN);
     return (
     <motion.div
       variants={itemSlideUp}
       key={id}
       className={styles.portfolioCard}
     >
-      <Link href={`/portafolio/project/${id}`}>
-        <Image
-          src={images[0]}
-          width={500}
-          height={300}
-          className={styles.portfolioImg}
-          alt={title}
-        />
+      <Link
+        href={`/portafolio/project/${id}`}
+        className={styles.portfolioCardMedia}
+      >
+        <span className={styles.portfolioCardImageWrap}>
+          <Image
+            src={images[0]}
+            width={500}
+            height={300}
+            className={styles.portfolioImg}
+            alt={title}
+          />
+          <div className="project-card-overlay">
+            <span className={styles.overlayProjectTitle}>{title}</span>
+            <p className="project-card-description">{previewText}</p>
+          </div>
+        </span>
       </Link>
+      <p
+        className={`project-card-description ${styles.descriptionBelowImage}`}
+      >
+        {previewText}
+      </p>
 
       <div className={styles.portfolioCardFooter}>
         <div className={styles.portfolioHeader}>

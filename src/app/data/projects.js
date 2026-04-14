@@ -32,6 +32,21 @@ export const projectsMeta = [
   {
     id: "2",
     images: [
+      "/img/delivery/page1.png",
+      "/img/delivery/page2.png",
+      "/img/delivery/page3.png",
+      "/img/delivery/page4.png",
+      "/img/delivery/page5.png",
+      "/img/delivery/page6.png",
+   
+    ],
+    projectUrl: "https://delivery-app-to-sell.vercel.app/",
+    repo: "https://delivery-app-to-sell.vercel.app/",
+    technologies: "Next.js (API Routes), TypeScript, Prisma ORM, PostgreSQL",
+  },
+  {
+    id: "3",
+    images: [
       "/img/pizzeria/page1.png",
       "/img/pizzeria/page2.png",
       "/img/pizzeria/page3.png",
@@ -46,21 +61,6 @@ export const projectsMeta = [
     projectUrl: "https://pizzeria-omega-khaki.vercel.app/",
     repo: "https://github.com/antonella-brochini/pizzeria",
     technologies: "Next.js, React, Redux y Tailwind CSS",
-  },
-  {
-    id: "3",
-    images: [
-      "/img/delivery/page1.png",
-      "/img/delivery/page2.png",
-      "/img/delivery/page3.png",
-      "/img/delivery/page4.png",
-      "/img/delivery/page5.png",
-      "/img/delivery/page6.png",
-   
-    ],
-    projectUrl: "https://delivery-app-to-sell.vercel.app/",
-    repo: "https://delivery-app-to-sell.vercel.app/",
-    technologies: "Next.js (API Routes), TypeScript, Prisma ORM, PostgreSQL",
   },
   {
     id: "4",

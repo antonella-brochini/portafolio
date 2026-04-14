@@ -38,32 +38,43 @@ export const es: Translation = {
     "1": {
       title: "E-commerce de vinos",
       description: [
+       "Acceso de prueba:  Usuario: admin  |  Contraseña: adminPass  |  https://fe-monte-bravo.vercel.app",
         "Solución e-commerce end-to-end desarrollada para una bodega, orientada a una experiencia de compra fluida y al crecimiento del negocio.",
-        "La plataforma integra Mercado Pago para pagos seguros y SendGrid para correos transaccionales y de marketing. Se implementó autenticación social y sesiones con JWT para un acceso seguro.",
-        "En el frontend se usó Redux para el estado global, gestionando sesión, carrito y flujo de datos de forma eficiente.",
-        "Incluye un panel de analíticas para ventas, productos más vendidos y decisiones basadas en datos.",
-        "Backend desplegado en AWS con Docker.",
+        "Integración con Mercado Pago para pagos seguros y SendGrid para comunicaciones transaccionales y de marketing.",
+        "Implementación de mecanismos de autenticación incluyendo login social y gestión de sesiones mediante JWT.",
+        "Frontend desarrollado con Redux para la gestión del estado global, incluyendo sesiones, carrito de compras y flujo de datos.",
+        "Diseño e implementación de modelos de datos relacionales para pedidos, usuarios, productos y transacciones.",
+        "Desarrollo de dashboards analíticos para el seguimiento de métricas clave como ventas, productos más vendidos y comportamiento de clientes.",
+        "Enfoque basado en datos para la toma de decisiones y optimización del negocio.",
+        "Backend desplegado en AWS utilizando Docker, garantizando escalabilidad y confiabilidad.",
+        "Diseño de API siguiendo principios REST, con documentación disponible en Swagger.",
         "https://api.antonellabrochini.com/swagger-ui/index.html para documentación y pruebas de la API. Usuario de prueba: user1 y contraseña: password1",
       ],
     },
+   
     "2": {
+      title: "App OrderFlow",
+      description: [
+      "Acceso de prueba:  Usuario: donvito@gmail.com  |  Contraseña: 12345678  |  https://orderflow.com.uy",
+        "Plataforma web para centralizar y optimizar pedidos de restaurantes, incluyendo reparto propio.",
+        "Sistema multi-tenant que permite a múltiples restaurantes operar de forma independiente (productos, pedidos, usuarios y configuraciones).",
+        "Integración de múltiples canales de entrada de pedidos (WhatsApp, teléfono y presencial), unificando los datos en una sola base estructurada.",
+        "Implementación de modelos de datos relacionales para gestión de pedidos, clientes, productos y ventas.",
+        "Desarrollo de dashboards y reportes analíticos para seguimiento de métricas clave: volumen de pedidos, ingresos, productos más vendidos y comportamiento de clientes.",
+        "Procesamiento y análisis de datos en tiempo real para optimizar la toma de decisiones en restaurantes.",
+        "Identificación de patrones de consumo y generación de insights para mejorar eficiencia operativa.",
+        "Menú digital con QR que captura datos de comportamiento del cliente y automatiza el flujo de pedidos hacia cocina.",
+        "Proyecto en desarrollo con validación en usuarios reales (restaurantes), incluyendo recolección de datos reales para análisis.",
+        "Enfoque en escalabilidad y estructuración de datos para futuras integraciones con herramientas de Business Intelligence."
+      ],
+    },
+    "3": {
       title: "App de pedidos de comida",
       description: [
         "Aplicación web para pedir comida: menú, personalización, carrito y checkout.",
         "Incluye autenticación: el usuario debe registrarse o iniciar sesión antes de pedir. Luego puede personalizar ingredientes, agregar al carrito y completar la compra.",
         "El checkout admite tarjeta, PayPal o pago en efectivo al repartidor.",
         "Usuario de prueba: demo@pizzeria.com y contraseña: 12345678",
-      ],
-    },
-    "3": {
-      title: "App OrderFood",
-      description: [
-        "Plataforma web para centralizar y optimizar pedidos de restaurantes, incluyendo reparto propio.",
-        "Permite que varios restaurantes usen el sistema, cada uno con pedidos, productos y flujos independientes.",
-        "Unifica pedidos de WhatsApp, teléfono y presencial en un solo sistema para mejorar organización y eficiencia.",
-        "Incluye menú digital con QR para que el cliente pida y el pedido llegue directo a cocina.",
-        "Ofrece seguimiento de datos e informes de ventas, pedidos y desempeño.",
-        "En desarrollo y validación con usuarios reales (restaurantes).",
       ],
     },
     "4": {
@@ -159,30 +170,42 @@ export const es: Translation = {
     heroParagraphs: [
       "Soy desarrolladora de software con experiencia construyendo aplicaciones web escalables con Next.js, Spring Boot y bases de datos relacionales.",
       "Trabajo en frontend y backend, con foco en código limpio y mantenible y arquitecturas eficientes.",
-      "Me gusta entender los sistemas de punta a punta y seguir mejorando bases técnicas mientras construyo soluciones funcionales, eficientes y escalables.",
+      "Además, diseño sistemas orientados a la generación y análisis de datos, desarrollando dashboards y métricas que permiten la toma de decisiones basada en información real.",
+      "Me gusta entender los sistemas de punta a punta y seguir mejorando mis bases técnicas mientras construyo soluciones funcionales, eficientes y orientadas a datos.",
     ],
     linkedIn: "LinkedIn",
     skillsOpen: "<skills>",
     stackTitle: "Mi stack",
     stackSubtitle:
-      "Desarrolladora fullstack enfocada en productos con diseño, rendimiento y claridad.",
+      "Desarrolladora fullstack con enfoque en productos, rendimiento y análisis de datos.",
+    
     skillsClose: "</skills>",
+    
     profileName: "Antonella Brochini",
-    profileRole: "Desarrolladora Full Stack",
+    
+    profileRole: "Full Stack Developer | Data Analysis",
+    
     profileNote:
-      "Busco especializarme en sistemas digitales escalables que combinen buena ingeniería con decisiones basadas en datos.",
+      "Busco especializarme en sistemas digitales escalables que combinen buena ingeniería con análisis de datos y toma de decisiones basada en métricas.",
+    
     mindsetLabel: "<Mindset />",
+    
     howIWork: "Cómo trabajo",
+    
     stats: [
-      { value: "Full Stack", label: "Perfil" },
+      { value: "Full Stack + Data", label: "Perfil" },
       { value: "Next.js", label: "Frontend" },
       { value: "Spring Boot", label: "Backend" },
       { value: "PostgreSQL", label: "BD" },
+      { value: "Python / Power BI", label: "Data" },
     ],
+    
     pills: [
       { icon: "⚛️", text: "React / Next.js" },
       { icon: "🍃", text: "Spring Boot" },
       { icon: "🗄️", text: "SQL / PostgreSQL" },
+      { icon: "🐍", text: "Python (Pandas / Data Analysis)" },
+      { icon: "📊", text: "Power BI / Dashboards" },
       { icon: "🐳", text: "Docker / Git" },
       { icon: "☁️", text: "AWS / Cloud" },
       { icon: "☁️", text: "Salesforce" },
@@ -190,18 +213,19 @@ export const es: Translation = {
       { icon: "🌍", text: "Inglés" },
       { icon: "🇪🇸", text: "Español (nativo)" },
     ],
+    
     timeline: [
       {
-        title: "Pienso en sistemas, no solo en features",
-        desc: "Antes de codificar analizo el problema, el contexto de negocio y el impacto a largo plazo. Alineo tecnología con estrategia.",
+        title: "Pienso en sistemas y datos",
+        desc: "Antes de codificar analizo el problema, el contexto de negocio y los datos disponibles para tomar decisiones informadas.",
       },
       {
         title: "Construyo con intención",
-        desc: "Diseño experiencias modernas, accesibles y de alto rendimiento pensadas para escalar, no solo para publicar.",
+        desc: "Diseño productos escalables que no solo funcionan, sino que generan y estructuran datos para análisis posterior.",
       },
       {
-        title: "Ingeniería con excelencia",
-        desc: "Arquitectura limpia, componentes reutilizables, pruebas y buenas prácticas son la base del crecimiento sostenible.",
+        title: "Ingeniería orientada a datos",
+        desc: "Aplico buenas prácticas, modelos de datos y herramientas analíticas para construir soluciones eficientes y medibles.",
       },
     ],
   },

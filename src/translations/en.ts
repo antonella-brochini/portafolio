@@ -36,32 +36,42 @@ export const en = {
     "1": {
       title: "Wine E-commerce",
       description: [
-        "End-to-end e-commerce solution developed for a winery, focused on delivering a seamless purchasing experience and driving business growth.",
-        "The platform integrates Mercado Pago for secure payment processing and SendGrid for automated transactional and marketing email campaigns. Social authentication and JWT-based authentication were implemented to ensure secure user access and session management.",
-        "On the frontend, Redux was used for centralized state management, enabling efficient handling of user sessions, cart state, and application data flow.",
-        "Additionally, the system includes an analytics dashboard to monitor sales performance, identify top-selling products, and support data-driven decision-making.",
-        "Backend deployed on AWS with Docker",
+        "Demo access:  User: admin  |  Password: adminPass  |  https://fe-monte-bravo.vercel.app",
+        "End-to-end e-commerce solution developed for a winery, focused on delivering a seamless purchasing experience and business growth.",
+        "Integration with Mercado Pago for secure payments and SendGrid for transactional and marketing communications.",
+        "Implementation of authentication mechanisms including social login and JWT-based session management.",
+        "Frontend built with Redux for global state management, handling user sessions, shopping cart, and data flow efficiently.",
+        "Design and implementation of relational data models for orders, users, products, and transactions.",
+        "Development of analytics dashboards to track key business metrics such as sales performance, top-selling products, and customer behavior.",
+        "Data-driven approach to support decision-making and optimize business performance.",
+        "Backend deployed on AWS using Docker, ensuring scalability and reliability.",
+        "API design following REST principles with documentation available via Swagger.",
         "https://api.antonellabrochini.com/swagger-ui/index.html for API documentation and testing. Rol user: user1 and password1",
       ],
     },
     "2": {
+      title: "OrderFlow App",
+      description: [
+        "Test access:  User: donvito@gmail.com  |  Password: 12345678  |  https://orderflow.com.uy",
+        "Web platform to centralize and optimize restaurant orders, including in-house delivery.",
+  "Multi-tenant system allowing multiple restaurants to operate independently (products, orders, users, and configurations).",
+  "Integration of multiple order channels (WhatsApp, phone, and in-person), consolidating data into a single structured database.",
+  "Implementation of relational data models for managing orders, customers, products, and sales.",
+  "Development of dashboards and analytical reports to track key metrics: order volume, revenue, top-selling products, and customer behavior.",
+  "Real-time data processing and analysis to support data-driven decision-making.",
+  "Identification of consumption patterns and generation of insights to improve operational efficiency.",
+  "QR-based digital menu that captures user behavior data and automates order flow to the kitchen.",
+  "Project under development and validation with real users (restaurants), including real data collection for analysis.",
+  "Focus on scalability and data structuring for future integration with Business Intelligence tools.",
+      ],
+    },
+    "3": {
       title: "Order Food App",
       description: [
         "Food ordering web application that allows users to browse a menu, customize food items, manage a shopping cart and complete orders through a checkout process.",
         "The application includes user authentication, so users must register or log in before placing an order. Once authenticated, they can personalize their food by selecting ingredients, add items to the cart and complete the purchase.",
         "The checkout system supports multiple payment options including credit card, PayPal or cash payment to the delivery person.",
         "user : demo@pizzeria.com  and Password: 12345678 to test the app",
-      ],
-    },
-    "3": {
-      title: "OrderFood App",
-      description: [
-        "Web-based platform designed to centralize and optimize restaurant order management, including in-house delivery operations.",
-        "Allows multiple restaurants to use the system, each managing their own orders, products, and workflows independently.",
-        "Unifies orders from different channels (WhatsApp, phone, and in-person) into a single system, improving organization and efficiency.",
-        "Includes a QR-based digital menu where customers can place orders directly, sending them instantly to the kitchen.",
-        "Provides data tracking and reporting features to analyze sales, orders, and business performance.",
-        "Currently in development and being validated with real users (restaurants).",
       ],
     },
     "4": {
@@ -157,30 +167,43 @@ export const en = {
     heroParagraphs: [
       "I’m a Software Developer with hands-on experience building scalable web applications using Next.js, Spring Boot, and relational databases.",
       "I work across both frontend and backend, with a strong focus on writing clean, maintainable code and designing efficient system architectures.",
-      "I enjoy understanding how systems work end-to-end and continuously improving my technical foundations while building solutions that are functional, efficient, and scalable.",
+      "I also design systems oriented toward data generation and analysis, developing dashboards and metrics to support data-driven decision-making.",
+      "I enjoy understanding systems end-to-end and continuously improving my technical foundations while building functional, efficient, and data-oriented solutions.",
     ],
     linkedIn: "LinkedIn",
     skillsOpen: "<skills>",
-    stackTitle: "My stack",
+    stackTitle: "My Stack",
+
     stackSubtitle:
-      "Fullstack Developer focused on building products with design, performance, and clarity.",
+      "Full-stack developer focused on product quality, performance, and data analysis.",
+    
     skillsClose: "</skills>",
+    
     profileName: "Antonella Brochini",
-    profileRole: "Full Stack Developer",
+    
+    profileRole: "Full Stack Developer | Data Analysis",
+    
     profileNote:
-      "I aim to specialize in developing scalable digital systems that combine strong engineering principles with data-driven decision making.",
+      "I aim to specialize in scalable digital systems that combine solid engineering with data analysis and data-driven decision-making.",
+    
     mindsetLabel: "<Mindset />",
+    
     howIWork: "How I Work",
+    
     stats: [
-      { value: "Full Stack", label: "Profile" },
+      { value: "Full Stack + Data", label: "Profile" },
       { value: "Next.js", label: "Frontend" },
       { value: "Spring Boot", label: "Backend" },
       { value: "PostgreSQL", label: "DB" },
+      { value: "Python / Power BI", label: "Data" },
     ],
+    
     pills: [
       { icon: "⚛️", text: "React / Next.js" },
       { icon: "🍃", text: "Spring Boot" },
       { icon: "🗄️", text: "SQL / PostgreSQL" },
+      { icon: "🐍", text: "Python (Pandas / Data Analysis)" },
+      { icon: "📊", text: "Power BI / Dashboards" },
       { icon: "🐳", text: "Docker / Git" },
       { icon: "☁️", text: "AWS / Cloud" },
       { icon: "☁️", text: "Salesforce" },
@@ -188,18 +211,19 @@ export const en = {
       { icon: "🌍", text: "English" },
       { icon: "🇪🇸", text: "Spanish (Native)" },
     ],
+    
     timeline: [
       {
-        title: "I think in systems, not features",
-        desc: "Before writing code, I analyze the problem, the business context, and the long-term impact. I build solutions that align technology with strategy.",
+        title: "I think in systems and data",
+        desc: "Before coding, I analyze the problem, business context, and available data to support informed decisions.",
       },
       {
         title: "I build with intention",
-        desc: "I design modern, accessible, high-performance experiences that are built to scale — not just to ship.",
+        desc: "I design scalable products that not only function well but also generate and structure data for future analysis.",
       },
       {
-        title: "I engineer for excellence",
-        desc: "Clean architecture, reusable components, testing, and best practices are not optional — they are the foundation for sustainable growth.",
+        title: "Data-oriented engineering",
+        desc: "I apply best practices, data modeling, and analytical tools to build efficient and measurable solutions.",
       },
     ],
   },

@@ -50,8 +50,23 @@ export default function ProjectPageClient({ projectId }: Props) {
               ))}
             </ImageCarousel>
           </div>
+           
+          {copy.data && copy.data.length > 0 && (
+  <div className={styles.descriptionCard}>
+    <h2 className={styles.sectionTitle}>Analytics</h2>
+    <div className={styles.descriptionContent}>
+      {copy.data.map((item, index) => (
+        <p key={index} className={styles.projectDescription} style={{ whiteSpace: "pre-line" }}>
+          {item}
+        </p>
+      ))}
+    </div>
+  </div>
+)}
           <div className={styles.descriptionCard}>
             <h2 className={styles.sectionTitle}>{t.projectDetail.description}</h2>
+          
+    
             <div className={styles.descriptionContent}>
               {copy.description.map((paragraph, index) => (
                 <p key={index} className={styles.projectDescription}>

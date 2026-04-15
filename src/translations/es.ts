@@ -37,8 +37,9 @@ export const es: Translation = {
   projects: {
     "1": {
       title: "E-commerce de vinos",
+      data: [],
       description: [
-       "Acceso de prueba:  Usuario: admin  |  Contraseña: adminPass  |  https://fe-monte-bravo.vercel.app",
+        "Acceso de prueba:  Usuario: admin  |  Contraseña: adminPass  |  https://fe-monte-bravo.vercel.app",
         "Solución e-commerce end-to-end desarrollada para una bodega, orientada a una experiencia de compra fluida y al crecimiento del negocio.",
         "Integración con Mercado Pago para pagos seguros y SendGrid para comunicaciones transaccionales y de marketing.",
         "Implementación de mecanismos de autenticación incluyendo login social y gestión de sesiones mediante JWT.",
@@ -51,25 +52,48 @@ export const es: Translation = {
         "https://api.antonellabrochini.com/swagger-ui/index.html para documentación y pruebas de la API. Usuario de prueba: user1 y contraseña: password1",
       ],
     },
-   
+
     "2": {
       title: "App OrderFlow",
+      data: [
+        "Implementación de análisis temporal (week-over-week, month-over-month y ventanas móviles de 7 días).",
+  "Detección automática de tendencias de negocio (crecimiento, caída, estabilidad) basada en datos reales de pedidos.",
+  "Identificación de patrones operativos como:\n  • Días de alta y baja demanda\n  • Horas pico de pedidos\n  • Concentración de ingresos en pocos días o productos",
+  "Cálculo de métricas clave:\n  • Ingresos totales\n  • Ticket promedio\n  • Volumen de pedidos\n  • Productos más vendidos",
+  "Generación automática de insights de negocio a partir de datos operativos.",
+  "Recomendaciones accionables orientadas a negocio:\n  • Aplicar promociones en días de baja actividad\n  • Potenciar productos con mayor rendimiento\n  • Optimizar operación en horarios pico",
+  "Desarrollo de reportes con resumen ejecutivo que sintetiza el estado del negocio, hallazgos clave y acciones sugeridas.",
+  "Análisis adaptado a escenarios de bajo volumen de datos, incluyendo interpretación de etapas iniciales del negocio.",
+],
       description: [
-      "Acceso de prueba:  Usuario: donvito@gmail.com  |  Contraseña: 12345678  |  https://orderflow.com.uy",
-        "Plataforma web para centralizar y optimizar pedidos de restaurantes, incluyendo reparto propio.",
-        "Sistema multi-tenant que permite a múltiples restaurantes operar de forma independiente (productos, pedidos, usuarios y configuraciones).",
-        "Integración de múltiples canales de entrada de pedidos (WhatsApp, teléfono y presencial), unificando los datos en una sola base estructurada.",
-        "Implementación de modelos de datos relacionales para gestión de pedidos, clientes, productos y ventas.",
-        "Desarrollo de dashboards y reportes analíticos para seguimiento de métricas clave: volumen de pedidos, ingresos, productos más vendidos y comportamiento de clientes.",
-        "Procesamiento y análisis de datos en tiempo real para optimizar la toma de decisiones en restaurantes.",
-        "Identificación de patrones de consumo y generación de insights para mejorar eficiencia operativa.",
-        "Menú digital con QR que captura datos de comportamiento del cliente y automatiza el flujo de pedidos hacia cocina.",
-        "Proyecto en desarrollo con validación en usuarios reales (restaurantes), incluyendo recolección de datos reales para análisis.",
-        "Enfoque en escalabilidad y estructuración de datos para futuras integraciones con herramientas de Business Intelligence."
-      ],
+        "Acceso de prueba: https://orderflow.com.uy  |  Usuario: donvito@gmail.com  |  Contraseña: 12345678",
+
+        "OrderFlow es una plataforma web diseñada para centralizar y optimizar la gestión de pedidos de restaurantes, incluyendo operaciones de reparto propio.",
+
+        "Arquitectura multi-tenant que permite a múltiples restaurantes operar de forma independiente, gestionando sus propios productos, pedidos, clientes y configuraciones.",
+
+        "Integración de múltiples canales de entrada de pedidos (WhatsApp, teléfono y presencial) en un sistema unificado y estructurado de datos.",
+
+        "Diseño e implementación de modelos de datos relacionales para la gestión de pedidos, clientes, productos y ventas.",
+
+        "Desarrollo de dashboards analíticos y sistemas de reporte para el seguimiento de métricas clave de negocio: ingresos, volumen de pedidos, productos más vendidos y comportamiento de clientes.",
+
+        "Implementación de una capa analítica con comparaciones temporales (semana a semana, mes a mes), detección de tendencias y análisis de patrones para apoyar la toma de decisiones basada en datos.",
+
+        "Generación automática de insights de negocio y recomendaciones accionables a partir de datos reales operativos (ej: concentración de demanda, horas pico, períodos de baja actividad).",
+
+        "Identificación de patrones de consumo y oportunidades de mejora para optimizar la eficiencia operativa de los restaurantes.",
+
+        "Sistema de menú digital con QR que captura datos de comportamiento del cliente y automatiza el flujo de pedidos hacia cocina.",
+
+        "Validación en entorno real con restaurantes, incluyendo recolección de datos reales para análisis y mejora continua del producto.",
+
+        "Diseñado con foco en escalabilidad, permitiendo futuras integraciones con herramientas de Business Intelligence y pipelines de análisis avanzado."
+      ]
     },
     "3": {
       title: "App de pedidos de comida",
+      data: [],
       description: [
         "Aplicación web para pedir comida: menú, personalización, carrito y checkout.",
         "Incluye autenticación: el usuario debe registrarse o iniciar sesión antes de pedir. Luego puede personalizar ingredientes, agregar al carrito y completar la compra.",
@@ -79,6 +103,7 @@ export const es: Translation = {
     },
     "4": {
       title: "Billetera digital",
+      data: [],
       description: [
         "Aplicación móvil de billetera digital con React Native y Expo.",
         "API REST propia con Node.js y Express para transacciones y cuentas.",
@@ -91,6 +116,7 @@ export const es: Translation = {
     },
     "5": {
       title: "Despliegue de aplicaciones en AWS",
+      data: [],
       description: [
         "Flujo de despliegue con Kubernetes en la rama principal.",
         "Integración de pruebas con SonarCloud.",
@@ -100,6 +126,7 @@ export const es: Translation = {
     },
     "6": {
       title: "IaC con Terraform en AWS",
+      data: [],
       description: [
         "Dos clústeres de Kubernetes con configuración equivalente en redes aisladas.",
         "Un clúster para cargas de producción.",
@@ -108,6 +135,7 @@ export const es: Translation = {
     },
     "7": {
       title: "Backend e-commerce con Keycloak",
+      data: [],
       description: [
         "API REST de e-commerce segura integrada con Keycloak y control de acceso por roles (RBAC).",
         "Endpoints protegidos y reglas para distintos roles (por ejemplo admin/cliente).",
@@ -116,7 +144,8 @@ export const es: Translation = {
       ],
     },
     "8": {
-      title: "One page — buen diseño",
+      title: "One page — Cool Diseño ",
+      data: [],
       description: [
         "Sitio one-page moderno y responsive con Next.js y TypeScript.",
         "Arquitectura de componentes clara, animaciones fluidas y buen rendimiento.",
@@ -125,6 +154,7 @@ export const es: Translation = {
     },
     "9": {
       title: "Sistema de reservas GX",
+      data: [],
       description: [
         "Aplicación de gestión de reservas desarrollada con GeneXus.",
         "Lógica de negocio y flujos de reserva estructurados.",
@@ -135,6 +165,7 @@ export const es: Translation = {
     },
     "10": {
       title: "Sitio de noticias",
+      data: [],
       description: [
         "Sitio de noticias desarrollado y personalizado con Joomla.",
         "Estructuras de contenido, categorías y artículos dinámicos.",
@@ -145,6 +176,7 @@ export const es: Translation = {
     },
     "11": {
       title: "Nuevo portafolio",
+      data: [],
       description: [
         "Portafolio personal moderno con Next.js.",
         "Animaciones avanzadas con Framer Motion.",
@@ -156,6 +188,7 @@ export const es: Translation = {
     },
     "12": {
       title: "Portafolio v1",
+      data: [],
       description: [
         "Mi primer portafolio personal con Next.js.",
         "Layout limpio y responsive, diseño sobrio y profesional.",
@@ -178,20 +211,20 @@ export const es: Translation = {
     stackTitle: "Mi stack",
     stackSubtitle:
       "Desarrolladora fullstack con enfoque en productos, rendimiento y análisis de datos.",
-    
+
     skillsClose: "</skills>",
-    
+
     profileName: "Antonella Brochini",
-    
+
     profileRole: "Full Stack Developer | Data Analysis",
-    
+
     profileNote:
       "Busco especializarme en sistemas digitales escalables que combinen buena ingeniería con análisis de datos y toma de decisiones basada en métricas.",
-    
+
     mindsetLabel: "<Mindset />",
-    
+
     howIWork: "Cómo trabajo",
-    
+
     stats: [
       { value: "Full Stack + Data", label: "Perfil" },
       { value: "Next.js", label: "Frontend" },
@@ -199,7 +232,7 @@ export const es: Translation = {
       { value: "PostgreSQL", label: "BD" },
       { value: "Python / Power BI", label: "Data" },
     ],
-    
+
     pills: [
       { icon: "⚛️", text: "React / Next.js" },
       { icon: "🍃", text: "Spring Boot" },
@@ -213,7 +246,7 @@ export const es: Translation = {
       { icon: "🌍", text: "Inglés" },
       { icon: "🇪🇸", text: "Español (nativo)" },
     ],
-    
+
     timeline: [
       {
         title: "Pienso en sistemas y datos",

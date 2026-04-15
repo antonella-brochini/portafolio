@@ -35,6 +35,7 @@ export const en = {
   projects: {
     "1": {
       title: "Wine E-commerce",
+      data: [],
       description: [
         "Demo access:  User: admin  |  Password: adminPass  |  https://fe-monte-bravo.vercel.app",
         "End-to-end e-commerce solution developed for a winery, focused on delivering a seamless purchasing experience and business growth.",
@@ -51,22 +52,44 @@ export const en = {
     },
     "2": {
       title: "OrderFlow App",
+      data: [
+        "Implementation of temporal analysis (week-over-week, month-over-month and 7-day moving windows).",
+  "Automatic detection of business trends (growth, decline, stability) based on real order data.",
+  "Identification of operational patterns such as:\n  • High and low demand days\n  • Peak order hours\n  • Revenue concentration in few days or products",
+  "Calculation of key metrics:\n  • Total revenue\n  • Average ticket\n  • Order volume\n  • Best-selling products",
+  "Automatic generation of business insights from operational data.",
+  "Actionable business-oriented recommendations:\n  • Apply promotions on low-activity days\n  • Boost highest-performing products\n  • Optimize operations during peak hours",
+  "Reports with executive summary synthesizing business status, key findings and suggested actions.",
+  "Analysis adapted to low-volume data scenarios, including interpretation of early business stages.",],
       description: [
-        "Test access:  User: donvito@gmail.com  |  Password: 12345678  |  https://orderflow.com.uy",
-        "Web platform to centralize and optimize restaurant orders, including in-house delivery.",
-  "Multi-tenant system allowing multiple restaurants to operate independently (products, orders, users, and configurations).",
-  "Integration of multiple order channels (WhatsApp, phone, and in-person), consolidating data into a single structured database.",
-  "Implementation of relational data models for managing orders, customers, products, and sales.",
-  "Development of dashboards and analytical reports to track key metrics: order volume, revenue, top-selling products, and customer behavior.",
-  "Real-time data processing and analysis to support data-driven decision-making.",
-  "Identification of consumption patterns and generation of insights to improve operational efficiency.",
-  "QR-based digital menu that captures user behavior data and automates order flow to the kitchen.",
-  "Project under development and validation with real users (restaurants), including real data collection for analysis.",
-  "Focus on scalability and data structuring for future integration with Business Intelligence tools.",
-      ],
+        "Demo access: https://orderflow.com.uy  |  User: donvito@gmail.com  |  Password: 12345678",
+
+        "OrderFlow is a web platform designed to centralize and optimize restaurant order management, including in-house delivery operations.",
+
+        "Multi-tenant architecture allowing multiple restaurants to operate independently, each with their own products, orders, customers, and configurations.",
+
+        "Integration of multiple order channels (WhatsApp, phone and in-person) into a unified and structured data system.",
+
+        "Design and implementation of relational data models for managing orders, customers, products, and sales data.",
+
+        "Development of analytical dashboards and reporting systems to track key business metrics such as revenue, order volume, top-selling products, and customer behavior.",
+
+        "Implementation of an analytical layer with time-based comparisons (week-over-week, month-over-month), trend detection, and pattern recognition to support data-driven decision-making.",
+
+        "Automatic generation of business insights and actionable recommendations based on real operational data (e.g., demand concentration, peak hours, low-activity periods).",
+
+        "Identification of consumption patterns and operational inefficiencies to improve restaurant performance and decision-making.",
+
+        "QR-based digital menu system that captures customer behavior data and automates the order flow to the kitchen.",
+
+        "Real-world validation with restaurant users, including real data collection for analysis and continuous product iteration.",
+
+        "Designed with scalability in mind, enabling future integration with Business Intelligence tools and advanced analytics pipelines."
+      ]
     },
     "3": {
       title: "Order Food App",
+      data: [],
       description: [
         "Food ordering web application that allows users to browse a menu, customize food items, manage a shopping cart and complete orders through a checkout process.",
         "The application includes user authentication, so users must register or log in before placing an order. Once authenticated, they can personalize their food by selecting ingredients, add items to the cart and complete the purchase.",
@@ -76,6 +99,7 @@ export const en = {
     },
     "4": {
       title: "Digital Wallet",
+      data: [],
       description: [
         "Developed a mobile digital wallet application using React Native with Expo.",
         "Integrated a custom REST API built with Node.js and Express for transaction and account management.",
@@ -88,6 +112,7 @@ export const en = {
     },
     "5": {
       title: "Application Deployment on AWS",
+      data: [],
       description: [
         "Application deployment workflow using Kubernetes on the master branch.",
         "Testing workflow integrated with SonarCloud.",
@@ -97,6 +122,7 @@ export const en = {
     },
     "6": {
       title: "IaC with Terraform on AWS",
+      data: [],
       description: [
         "Provisioned two Kubernetes clusters with identical configurations across isolated networks.",
         "Configured one cluster for production workloads.",
@@ -105,6 +131,7 @@ export const en = {
     },
     "7": {
       title: "E-commerce Backend with Keycloak",
+      data: [],
       description: [
         "Developed a secure e-commerce REST API integrated with Keycloak for authentication and role-based access control (RBAC).",
         "Implemented protected endpoints and authorization rules for different user roles (e.g., admin/customer).",
@@ -114,6 +141,7 @@ export const en = {
     },
     "8": {
       title: "One page Nice Design",
+      data: [],
       description: [
         "Modern responsive one-page website built with Next.js and TypeScript.",
         "It features a clean component-based architecture, smooth UI animations, and optimized performance.",
@@ -122,6 +150,7 @@ export const en = {
     },
     "9": {
       title: "Reservation Management System GX",
+      data: [],
       description: [
         "Developed a reservation management application using GeneXus.",
         "Designed and structured business logic for booking workflows.",
@@ -132,6 +161,7 @@ export const en = {
     },
     "10": {
       title: "News Website",
+      data: [],
       description: [
         "Developed and customized a news website using Joomla CMS.",
         "Configured content structures, categories, and dynamic article management.",
@@ -142,6 +172,7 @@ export const en = {
     },
     "11": {
       title: "New Portfolio",
+      data: [],
       description: [
         "Designed and developed a modern personal portfolio using Next.js.",
         "Implemented advanced animations with Framer Motion to enhance user interaction and visual flow.",
@@ -153,6 +184,7 @@ export const en = {
     },
     "12": {
       title: "Portfolio v1",
+      data: [],
       description: [
         "Designed and developed my first personal portfolio using Next.js.",
         "Built with a clean, responsive layout and a sober, professional design approach.",
@@ -176,20 +208,20 @@ export const en = {
 
     stackSubtitle:
       "Full-stack developer focused on product quality, performance, and data analysis.",
-    
+
     skillsClose: "</skills>",
-    
+
     profileName: "Antonella Brochini",
-    
+
     profileRole: "Full Stack Developer | Data Analysis",
-    
+
     profileNote:
       "I aim to specialize in scalable digital systems that combine solid engineering with data analysis and data-driven decision-making.",
-    
+
     mindsetLabel: "<Mindset />",
-    
+
     howIWork: "How I Work",
-    
+
     stats: [
       { value: "Full Stack + Data", label: "Profile" },
       { value: "Next.js", label: "Frontend" },
@@ -197,7 +229,7 @@ export const en = {
       { value: "PostgreSQL", label: "DB" },
       { value: "Python / Power BI", label: "Data" },
     ],
-    
+
     pills: [
       { icon: "⚛️", text: "React / Next.js" },
       { icon: "🍃", text: "Spring Boot" },
@@ -211,7 +243,7 @@ export const en = {
       { icon: "🌍", text: "English" },
       { icon: "🇪🇸", text: "Spanish (Native)" },
     ],
-    
+
     timeline: [
       {
         title: "I think in systems and data",

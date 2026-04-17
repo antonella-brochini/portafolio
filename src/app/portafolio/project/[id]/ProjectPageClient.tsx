@@ -38,17 +38,16 @@ export default function ProjectPageClient({ projectId }: Props) {
       <section className="portfolio_part section_padding">
         <div className="mi-container">
           <div className={styles.imageContainer}>
-            <ImageCarousel>
-              {meta.images?.map((img, index) => (
-                <div key={`img-${index}`}>
-                  <img
-                    src={img}
-                    alt={`${copy.title} — ${t.projectDetail.imageAlt}`}
-                    width={300}
-                  />
-                </div>
-              ))}
-            </ImageCarousel>
+            <ImageCarousel
+              images={meta.images ?? []}
+              altBase={`${copy.title} — ${t.projectDetail.imageAlt}`}
+              labels={{
+                prev: t.projectDetail.galleryPrev,
+                next: t.projectDetail.galleryNext,
+                zoom: t.projectDetail.galleryZoom,
+                close: t.projectDetail.galleryClose,
+              }}
+            />
           </div>
            
           {copy.data && copy.data.length > 0 && (

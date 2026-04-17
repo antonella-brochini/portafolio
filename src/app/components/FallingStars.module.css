@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-/* Estrella individual */
+/* Estrella individual (modo oscuro: blanco / cian) */
 .fallingStar {
   position: absolute;
   top: -10px;
@@ -53,6 +53,39 @@
 /* Efecto de parpadeo suave */
 .fallingStar {
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Modo claro: rosa / magenta como el gradiente de títulos (#ff00cc → #9841ff) */
+@keyframes fall-diagonal-light {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: min(1, calc(var(--opacity) * 1.35));
+    filter: blur(0);
+  }
+
+  100% {
+    transform: translateY(100vh) translateX(-100vh);
+    opacity: 0;
+    filter: blur(2px);
+  }
+}
+
+:global(html.light) .fallingStar {
+  background: radial-gradient(
+    circle,
+    rgba(255, 0, 204, 1) 0%,
+    rgba(255, 0, 180, 0.65) 42%,
+    rgba(152, 65, 255, 0.45) 70%,
+    rgba(152, 65, 255, 0) 100%
+  );
+  box-shadow:
+    0 0 16px rgba(255, 0, 204, calc(var(--opacity) * 1.1)),
+    0 0 32px rgba(152, 65, 255, calc(var(--opacity) * 1)),
+    0 0 52px rgba(255, 105, 180, calc(var(--opacity) * 0.65));
+}
+
+:global(html.light) .fallingStar:nth-child(n) {
+  animation: fall-diagonal-light var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94) var(--delay) forwards;
 }
 
 /* Reduced motion support */

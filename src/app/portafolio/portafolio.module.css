@@ -184,14 +184,14 @@
   margin: 0;
   font-size: 0.875rem;
   line-height: 1.5;
-  color: white;
+  color: rgba(255, 255, 255, 0.922);
   flex: 1;
   overflow: auto;
 }
 
 
 .flipBackTechnologies{
-  color: white;
+  color: rgba(255, 255, 255, 0.922);
   font-size: 0.875rem;
   line-height: 1.5;
   font-weight: bold;

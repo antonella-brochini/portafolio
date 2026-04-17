@@ -33,9 +33,11 @@ export const projectsMeta = [
 
     id: "2",
     images: [
+      "/img/analisis-retail/grafico0.png",
       "/img/analisis-retail/grafico1.png",
       "/img/analisis-retail/grafico2.png",
       "/img/analisis-retail/grafico3.png",
+      "/img/analisis-retail/grafico4.png",
    
     ],
     projectUrl: "https://github.com/antonella-brochini/sales-data-analysis",

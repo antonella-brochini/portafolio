@@ -31,6 +31,10 @@ export const en = {
     github: "GitHub",
     viewProject: "View Project",
     imageAlt: "Project screenshot",
+    galleryPrev: "Previous image",
+    galleryNext: "Next image",
+    galleryZoom: "View full size",
+    galleryClose: "Close",
   },
   projects: {
    
@@ -78,19 +82,20 @@ export const en = {
       summary:
       "End-to-end sales data analysis project using Python and Power BI, focused on data cleaning, validation, and business insight generation through interactive visualizations.",
       data: [
-       
-          "Sales trend analysis:\n  • Clear growth from 2010 to 2011\n  • Stable behavior with seasonal peaks",
-          
-          "Geographic distribution:\n  • Strong revenue concentration in United Kingdom\n  • Lower contribution from Netherlands, EIRE, Germany and France\n  • Potential market expansion opportunities",
-          
-          "Market risk detection:\n  • High dependency on a single country (UK)\n  • Exposure to demand changes in that market",
-          
-          "Product performance:\n  • Identification of top-selling products\n  • High-demand items include PAPER CRAFT, LITTLE BIRDIE and MEDIUM CERAMIC TOP STORAGE JAR",
-          
-          "Product concentration patterns:\n  • Small group of products generates large share of sales\n  • Opportunity to optimize inventory and marketing focus",
-          
-          "Business insights generation:\n  • Data-driven understanding of sales behavior\n  • Support for decision-making and growth strategies"
-        
+        "Business KPIs:\n  • Total Revenue\n  • Total Orders\n  • Total Customers\n  • Average Order Value\n  • Quick evaluation of overall performance",
+        "Sales trend analysis:\n  • Clear growth from 2010 to 2011\n  • Stable behavior with seasonal peaks\n  • Monthly visualization to identify time patterns",
+      
+        "Geographic distribution:\n  • Strong revenue concentration in the United Kingdom\n  • Lower contribution from Netherlands, EIRE, Germany and France\n  • Market expansion opportunities",
+      
+        "Market risk detection:\n  • High dependency on a single country (UK)\n  • Exposure to demand changes in that market",
+      
+        "Product performance:\n  • Identification of top-selling products\n  • High-demand items such as PAPER CRAFT, LITTLE BIRDIE and MEDIUM CERAMIC TOP STORAGE JAR",
+      
+        "Product concentration patterns:\n  • A small group of products generates a large share of total sales\n  • Opportunity to optimize inventory and marketing strategies",
+      
+        "Interactive dashboard analysis:\n  • Integration of KPIs and visualizations in a single view\n  • Real-time data exploration\n  • Improved understanding of business metrics",
+      
+        "Business insights generation:\n  • Data-driven understanding of sales behavior\n  • Support for decision-making\n  • Identification of growth opportunities"
       ],
       description: [
         "End-to-end sales data analysis project using Python (Pandas) and Power BI.",

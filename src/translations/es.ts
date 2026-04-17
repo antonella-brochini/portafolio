@@ -33,6 +33,10 @@ export const es: Translation = {
     github: "GitHub",
     viewProject: "Ver proyecto",
     imageAlt: "Captura del proyecto",
+    galleryPrev: "Imagen anterior",
+    galleryNext: "Imagen siguiente",
+    galleryZoom: "Ver en tamaño completo",
+    galleryClose: "Cerrar",
   },
   projects: {
     "1": {
@@ -80,17 +84,20 @@ export const es: Translation = {
       summary:
       "Proyecto de análisis de datos de ventas utilizando Python y Power BI, enfocado en limpieza de datos, validación y generación de insights de negocio mediante visualizaciones interactivas.",
       data: [
-        "Análisis de tendencia de ventas:\n  • Crecimiento claro entre 2010 y 2011\n  • Comportamiento estable con picos estacionales",
-  
-  "Distribución geográfica:\n  • Alta concentración de revenue en Reino Unido\n  • Menor participación de Netherlands, EIRE, Germany y France\n  • Oportunidades de expansión a otros mercados",
-  
-  "Detección de riesgo de mercado:\n  • Fuerte dependencia de un solo país (UK)\n  • Exposición a cambios en la demanda de ese mercado",
-  
-  "Rendimiento de productos:\n  • Identificación de productos más vendidos\n  • Productos destacados como PAPER CRAFT, LITTLE BIRDIE y MEDIUM CERAMIC TOP STORAGE JAR",
-  
-  "Patrones de concentración de productos:\n  • Un grupo reducido genera gran parte de las ventas\n  • Oportunidad de optimizar inventario y marketing",
-  
-  "Generación de insights de negocio:\n  • Comprensión del comportamiento de ventas\n  • Apoyo a la toma de decisiones y crecimiento"
+        "KPIs de negocio:\n  • Total Revenue\n  • Total Orders\n  • Total Customers\n  • Average Order Value\n  • Evaluación rápida del desempeño general",
+        "Análisis de tendencia de ventas:\n  • Crecimiento claro entre 2010 y 2011\n  • Comportamiento estable con picos estacionales\n  • Visualización mensual para identificar patrones temporales",
+      
+        "Distribución geográfica:\n  • Alta concentración de revenue en Reino Unido\n  • Menor participación de Netherlands, EIRE, Germany y France\n  • Oportunidades de expansión a otros mercados",
+      
+        "Detección de riesgo de mercado:\n  • Fuerte dependencia de un solo país (UK)\n  • Exposición a cambios en la demanda de ese mercado",
+      
+        "Rendimiento de productos:\n  • Identificación de productos más vendidos\n  • Productos destacados como PAPER CRAFT, LITTLE BIRDIE y MEDIUM CERAMIC TOP STORAGE JAR",
+      
+        "Patrones de concentración de productos:\n  • Un grupo reducido genera gran parte de las ventas\n  • Oportunidad de optimizar inventario y marketing",
+      
+        "Análisis de dashboard interactivo:\n  • Integración de KPIs y visualizaciones en una sola vista\n  • Exploración de datos en tiempo real\n  • Mejora en la interpretación de métricas de negocio",
+      
+        "Generación de insights de negocio:\n  • Comprensión del comportamiento de ventas\n  • Apoyo a la toma de decisiones\n  • Identificación de oportunidades de crecimiento"
       ],
       description: [
         "Proyecto de análisis de datos de ventas de extremo a extremo utilizando Python (Pandas) y Power BI.",

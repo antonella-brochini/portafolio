@@ -383,6 +383,7 @@
   .aboutHeroText {
     font-size: 0.95rem;
     line-height: 1.6;
+    color: rgba(255, 255, 255, 0.922);
   }
    .aboutHeroSection { padding-top: 90px; }
 }

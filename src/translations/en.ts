@@ -33,25 +33,11 @@ export const en = {
     imageAlt: "Project screenshot",
   },
   projects: {
+   
     "1": {
-      title: "Wine E-commerce",
-      data: [],
-      description: [
-        "Demo access:  User: admin  |  Password: adminPass  |  https://fe-monte-bravo.vercel.app",
-        "End-to-end e-commerce solution developed for a winery, focused on delivering a seamless purchasing experience and business growth.",
-        "Integration with Mercado Pago for secure payments and SendGrid for transactional and marketing communications.",
-        "Implementation of authentication mechanisms including social login and JWT-based session management.",
-        "Frontend built with Redux for global state management, handling user sessions, shopping cart, and data flow efficiently.",
-        "Design and implementation of relational data models for orders, users, products, and transactions.",
-        "Development of analytics dashboards to track key business metrics such as sales performance, top-selling products, and customer behavior.",
-        "Data-driven approach to support decision-making and optimize business performance.",
-        "Backend deployed on AWS using Docker, ensuring scalability and reliability.",
-        "API design following REST principles with documentation available via Swagger.",
-        "https://api.antonellabrochini.com/swagger-ui/index.html for API documentation and testing. Rol user: user1 and password1",
-      ],
-    },
-    "2": {
       title: "OrderFlow App",
+      summary:
+        "Multi-tenant platform for restaurant order management with analytics, trend detection, and actionable business insights from real operational data.",
       data: [
         "Implementation of temporal analysis (week-over-week, month-over-month and 7-day moving windows).",
   "Automatic detection of business trends (growth, decline, stability) based on real order data.",
@@ -87,8 +73,56 @@ export const en = {
         "Designed with scalability in mind, enabling future integration with Business Intelligence tools and advanced analytics pipelines."
       ]
     },
+    "2": {
+      title: "Retail Data Analysis",
+      summary:
+      "End-to-end sales data analysis project using Python and Power BI, focused on data cleaning, validation, and business insight generation through interactive visualizations.",
+      data: [
+       
+          "Sales trend analysis:\n  • Clear growth from 2010 to 2011\n  • Stable behavior with seasonal peaks",
+          
+          "Geographic distribution:\n  • Strong revenue concentration in United Kingdom\n  • Lower contribution from Netherlands, EIRE, Germany and France\n  • Potential market expansion opportunities",
+          
+          "Market risk detection:\n  • High dependency on a single country (UK)\n  • Exposure to demand changes in that market",
+          
+          "Product performance:\n  • Identification of top-selling products\n  • High-demand items include PAPER CRAFT, LITTLE BIRDIE and MEDIUM CERAMIC TOP STORAGE JAR",
+          
+          "Product concentration patterns:\n  • Small group of products generates large share of sales\n  • Opportunity to optimize inventory and marketing focus",
+          
+          "Business insights generation:\n  • Data-driven understanding of sales behavior\n  • Support for decision-making and growth strategies"
+        
+      ],
+      description: [
+        "End-to-end sales data analysis project using Python (Pandas) and Power BI.",
+
+        "The project includes data cleaning, type validation, and correction of data modeling issues to ensure accurate calculations. Key insights were generated through interactive dashboards, including sales trends over time, revenue by country, and top-selling products.",
+        
+        "This analysis highlights business patterns such as strong geographic concentration and product demand distribution, providing valuable insights for decision-making.",
+      ],
+    },
     "3": {
+      title: "Wine E-commerce",
+      summary:
+        "Full-stack winery e-commerce with secure payments, JWT and social auth, analytics, and a documented REST API deployed on AWS with Docker.",
+      data: [],
+      description: [
+        "Demo access:  User: admin  |  Password: adminPass  |  https://fe-monte-bravo.vercel.app",
+        "End-to-end e-commerce solution developed for a winery, focused on delivering a seamless purchasing experience and business growth.",
+        "Integration with Mercado Pago for secure payments and SendGrid for transactional and marketing communications.",
+        "Implementation of authentication mechanisms including social login and JWT-based session management.",
+        "Frontend built with Redux for global state management, handling user sessions, shopping cart, and data flow efficiently.",
+        "Design and implementation of relational data models for orders, users, products, and transactions.",
+        "Development of analytics dashboards to track key business metrics such as sales performance, top-selling products, and customer behavior.",
+        "Data-driven approach to support decision-making and optimize business performance.",
+        "Backend deployed on AWS using Docker, ensuring scalability and reliability.",
+        "API design following REST principles with documentation available via Swagger.",
+        "https://api.antonellabrochini.com/swagger-ui/index.html for API documentation and testing. Rol user: user1 and password1",
+      ],
+    },
+    "4": {
       title: "Order Food App",
+      summary:
+        "Food ordering web app with menu browsing, customization, cart, authentication, and checkout supporting card, PayPal, or cash on delivery.",
       data: [],
       description: [
         "Food ordering web application that allows users to browse a menu, customize food items, manage a shopping cart and complete orders through a checkout process.",
@@ -97,8 +131,10 @@ export const en = {
         "user : demo@pizzeria.com  and Password: 12345678 to test the app",
       ],
     },
-    "4": {
+    "5": {
       title: "Digital Wallet",
+      summary:
+        "React Native (Expo) mobile wallet with a custom Node.js API, local persistence, and a clean UI for balances and transactions.",
       data: [],
       description: [
         "Developed a mobile digital wallet application using React Native with Expo.",
@@ -110,8 +146,10 @@ export const en = {
         "Optimized performance across mobile devices.",
       ],
     },
-    "5": {
+    "6": {
       title: "Application Deployment on AWS",
+      summary:
+        "DevOps pipeline with Kubernetes deployment, SonarCloud quality gates, and load testing via Docker Compose, Apache Bench, and k6.",
       data: [],
       description: [
         "Application deployment workflow using Kubernetes on the master branch.",
@@ -120,8 +158,10 @@ export const en = {
         "Load testing workflow with k6.",
       ],
     },
-    "6": {
+    "7": {
       title: "IaC with Terraform on AWS",
+      summary:
+        "Terraform-defined AWS infrastructure with twin Kubernetes clusters and namespace isolation for production versus dev and test workloads.",
       data: [],
       description: [
         "Provisioned two Kubernetes clusters with identical configurations across isolated networks.",
@@ -129,8 +169,10 @@ export const en = {
         "Segmented the second cluster using namespaces for development and testing environments.",
       ],
     },
-    "7": {
+    "8": {
       title: "E-commerce Backend with Keycloak",
+      summary:
+        "Secure Spring Boot e-commerce API with Keycloak RBAC, protected endpoints by role, and a scalable domain model for products and orders.",
       data: [],
       description: [
         "Developed a secure e-commerce REST API integrated with Keycloak for authentication and role-based access control (RBAC).",
@@ -139,8 +181,10 @@ export const en = {
         "Documented setup and deployment workflow to run locally with environment-based configuration (Docker-ready if applicable).",
       ],
     },
-    "8": {
+    "9": {
       title: "One page Nice Design",
+      summary:
+        "Responsive one-page site built with Next.js and TypeScript—component-driven layout, subtle motion, and performance-minded frontend structure.",
       data: [],
       description: [
         "Modern responsive one-page website built with Next.js and TypeScript.",
@@ -148,8 +192,10 @@ export const en = {
         "The project focuses on modern frontend practices, reusable components, and scalable styling for building elegant web interfaces.",
       ],
     },
-    "9": {
+    "10": {
       title: "Reservation Management System GX",
+      summary:
+        "Reservation workflows and transactional booking logic implemented in GeneXus with validation rules and structured data handling.",
       data: [],
       description: [
         "Developed a reservation management application using GeneXus.",
@@ -159,8 +205,10 @@ export const en = {
         "Implemented validation rules and user interaction flows.",
       ],
     },
-    "10": {
+    "11": {
       title: "News Website",
+      summary:
+        "Joomla-based news portal with categories, responsive templates, extensions, and a production-ready deployment workflow.",
       data: [],
       description: [
         "Developed and customized a news website using Joomla CMS.",
@@ -170,8 +218,10 @@ export const en = {
         "Handled deployment and configuration for production environment.",
       ],
     },
-    "11": {
+    "12": {
       title: "New Portfolio",
+      summary:
+        "This portfolio: Next.js, Framer Motion animations, custom SVG work, and a modular structure focused on UX and maintainability.",
       data: [],
       description: [
         "Designed and developed a modern personal portfolio using Next.js.",
@@ -182,8 +232,10 @@ export const en = {
         "Deployed using modern frontend best practices.",
       ],
     },
-    "12": {
+    "13": {
       title: "Portfolio v1",
+      summary:
+        "First static Next.js portfolio on GitHub Pages—a clean baseline that later evolved into a more scalable architecture.",
       data: [],
       description: [
         "Designed and developed my first personal portfolio using Next.js.",

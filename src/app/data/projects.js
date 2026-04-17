@@ -3,35 +3,6 @@ export const projectsMeta = [
   {
     id: "1",
     images: [
-      "/img/ecomerce/landing1.png",
-      "/img/ecomerce/landing2.png",
-      "/img/ecomerce/landing3.png",
-      "/img/ecomerce/admin0.png",
-      "/img/ecomerce/admin1.png",
-      "/img/ecomerce/admin2.png",
-      "/img/ecomerce/admin3.png",
-      "/img/ecomerce/admin4.png",
-      "/img/ecomerce/admin5.png",
-      "/img/ecomerce/analiticas.jpg",
-      "/img/ecomerce/analiticas2.jpg",
-      "/img/ecomerce/analiticas3.jpg",
-      "/img/ecomerce/carrito1.png",
-      "/img/ecomerce/carrito2.png",
-      "/img/ecomerce/carrito3.png",
-      "/img/ecomerce/carrito4.png",
-      "/img/ecomerce/carrito5.png",
-      "/img/ecomerce/user1.png",
-      "/img/ecomerce/user2.png",
-      "/img/ecomerce/user3.png",
-      "/img/ecomerce/user4.png",
-    ],
-    projectUrl: "https://fe-monte-bravo.vercel.app",
-    repo: "https://github.com/antonella-brochini/be-MonteBravo",
-    technologies: "Spring Boot, Next.js, PostgreSQL, Tailwind CSS",
-  },
-  {
-    id: "2",
-    images: [
       "/img/delivery/page1.png",
       "/img/delivery/page2.png",
       "/img/delivery/page3.png",
@@ -59,7 +30,49 @@ export const projectsMeta = [
     technologies: "Next.js (API Routes), TypeScript, Prisma ORM, PostgreSQL",
   },
   {
+
+    id: "2",
+    images: [
+      "/img/analisis-retail/grafico1.png",
+      "/img/analisis-retail/grafico2.png",
+      "/img/analisis-retail/grafico3.png",
+   
+    ],
+    projectUrl: "https://github.com/antonella-brochini/sales-data-analysis",
+    repo: "https://github.com/antonella-brochini/sales-data-analysis",
+    technologies: "Data Analysis, Python, Pandas, Power BI",
+  },
+  {
     id: "3",
+    images: [
+      "/img/ecomerce/landing1.png",
+      "/img/ecomerce/landing2.png",
+      "/img/ecomerce/landing3.png",
+      "/img/ecomerce/admin0.png",
+      "/img/ecomerce/admin1.png",
+      "/img/ecomerce/admin2.png",
+      "/img/ecomerce/admin3.png",
+      "/img/ecomerce/admin4.png",
+      "/img/ecomerce/admin5.png",
+      "/img/ecomerce/analiticas.jpg",
+      "/img/ecomerce/analiticas2.jpg",
+      "/img/ecomerce/analiticas3.jpg",
+      "/img/ecomerce/carrito1.png",
+      "/img/ecomerce/carrito2.png",
+      "/img/ecomerce/carrito3.png",
+      "/img/ecomerce/carrito4.png",
+      "/img/ecomerce/carrito5.png",
+      "/img/ecomerce/user1.png",
+      "/img/ecomerce/user2.png",
+      "/img/ecomerce/user3.png",
+      "/img/ecomerce/user4.png",
+    ],
+    projectUrl: "https://fe-monte-bravo.vercel.app",
+    repo: "https://github.com/antonella-brochini/be-MonteBravo",
+    technologies: "Spring Boot, Next.js, PostgreSQL, Tailwind CSS",
+  },
+  {
+    id: "4",
     images: [
       "/img/pizzeria/page1.png",
       "/img/pizzeria/page2.png",
@@ -77,7 +90,7 @@ export const projectsMeta = [
     technologies: "Next.js, React, Redux y Tailwind CSS",
   },
   {
-    id: "4",
+    id: "5",
     images: [
       "/img/digitalWallet/page1.png",
       "/img/digitalWallet/page2.png",
@@ -93,7 +106,7 @@ export const projectsMeta = [
     technologies: "React Native, Expo, Tailwind CSS, Node.js, Express",
   },
   {
-    id: "5",
+    id: "6",
     images: [
       "/img/deploy-app-github.png",
       "/img/deploy1.png",
@@ -104,14 +117,14 @@ export const projectsMeta = [
     technologies: "Kubernetes, Docker, SonarCloud, Apache Benchmark, k6",
   },
   {
-    id: "6",
+    id: "7",
     images: ["/img/infra-github.png"],
     projectUrl: "https://github.com/antonella-brochini/voting-app-infra",
     repo: "https://github.com/antonella-brochini/voting-app-infra",
     technologies: "Terraform, AWS, Kubernetes",
   },
   {
-    id: "7",
+    id: "8",
     images: ["/img/keycloak.png"],
     projectUrl:
       "https://github.com/antonella-brochini/ecommerce-api-portafolio",
@@ -119,7 +132,7 @@ export const projectsMeta = [
     technologies: "Spring Boot, PostgreSQL, Keycloak, Docker",
   },
   {
-    id: "8",
+    id: "9",
     images: [
       "/img/juegos/page1.png",
       "/img/juegos/page2.png",
@@ -129,10 +142,10 @@ export const projectsMeta = [
     ],
     projectUrl: "https://one-page-rust.vercel.app/",
     repo: "https://github.com/antonella-brochini/one-page",
-    technologies: "Next.js, TypeScript, CSS, HTML",
+    technologies: "Next.js, TypeScript, Bootstrap, HTML",
   },
   {
-    id: "9",
+    id: "10",
     images: [
       "/img/appReservasGX/page1.png",
       "/img/appReservasGX/page2.png",
@@ -143,7 +156,7 @@ export const projectsMeta = [
     technologies: "Genexus",
   },
   {
-    id: "10",
+    id: "11",
     images: [
       "/img/noticiasWebsite/page1.png",
       "/img/noticiasWebsite/page2.png",
@@ -156,7 +169,7 @@ export const projectsMeta = [
     technologies: "Joomla, Bootstrap, CSS, HTML",
   },
   {
-    id: "11",
+    id: "12",
     images: [
       "/img/newPortfolio/page1.png",
       "/img/newPortfolio/page2.png",
@@ -169,10 +182,10 @@ export const projectsMeta = [
     ],
     projectUrl: "https://github.com/antonella-brochini/portafolio",
     repo: "https://github.com/antonella-brochini/portafolio",
-    technologies: "Next.js, Bootstrap, HTML",
+    technologies: "Next.js, TypeScript, Bootstrap",
   },
   {
-    id: "12",
+    id: "13",
     images: [
       "/img/porfolioV1/page1.png",
       "/img/porfolioV1/page2.png",

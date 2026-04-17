@@ -63,48 +63,82 @@
   flex-direction: column;
 }
 
-.portfolioCardMedia {
+/* —— Flip 3D (solo hover en dispositivos con hover fino; evita flip al tabular al footer) —— */
+.flipScene {
+  perspective: 1100px;
+  border-radius: 5px;
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  min-height: 210px;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .portfolioCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+  }
+
+  /* El frente sigue encima en el stacking 2D y bloqueaba los clics al dorso */
+  .portfolioCard:hover .flipFront {
+    pointer-events: none;
+  }
+
+  .portfolioCard:hover .flipBack {
+    z-index: 3;
+  }
+}
+
+.flipFace {
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipFront {
   display: block;
   position: relative;
+  z-index: 2;
   text-decoration: none;
   color: inherit;
-  border-radius: 5px;
-  overflow: hidden;
+  transform: translateZ(1px);
 }
 
-.portfolioCardImageWrap {
-  position: relative;
-  display: block;
-  width: 100%;
-  border-radius: 5px;
-  overflow: hidden;
+.flipFrontBar {
+  display: none;
 }
 
-/* Hover overlay (desktop): nombre + preview; transición opacity */
-.portfolioCard :global(.project-card-overlay) {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 16px;
-  text-align: center;
-  background: rgba(16, 10, 31, 0.82);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  z-index: 2;
-}
+@media (min-width: 769px) {
+  .flipFrontBar {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 14px;
+    background: linear-gradient(
+      to top,
+      rgba(16, 10, 31, 0.88) 0%,
+      rgba(16, 10, 31, 0.35) 55%,
+      transparent 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+  }
 
-.portfolioCard:hover :global(.project-card-overlay) {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.light .portfolioCard :global(.project-card-overlay) {
-  background: rgba(255, 255, 255, 0.92);
+  .light .flipFrontBar {
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.4) 60%,
+      transparent 100%
+    );
+  }
 }
 
 .overlayProjectTitle {
@@ -116,33 +150,108 @@
   margin: 0;
 }
 
-.portfolioCard :global(.project-card-description) {
+.flipBack {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 18px;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transform: rotateY(180deg) translateZ(0);
+  background: linear-gradient(
+    145deg,
+    rgba(22, 14, 42, 0.98) 0%,
+    rgba(36, 22, 58, 0.99) 100%
+  );
+  border: 1px solid rgba(152, 65, 255, 0.2);
+}
+
+.flipBack:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
+  z-index: 4;
+}
+
+
+.flipBackSummary {
   margin: 0;
   font-size: 0.875rem;
-  line-height: 1.45;
-  color: var(--text-secondary);
-  max-width: 100%;
+  line-height: 1.5;
+  color: white;
+  flex: 1;
+  overflow: auto;
 }
 
-.descriptionBelowImage {
-  display: none;
-  margin-top: 10px;
-  padding: 0 4px;
+
+.flipBackTechnologies{
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+/* Móvil y dispositivos sin hover (touch): sin flip; resumen debajo de la imagen */
+@media (max-width: 768px), (hover: none) {
+  .flipScene {
+    perspective: none;
+  }
+
+  .flipCardInner {
+    transform: none !important;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flipFront {
+    transform: none;
+  }
+
+  .flipBack {
+    position: relative;
+    inset: auto;
+    transform: none;
+    margin-top: 10px;
+    min-height: auto;
+    flex: none;
+  }
+
+  /* Título solo en el footer; evita duplicar con la barra */
+  .flipFrontBar {
+    display: none !important;
+  }
 }
 
-@media (max-width: 768px) {
-  .portfolioCard :global(.project-card-overlay) {
-    display: none;
+@media (prefers-reduced-motion: reduce) {
+  .flipScene {
+    perspective: none;
   }
 
-  .portfolioCard:hover :global(.project-card-overlay) {
-    opacity: 0;
-    pointer-events: none;
+  .flipCardInner {
+    transition: none;
+    transform: none !important;
   }
 
-  .descriptionBelowImage {
-    display: block;
+  .flipBack {
+    position: relative;
+    inset: auto;
+    transform: none;
+    margin-top: 10px;
   }
+}
+
+.portfolioCardImageWrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .portfolioGrid {

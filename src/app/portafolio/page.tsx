@@ -32,15 +32,12 @@ export default function PortfolioPage() {
       }
     });
   }, []);
- // This function will scroll the window to the top 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // for smoothly scrolling
+      behavior: 'smooth'
     });
   };
-
-
 
   return (
     <div>
@@ -68,40 +65,47 @@ export default function PortfolioPage() {
   variants={list}
   className={styles.portfolioGrid}
 >
-  {projectsMeta.map(({ id, images, projectUrl, repo }) => {
-    const title = t.projects[id as keyof typeof t.projects]?.title ?? id;
-    const firstParagraph =
-      t.projects[id as keyof typeof t.projects]?.description?.[0] ?? "";
-    const previewText = truncateProjectPreview(firstParagraph, PREVIEW_MAX_LEN);
+  {projectsMeta.map(({ id, images, projectUrl, repo , technologies}) => {
+    const projectCopy = t.projects[id as keyof typeof t.projects];
+    const title = projectCopy?.title ?? String(id);
+    const firstParagraph = projectCopy?.description?.[0] ?? "";
+    const summary =
+      projectCopy && "summary" in projectCopy && projectCopy.summary
+        ? projectCopy.summary
+        : truncateProjectPreview(firstParagraph, PREVIEW_MAX_LEN);
+
     return (
     <motion.div
       variants={itemSlideUp}
       key={id}
       className={styles.portfolioCard}
     >
-      <Link
-        href={`/portafolio/project/${id}`}
-        className={styles.portfolioCardMedia}
-      >
-        <span className={styles.portfolioCardImageWrap}>
-          <Image
-            src={images[0]}
-            width={500}
-            height={300}
-            className={styles.portfolioImg}
-            alt={title}
-          />
-          <div className="project-card-overlay">
-            <span className={styles.overlayProjectTitle}>{title}</span>
-            <p className="project-card-description">{previewText}</p>
-          </div>
-        </span>
-      </Link>
-      <p
-        className={`project-card-description ${styles.descriptionBelowImage}`}
-      >
-        {previewText}
-      </p>
+      <div className={styles.flipScene}>
+        <div className={styles.flipCardInner}>
+          <Link
+            href={`/portafolio/project/${id}`}
+            className={`${styles.flipFace} ${styles.flipFront}`}
+          >
+            <span className={styles.portfolioCardImageWrap}>
+              <Image
+                src={images[0]}
+                width={500}
+                height={300}
+                className={styles.portfolioImg}
+                alt={title}
+              />
+            </span>
+          </Link>
+          <Link
+            href={`/portafolio/project/${id}`}
+            className={`${styles.flipFace} ${styles.flipBack}`}
+            aria-label={`${title} — ${t.projectDetail.viewProject}`}
+          >
+            <p className={styles.flipBackSummary}>{summary}</p>
+            <p className={styles.flipBackTechnologies}>{technologies}</p>
+          </Link>
+        </div>
+      </div>
 
       <div className={styles.portfolioCardFooter}>
         <div className={styles.portfolioHeader}>

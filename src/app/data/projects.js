@@ -165,13 +165,29 @@ export const projectsMeta = [
       "/img/noticiasWebsite/page3.png",
       "/img/noticiasWebsite/page4.png",
       "/img/noticiasWebsite/page5.png",
+      "/img/noticiasWebsite/page6.png",
     ],
     projectUrl: "https://www.noticiasydestinos.com/index.php/es/",
     repo: "https://www.noticiasydestinos.com/index.php/es/",
     technologies: "Joomla, Bootstrap, CSS, HTML",
   },
-  {
+
+{
     id: "12",
+    images: [
+      "/img/catalogo/page1.png",
+      "/img/catalogo/page2.png",
+      "/img/catalogo/page3.png",
+      "/img/catalogo/page4.png",
+      "/img/catalogo/page5.png",
+     
+    ],
+    projectUrl: "https://catalogo-drab.vercel.app/",
+    repo: "https://catalogo-drab.vercel.app/",
+    technologies: "Next.js 15 (App Router), TypeScript, Tailwind CSS, Prisma, PostgreSQL, Cloudflare R2",
+  },
+  {
+    id: "13",
     images: [
       "/img/newPortfolio/page1.png",
       "/img/newPortfolio/page2.png",
@@ -187,7 +203,7 @@ export const projectsMeta = [
     technologies: "Next.js, TypeScript, Bootstrap",
   },
   {
-    id: "13",
+    id: "14",
     images: [
       "/img/porfolioV1/page1.png",
       "/img/porfolioV1/page2.png",

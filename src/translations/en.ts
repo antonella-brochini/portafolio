@@ -224,6 +224,17 @@ export const en = {
       ],
     },
     "12": {
+      title: "Product Catalog",
+      summary:
+       "Multi-tenant SaaS that lets small businesses create two public catalogs with channel-specific pricing for Instagram and WhatsApp. Customers browse products, build a cart, and send a pre-filled order to the owner's WhatsApp in a single tap.",
+      data: [],
+      description: [
+        "A SaaS platform built for small businesses selling through social media that needed an online storefront with different prices per channel.",
+        "Each store manages products, collections and images through a mobile-first admin panel and gets two public catalogs: one for Instagram (bio link) and another for WhatsApp (with cart).",
+        "Catalog visitors don't sign up — they browse, add items to the cart, and send their order directly to the owner's WhatsApp Business with a pre-filled message, frictionless. The UI mirrors the native WhatsApp Business catalog experience so it feels familiar to end customers.",
+      ],
+    },
+    "13": {
       title: "New Portfolio",
       summary:
         "This portfolio: Next.js, Framer Motion animations, custom SVG work, and a modular structure focused on UX and maintainability.",
@@ -237,7 +248,7 @@ export const en = {
         "Deployed using modern frontend best practices.",
       ],
     },
-    "13": {
+    "14": {
       title: "Portfolio v1",
       summary:
         "First static Next.js portfolio on GitHub Pages—a clean baseline that later evolved into a more scalable architecture.",

@@ -226,7 +226,20 @@ export const es: Translation = {
         "Despliegue y configuración para producción.",
       ],
     },
+
     "12": {
+      title: "Catálogo de productos",
+      summary:
+      "SaaS multi-tenant que permite a tiendas pequeñas crear dos catálogos públicos con precios diferenciados para Instagram y WhatsApp. Los clientes navegan productos, arman un carrito y envían el pedido pre-armado al WhatsApp del dueño en un solo tap.",
+      data: [],
+      description: [
+        "Plataforma SaaS para tiendas que vendían por redes sociales y necesitaban una vidriera online con precios distintos en cada canal.",
+         "Cada tienda gestiona productos, colecciones e imágenes desde un panel mobile-first, y obtiene dos catálogos públicos: uno para Instagram (link en bio) y otro para WhatsApp (con carrito)",
+         "Los clientes del catálogo no se registran: navegan, agregan productos al carrito y envían el pedido directo al WhatsApp Business del dueño con un mensaje pre-armado, sin fricción.",
+         "El diseño replica la experiencia nativa del catálogo de WhatsApp Business para que sea familiar a los clientes finales."
+      ],
+    },
+    "13": {
       title: "Nuevo portafolio",
       summary:
         "Este portafolio en Next.js con Framer Motion, gráficos SVG y estructura modular pensada para UX y mantenibilidad.",
@@ -240,7 +253,7 @@ export const es: Translation = {
         "Despliegue siguiendo buenas prácticas de frontend.",
       ],
     },
-    "13": {
+    "14": {
       title: "Portafolio v1",
       summary:
         "Primer portafolio estático en Next.js para GitHub Pages: base clara que luego evolucionó hacia una arquitectura más escalable.",
@@ -253,6 +266,7 @@ export const es: Translation = {
       ],
     },
   },
+
   about: {
     titleAbout: "Sobre",
     titleMe: "mí",

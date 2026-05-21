@@ -52,7 +52,7 @@ export const en = {
   "Reports with executive summary synthesizing business status, key findings and suggested actions.",
   "Analysis adapted to low-volume data scenarios, including interpretation of early business stages.",],
       description: [
-        "Demo access: https://orderflow.com.uy  |  User: donvito@gmail.com  |  Password: 12345678",
+        "Demo access: https://www.orderflow.uy  |  User: donvito@gmail.com  |  Password: 12345678",
 
         "OrderFlow is a web platform designed to centralize and optimize restaurant order management, including in-house delivery operations.",
 

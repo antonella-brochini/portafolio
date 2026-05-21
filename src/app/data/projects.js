@@ -23,10 +23,9 @@ export const projectsMeta = [
       "/img/delivery/page18.png",
       "/img/delivery/page19.png",
     
-   
     ],
-    projectUrl: "https://delivery-app-to-sell.vercel.app/",
-    repo: "https://delivery-app-to-sell.vercel.app/",
+    projectUrl: "https://www.orderflow.uy/",
+    repo: "https://www.orderflow.uy/",
     technologies: "Next.js (API Routes), TypeScript, Prisma ORM, PostgreSQL",
   },
   {
@@ -175,6 +174,7 @@ export const projectsMeta = [
 {
     id: "12",
     images: [
+      "/img/catalogo/page0.png",
       "/img/catalogo/page1.png",
       "/img/catalogo/page2.png",
       "/img/catalogo/page3.png",

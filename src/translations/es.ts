@@ -54,7 +54,7 @@ export const es: Translation = {
   "Análisis adaptado a escenarios de bajo volumen de datos, incluyendo interpretación de etapas iniciales del negocio.",
 ],
       description: [
-        "Acceso de prueba: https://orderflow.com.uy  |  Usuario: donvito@gmail.com  |  Contraseña: 12345678",
+        "Acceso de prueba: https://www.orderflow.uy  |  Usuario: donvito@gmail.com  |  Contraseña: 12345678",
 
         "OrderFlow es una plataforma web diseñada para centralizar y optimizar la gestión de pedidos de restaurantes, incluyendo operaciones de reparto propio.",
 

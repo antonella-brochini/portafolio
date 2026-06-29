@@ -5,22 +5,24 @@ const path = "/portafolio";
 const url = `${SITE_URL}${path}`;
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: `Selected projects and case studies by ${SITE_NAME} — e-commerce, food ordering apps, DevOps, and full-stack web development.`,
+  title: "Proyectos — Antonella Brochini",
+  description:
+    "Proyectos y casos de estudio de Antonella Brochini — OrderFlow (SaaS para restaurantes), e-commerce, apps web y desarrollo full-stack con Next.js y React.",
   keywords: [
     SITE_NAME,
-    "projects",
-    "portfolio work",
-    "e-commerce",
-    "Next.js projects",
-    "case studies",
+    "proyectos desarrolladora Uruguay",
+    "OrderFlow SaaS restaurantes",
+    "e-commerce Uruguay",
+    "Next.js proyectos",
+    "casos de estudio desarrollo web",
   ],
   alternates: {
     canonical: url,
   },
   openGraph: {
     title: `Projects — ${SITE_NAME}`,
-    description: `Explore web applications and systems built by ${SITE_NAME}.`,
+    description:
+      "Proyectos de Antonella Brochini — OrderFlow, e-commerce y apps web full-stack.",
     url,
     images: [
       {

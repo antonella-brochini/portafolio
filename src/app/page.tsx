@@ -3,16 +3,18 @@ import HomeClient from "./HomeClient";
 import { SITE_NAME, SITE_URL } from "./seo-constants";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Antonella Brochini — Desarrolladora Full-Stack Uruguay",
   description:
-    "Portfolio of Antonella Brochini — full-stack developer building modern web apps with Next.js, React, and cloud technologies.",
+    "Portfolio de Antonella Brochini, desarrolladora full-stack de Uruguay. Creadora de OrderFlow, SaaS para restaurantes. Especializada en Next.js, React y TypeScript.",
   keywords: [
     SITE_NAME,
-    "developer portfolio",
-    "full-stack developer",
-    "Next.js",
-    "React",
-    "web development",
+    "desarrolladora full-stack Uruguay",
+    "full-stack developer Uruguay",
+    "Next.js developer Uruguay",
+    "React developer",
+    "OrderFlow",
+    "SaaS Uruguay",
+    "portfolio desarrolladora",
   ],
   alternates: {
     canonical: SITE_URL,
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${SITE_NAME} — Portfolio`,
     description:
-      "Designing digital experiences beyond limits. Building today, leading tomorrow.",
+      "Desarrolladora full-stack de Uruguay. Creadora de OrderFlow, SaaS para restaurantes. Especializada en Next.js, React y TypeScript.",
     url: SITE_URL,
     images: [
       {

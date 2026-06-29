@@ -8,7 +8,7 @@ import { LanguageProvider } from "../context/LanguageContext";
 import { SITE_NAME, SITE_URL } from "./seo-constants";
 
 const defaultDescription =
-  "Official portfolio of Antonella Brochini — software developer specializing in modern web applications, e-commerce, and cloud solutions.";
+  "Portfolio de Antonella Brochini — desarrolladora full-stack de Uruguay especializada en Next.js, React y TypeScript. Creadora de OrderFlow, plataforma SaaS para restaurantes.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -23,13 +23,14 @@ export const metadata: Metadata = {
   keywords: [
     SITE_NAME,
     "portfolio",
-    "developer",
-    "full-stack",
+    "desarrolladora full-stack Uruguay",
+    "full-stack developer Uruguay",
     "Next.js",
     "React",
     "TypeScript",
+    "SaaS Uruguay",
+    "OrderFlow",
     "web development",
-    "Uruguay",
   ],
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
@@ -41,7 +42,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "es_UY",
+    alternateLocale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
     title: `${SITE_NAME} — Portfolio`,
@@ -70,7 +72,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "/",
+    canonical: SITE_URL,
   },
 };
 
@@ -86,10 +88,43 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={oxanium.className} suppressHydrationWarning>
+    <html lang="es" className={oxanium.className} suppressHydrationWarning>
       <body>
         <ThemeProvider>
           <LanguageProvider>
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Person",
+                  name: "Antonella Brochini",
+                  url: "https://www.antonellabrochini.com",
+                  jobTitle: "Full-Stack Developer",
+                  worksFor: {
+                    "@type": "Organization",
+                    name: "Freelance",
+                  },
+                  address: {
+                    "@type": "PostalAddress",
+                    addressCountry: "UY",
+                    addressRegion: "Montevideo",
+                  },
+                  sameAs: [
+                    "https://github.com/antonella-brochini",
+                    "https://www.linkedin.com/in/antonella-brochini/",
+                  ],
+                  knowsAbout: [
+                    "Next.js",
+                    "React",
+                    "TypeScript",
+                    "Prisma",
+                    "PostgreSQL",
+                    "SaaS",
+                  ],
+                }),
+              }}
+            />
             <Header />
             {children}
           </LanguageProvider>

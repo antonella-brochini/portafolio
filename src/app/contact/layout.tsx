@@ -5,21 +5,24 @@ const path = "/contact";
 const url = `${SITE_URL}${path}`;
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: `Contact ${SITE_NAME} — send a message for collaborations, opportunities, or questions about my work.`,
+  title: "Contacto — Antonella Brochini",
+  description:
+    "Contactá a Antonella Brochini — desarrolladora full-stack de Uruguay disponible para proyectos freelance, colaboraciones y oportunidades laborales.",
   keywords: [
     SITE_NAME,
-    "contact",
-    "hire developer",
-    "collaboration",
-    "get in touch",
+    "contratar desarrolladora Uruguay",
+    "freelance full-stack Uruguay",
+    "contacto desarrolladora web",
+    "colaboración proyectos web",
+    "hire developer Uruguay",
   ],
   alternates: {
     canonical: url,
   },
   openGraph: {
     title: `Contact — ${SITE_NAME}`,
-    description: `Reach out to ${SITE_NAME} via the contact form.`,
+    description:
+      "Contactá a Antonella Brochini para proyectos freelance, colaboraciones u oportunidades laborales.",
     url,
     images: [
       {

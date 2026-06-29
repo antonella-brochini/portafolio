@@ -5,22 +5,25 @@ const path = "/aboutt";
 const url = `${SITE_URL}${path}`;
 
 export const metadata: Metadata = {
-  title: "About",
-  description: `${SITE_NAME} — background, tech stack, mindset, and how I work as a software developer.`,
+  title: "Sobre mí — Antonella Brochini",
+  description:
+    "Antonella Brochini — desarrolladora full-stack de Uruguay. Técnica en Análisis de Sistemas, creadora de OrderFlow. Stack: Next.js, React, TypeScript, Prisma, PostgreSQL.",
   keywords: [
     SITE_NAME,
-    "about",
-    "developer bio",
-    "tech stack",
-    "skills",
-    "experience",
+    "desarrolladora Uruguay",
+    "técnica análisis de sistemas Uruguay",
+    "full-stack developer",
+    "Next.js TypeScript Prisma",
+    "OrderFlow creadora",
+    "experiencia desarrolladora web",
   ],
   alternates: {
     canonical: url,
   },
   openGraph: {
     title: `About — ${SITE_NAME}`,
-    description: `Learn more about ${SITE_NAME}: skills, experience, and approach to building software.`,
+    description:
+      "Desarrolladora full-stack de Uruguay. Creadora de OrderFlow. Stack: Next.js, React, TypeScript, Prisma y PostgreSQL.",
     url,
     images: [
       {

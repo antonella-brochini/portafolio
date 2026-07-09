@@ -265,6 +265,21 @@ export const es: Translation = {
         "Base de mi camino en frontend; luego lo reconstruí con mejor arquitectura y escalabilidad.",
       ],
     },
+    "15": {
+      title: "Análisis de ventas de Superstore",
+      summary:
+      "Proyecto integral de análisis de datos desarrollado sobre el dataset Superstore Sales, cubriendo todo el ciclo analítico: limpieza de datos, modelado, análisis exploratorio, consultas SQL, dashboards y analítica avanzada.",
+      data: [],
+      description: [
+        "Análisis exploratorio y evaluación de la calidad de los datos.",
+        "Pipeline de limpieza y transformación de datos con Python.",
+        "Diseño de una base analítica en PostgreSQL con tabla plana y modelo dimensional (Star Schema).",
+        "Desarrollo de consultas SQL para responder preguntas de negocio e identificar KPIs.",
+        "Creación de dashboards interactivos con Plotly, Streamlit y Power BI.",
+        "Aplicación de analítica avanzada mediante segmentación de clientes (RFM y clustering), pronóstico de ventas y detección de anomalías.",
+        "Identificación de oportunidades de mejora en la estrategia comercial, incluyendo el impacto de los descuentos, categorías con baja rentabilidad y patrones estacionales de ventas.",
+      ],
+    },
   },
 
   about: {

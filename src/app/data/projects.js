@@ -217,6 +217,20 @@ export const projectsMeta = [
     repo: "https://github.com/antonella-brochini/deploy-portafolio",
     technologies: "Next.js, Bootstrap, HTML",
   },
+  {
+    id: "15",
+    images: [
+      "/img/dataAnalysis/1.png",
+      "/img/dataAnalysis/2.png",
+      "/img/dataAnalysis/3.png",
+      "/img/dataAnalysis/4.png",
+      "/img/dataAnalysis/5.png",
+ 
+    ],
+    projectUrl: "https://proyectofinal-data-frhx5iwvajjdrhmcarzgwk.streamlit.app/",
+    repo: "https://github.com/antonella-brochini/proyectoFinal-data",
+    technologies: "Python (Pandas, NumPy, Plotly, Streamlit), SQL, Power BI",
+  },
 ];
 
 export function getProjectMeta(id) {

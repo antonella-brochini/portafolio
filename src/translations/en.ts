@@ -260,6 +260,22 @@ export const en = {
         "This project represents the foundation of my frontend development journey and was later rebuilt with improved scalability and architectural thinking.",
       ],
     },
+    "15": {
+      title: "Superstore Sales Analytics",
+      summary:
+        "Comprehensive data analysis project developed on the Superstore Sales dataset, covering the entire analytical pipeline: data cleaning, modeling, exploratory analysis, SQL queries, dashboards, and advanced analytics.",
+      data: [],
+     description: [
+      "Exploratory analysis and evaluation of data quality.",
+      "Data cleaning and transformation pipeline with Python.",
+      "Design of an analytical base in PostgreSQL with flat table and dimensional model (Star Schema).",
+      "Development of SQL queries to answer business questions and identify KPIs.",
+      "Creation of interactive dashboards with Plotly, Streamlit and Power BI.",
+      "Application of advanced analytics through customer segmentation (RFM and clustering), sales forecasting and anomaly detection.",
+      "Identification of improvement opportunities in the commercial strategy, including the impact of discounts, low-profit categories and seasonal sales patterns.",
+     ],
+    },
+
   },
   about: {
     titleAbout: "About",

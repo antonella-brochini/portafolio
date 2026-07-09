@@ -225,6 +225,10 @@ export const projectsMeta = [
       "/img/dataAnalysis/3.png",
       "/img/dataAnalysis/4.png",
       "/img/dataAnalysis/5.png",
+      "/img/dataAnalysis/page1.png",
+      "/img/dataAnalysis/page2.png",
+      "/img/dataAnalysis/page3.png",
+      "/img/dataAnalysis/page4.png",
  
     ],
     projectUrl: "https://proyectofinal-data-frhx5iwvajjdrhmcarzgwk.streamlit.app/",

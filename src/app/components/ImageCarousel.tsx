@@ -35,6 +35,7 @@ export default function ImageCarousel({
   const [mounted, setMounted] = useState(false);
   const thumbsRef = useRef<HTMLDivElement>(null);
   const closeBtnRef = useRef<HTMLButtonElement>(null);
+  const modalPanelRef = useRef<HTMLDivElement>(null);
   const reduceMotion = useReducedMotion();
 
   const n = images?.length ?? 0;
@@ -92,6 +93,37 @@ export default function ImageCarousel({
   }, [lightbox]);
 
   useEffect(() => {
+    if (!lightbox) return;
+    const panel = modalPanelRef.current;
+    if (!panel) return;
+
+    const getFocusable = () =>
+      Array.from(
+        panel.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+        ),
+      );
+
+    const onTab = (e: KeyboardEvent) => {
+      if (e.key !== "Tab") return;
+      const items = getFocusable();
+      if (items.length === 0) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    panel.addEventListener("keydown", onTab);
+    return () => panel.removeEventListener("keydown", onTab);
+  }, [lightbox]);
+
+  useEffect(() => {
     const root = thumbsRef.current;
     if (!root) return;
     const thumb = root.querySelector(`[data-thumb-index="${index}"]`);
@@ -123,6 +155,7 @@ export default function ImageCarousel({
           onClick={() => setLightbox(false)}
         />
         <div
+          ref={modalPanelRef}
           className={styles.modalPanel}
           onClick={(e) => e.stopPropagation()}
           onKeyDown={(e) => e.stopPropagation()}
@@ -269,8 +302,9 @@ export default function ImageCarousel({
               alt=""
               width={88}
               height={62}
+              sizes="88px"
               className={styles.thumbImg}
-              loading={i === index ? "eager" : "lazy"}
+              loading={i < 4 ? "eager" : "lazy"}
             />
           </button>
         ))}

@@ -7,6 +7,11 @@ export const en = {
   },
   header: {
     menuToggle: "Toggle menu",
+    backToTop: "Back to top",
+    skipToContent: "Skip to main content",
+    mainNav: "Main navigation",
+    openProject: "Open project site",
+    openRepo: "Open GitHub repository",
   },
   theme: {
     toggleAria: "Toggle theme",
@@ -23,10 +28,13 @@ export const en = {
     cta: "View My Work",
   },
   portfolio: {
-    selectedProjects: "Selected Projects",
+    pageTitle: "Projects",
+    development: "Full-Stack Projects",
+    data: "Data Analytics",
   },
   projectDetail: {
     description: "Description",
+    analytics: "Analytics",
     notFound: "Project not found",
     github: "GitHub",
     viewProject: "View Project",
@@ -77,34 +85,7 @@ export const en = {
         "Designed with scalability in mind, enabling future integration with Business Intelligence tools and advanced analytics pipelines."
       ]
     },
-    "2": {
-      title: "Retail Data Analysis",
-      summary:
-      "End-to-end sales data analysis project using Python and Power BI, focused on data cleaning, validation, and business insight generation through interactive visualizations.",
-      data: [
-        "Business KPIs:\n  • Total Revenue\n  • Total Orders\n  • Total Customers\n  • Average Order Value\n  • Quick evaluation of overall performance",
-        "Sales trend analysis:\n  • Clear growth from 2010 to 2011\n  • Stable behavior with seasonal peaks\n  • Monthly visualization to identify time patterns",
-      
-        "Geographic distribution:\n  • Strong revenue concentration in the United Kingdom\n  • Lower contribution from Netherlands, EIRE, Germany and France\n  • Market expansion opportunities",
-      
-        "Market risk detection:\n  • High dependency on a single country (UK)\n  • Exposure to demand changes in that market",
-      
-        "Product performance:\n  • Identification of top-selling products\n  • High-demand items such as PAPER CRAFT, LITTLE BIRDIE and MEDIUM CERAMIC TOP STORAGE JAR",
-      
-        "Product concentration patterns:\n  • A small group of products generates a large share of total sales\n  • Opportunity to optimize inventory and marketing strategies",
-      
-        "Interactive dashboard analysis:\n  • Integration of KPIs and visualizations in a single view\n  • Real-time data exploration\n  • Improved understanding of business metrics",
-      
-        "Business insights generation:\n  • Data-driven understanding of sales behavior\n  • Support for decision-making\n  • Identification of growth opportunities"
-      ],
-      description: [
-        "End-to-end sales data analysis project using Python (Pandas) and Power BI.",
-
-        "The project includes data cleaning, type validation, and correction of data modeling issues to ensure accurate calculations. Key insights were generated through interactive dashboards, including sales trends over time, revenue by country, and top-selling products.",
-        
-        "This analysis highlights business patterns such as strong geographic concentration and product demand distribution, providing valuable insights for decision-making.",
-      ],
-    },
+   
     "3": {
       title: "Wine E-commerce",
       summary:
@@ -261,6 +242,20 @@ export const en = {
       ],
     },
     "15": {
+      title: "Commercial Intelligence Platform with AI",
+      
+      summary:
+        "Commercial intelligence platform with AI that helps detect growth opportunities, optimize inventory, and understand customer behavior through automated analysis and AI.",
+      data: [],
+      description: [
+        "Web-based commercial intelligence platform powered by AI, designed to transform sales, customer, and market data into strategic information for decision-making.",
+        "Centralizes data from multiple sources and automates analysis through interactive dashboards, key metrics, and intelligent reports to track business performance.",
+        "Includes features like sales and profitability analysis, customer segmentation, anomaly detection, demand forecasting, automated reporting, and natural language queries on data.",
+        "Its architecture allows integrating external sources, such as weather information, special dates, and competitor data, enriching the analysis and providing a more complete view of the business.",
+        "The goal of the platform is to help businesses discover growth opportunities, optimize commercial planning, and support strategic decisions through data analysis and artificial intelligence."
+      ],
+    },
+    "16": {
       title: "Superstore Sales Analytics",
       summary:
         "Comprehensive data analysis project developed on the Superstore Sales dataset, covering the entire analytical pipeline: data cleaning, modeling, exploratory analysis, SQL queries, dashboards, and advanced analytics.",
@@ -275,7 +270,35 @@ export const en = {
       "Identification of improvement opportunities in the commercial strategy, including the impact of discounts, low-profit categories and seasonal sales patterns.",
      ],
     },
+    "17": {
+      title: "Retail Data Analysis",
+      summary:
+      "End-to-end sales data analysis project using Python and Power BI, focused on data cleaning, validation, and business insight generation through interactive visualizations.",
+      data: [
+        "Business KPIs:\n  • Total Revenue\n  • Total Orders\n  • Total Customers\n  • Average Order Value\n  • Quick evaluation of overall performance",
+        "Sales trend analysis:\n  • Clear growth from 2010 to 2011\n  • Stable behavior with seasonal peaks\n  • Monthly visualization to identify time patterns",
+      
+        "Geographic distribution:\n  • Strong revenue concentration in the United Kingdom\n  • Lower contribution from Netherlands, EIRE, Germany and France\n  • Market expansion opportunities",
+      
+        "Market risk detection:\n  • High dependency on a single country (UK)\n  • Exposure to demand changes in that market",
+      
+        "Product performance:\n  • Identification of top-selling products\n  • High-demand items such as PAPER CRAFT, LITTLE BIRDIE and MEDIUM CERAMIC TOP STORAGE JAR",
+      
+        "Product concentration patterns:\n  • A small group of products generates a large share of total sales\n  • Opportunity to optimize inventory and marketing strategies",
+      
+        "Interactive dashboard analysis:\n  • Integration of KPIs and visualizations in a single view\n  • Real-time data exploration\n  • Improved understanding of business metrics",
+      
+        "Business insights generation:\n  • Data-driven understanding of sales behavior\n  • Support for decision-making\n  • Identification of growth opportunities"
+      ],
+      description: [
+        "End-to-end sales data analysis project using Python (Pandas) and Power BI.",
 
+        "The project includes data cleaning, type validation, and correction of data modeling issues to ensure accurate calculations. Key insights were generated through interactive dashboards, including sales trends over time, revenue by country, and top-selling products.",
+        
+        "This analysis highlights business patterns such as strong geographic concentration and product demand distribution, providing valuable insights for decision-making.",
+      ],
+    },
+ 
   },
   about: {
     titleAbout: "About",
@@ -351,7 +374,14 @@ export const en = {
       subject: "Subject",
       message: "Your message",
     },
+    labels: {
+      name: "Name",
+      email: "Email",
+      subject: "Subject",
+      message: "Message",
+    },
     submit: "Send Message",
+    sending: "Sending…",
     success: "Message sent successfully!",
     sendError: "Failed to send message",
     errors: {

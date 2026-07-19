@@ -1,0 +1,227 @@
+/* ====== CONTACT SECTION ====== */
+.contactSection {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 3;
+}
+
+.formContact{
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.formGroup {
+  margin-bottom: 8px;
+ 
+}
+
+.fieldLabel {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.infoHeading {
+  font-size: 1.1rem;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.infoHeading a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.infoHeading a:hover,
+.infoHeading a:focus-visible {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+.formControl {
+  background: transparent;
+  width: 100%;
+
+  border: 1px solid rgba(152, 65, 255, 0.25) !important;
+  border-radius: 8px;
+  color: var(--text-primary) !important;
+  padding: 8px 12px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.formControl::placeholder {
+   color: var(--text-secondary);
+   opacity: 0.85;
+}
+
+.formControl:focus {
+  background: rgba(152, 65, 255, 0.1) !important;
+  border-color: rgba(152, 65, 255, 0.5) !important;
+  box-shadow: 0 0 20px rgba(152, 65, 255, 0.2);
+  color: var(--white) !important;
+}
+
+.formControl:hover {
+  background: rgba(152, 65, 255, 0.08) !important;
+  border-color: rgba(152, 65, 255, 0.4) !important;
+}
+
+textarea.formControl {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* ====== BUTTON STYLES ====== */
+.buttonContactForm {
+  background: linear-gradient(90deg, #ff00cc, #9841ff, #00d4ff);
+  background-size: 200% 100%;
+  color: #fff;
+  border: none;
+  padding: 8px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.buttonContactForm:hover {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(152, 65, 255, 0.3);
+}
+
+.buttonContactForm:active {
+  transform: translateY(0);
+}
+
+/* ====== ERROR AND SUCCESS MESSAGES ====== */
+.textDanger {
+  color: #ff4757 !important;
+  font-size: 13px;
+  margin-top: 6px;
+  display: block;
+}
+
+.textSuccess {
+  color: #2ed573 !important;
+  font-size: 14px;
+  padding: 12px 16px;
+  background: rgba(46, 213, 115, 0.1);
+  border: 1px solid rgba(46, 213, 115, 0.3);
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ====== CONTACT INFO CARDS ====== */
+.contactInfo {
+  padding: 16px 0;
+  margin-bottom: 12px;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+}
+
+.contactInfoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--white);
+  flex-shrink: 0;
+  margin-right: 12px;
+  min-width: 24px;
+}
+
+.contactInfo h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 0 4px 0;
+}
+
+.contactInfo p {
+  font-size: 13px;
+  color: var(--white);
+  margin: 0;
+  line-height: 1.6;
+}
+
+ .mediaBody {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====== SEQUENTIAL REVEAL ====== */
+.contactReveal {
+  opacity: 0;
+  transform: translateX(-18px);
+  filter: blur(4px);
+  animation: contactSlideReveal 1s ease forwards;
+  animation-delay: var(--reveal-delay, 0s);
+}
+
+@keyframes contactSlideReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-18px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contactReveal {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .formContact {
+    padding: 20px;
+  }
+
+  .contactInfo {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .formContact {
+    padding: 15px;
+  }
+
+  .formControl {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .buttonContactForm {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  .contactInfo {
+    padding: 15px;
+  }
+
+  textarea.formControl {
+    min-height: 100px;
+  }
+}

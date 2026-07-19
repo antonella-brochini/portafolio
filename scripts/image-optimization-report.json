@@ -1,0 +1,2643 @@
+{
+  "generatedAt": "2026-07-19T21:00:34.168Z",
+  "maxWidth": 1600,
+  "quality": 80,
+  "beforeTotalBytes": 51487085,
+  "afterTotalBytes": 5916884,
+  "results": [
+    {
+      "source": "public/img/analisis-retail/grafico0.png",
+      "out": "public/img/analisis-retail/grafico0.webp",
+      "before": 76086,
+      "after": 42874
+    },
+    {
+      "source": "public/img/analisis-retail/grafico1.png",
+      "out": "public/img/analisis-retail/grafico1.webp",
+      "before": 39017,
+      "after": 21800
+    },
+    {
+      "source": "public/img/analisis-retail/grafico2.png",
+      "out": "public/img/analisis-retail/grafico2.webp",
+      "before": 38932,
+      "after": 14266
+    },
+    {
+      "source": "public/img/analisis-retail/grafico3.png",
+      "out": "public/img/analisis-retail/grafico3.webp",
+      "before": 38041,
+      "after": 17770
+    },
+    {
+      "source": "public/img/analisis-retail/grafico4.png",
+      "out": "public/img/analisis-retail/grafico4.webp",
+      "before": 16948,
+      "after": 8324
+    },
+    {
+      "source": "public/img/appReservasGX/page1.png",
+      "out": "public/img/appReservasGX/page1.webp",
+      "before": 454825,
+      "after": 48894
+    },
+    {
+      "source": "public/img/appReservasGX/page2.png",
+      "out": "public/img/appReservasGX/page2.webp",
+      "before": 113160,
+      "after": 35530
+    },
+    {
+      "source": "public/img/appReservasGX/page3.png",
+      "out": "public/img/appReservasGX/page3.webp",
+      "before": 437750,
+      "after": 68632
+    },
+    {
+      "source": "public/img/catalogo/page0.png",
+      "out": "public/img/catalogo/page0.webp",
+      "before": 409099,
+      "after": 15502
+    },
+    {
+      "source": "public/img/catalogo/page1.png",
+      "out": "public/img/catalogo/page1.webp",
+      "before": 347988,
+      "after": 34006
+    },
+    {
+      "source": "public/img/catalogo/page2.png",
+      "out": "public/img/catalogo/page2.webp",
+      "before": 87585,
+      "after": 23846
+    },
+    {
+      "source": "public/img/catalogo/page3.png",
+      "out": "public/img/catalogo/page3.webp",
+      "before": 60537,
+      "after": 10168
+    },
+    {
+      "source": "public/img/catalogo/page4.png",
+      "out": "public/img/catalogo/page4.webp",
+      "before": 81322,
+      "after": 22258
+    },
+    {
+      "source": "public/img/catalogo/page5.png",
+      "out": "public/img/catalogo/page5.webp",
+      "before": 25732,
+      "after": 10640
+    },
+    {
+      "source": "public/img/catalogo/page6.png",
+      "out": "public/img/catalogo/page6.webp",
+      "before": 71535,
+      "after": 25188
+    },
+    {
+      "source": "public/img/dataAnalysis/1.png",
+      "out": "public/img/dataAnalysis/1.webp",
+      "before": 684380,
+      "after": 133790
+    },
+    {
+      "source": "public/img/dataAnalysis/2.png",
+      "out": "public/img/dataAnalysis/2.webp",
+      "before": 699438,
+      "after": 153012
+    },
+    {
+      "source": "public/img/dataAnalysis/3.png",
+      "out": "public/img/dataAnalysis/3.webp",
+      "before": 600223,
+      "after": 136146
+    },
+    {
+      "source": "public/img/dataAnalysis/4.png",
+      "out": "public/img/dataAnalysis/4.webp",
+      "before": 443758,
+      "after": 106264
+    },
+    {
+      "source": "public/img/dataAnalysis/5.png",
+      "out": "public/img/dataAnalysis/5.webp",
+      "before": 515159,
+      "after": 125334
+    },
+    {
+      "source": "public/img/dataAnalysis/page1.png",
+      "out": "public/img/dataAnalysis/page1.webp",
+      "before": 64197,
+      "after": 44136
+    },
+    {
+      "source": "public/img/dataAnalysis/page2.png",
+      "out": "public/img/dataAnalysis/page2.webp",
+      "before": 78209,
+      "after": 45882
+    },
+    {
+      "source": "public/img/dataAnalysis/page3.png",
+      "out": "public/img/dataAnalysis/page3.webp",
+      "before": 72275,
+      "after": 44256
+    },
+    {
+      "source": "public/img/dataAnalysis/page4.png",
+      "out": "public/img/dataAnalysis/page4.webp",
+      "before": 131645,
+      "after": 55090
+    },
+    {
+      "source": "public/img/delivery/page1.png",
+      "out": "public/img/delivery/page1.webp",
+      "before": 164901,
+      "after": 41776
+    },
+    {
+      "source": "public/img/delivery/page10.png",
+      "out": "public/img/delivery/page10.webp",
+      "before": 72280,
+      "after": 29600
+    },
+    {
+      "source": "public/img/delivery/page11.png",
+      "out": "public/img/delivery/page11.webp",
+      "before": 464644,
+      "after": 44274
+    },
+    {
+      "source": "public/img/delivery/page12.png",
+      "out": "public/img/delivery/page12.webp",
+      "before": 96274,
+      "after": 45760
+    },
+    {
+      "source": "public/img/delivery/page13.png",
+      "out": "public/img/delivery/page13.webp",
+      "before": 77962,
+      "after": 31202
+    },
+    {
+      "source": "public/img/delivery/page14.png",
+      "out": "public/img/delivery/page14.webp",
+      "before": 85663,
+      "after": 32896
+    },
+    {
+      "source": "public/img/delivery/page15.png",
+      "out": "public/img/delivery/page15.webp",
+      "before": 386851,
+      "after": 33810
+    },
+    {
+      "source": "public/img/delivery/page16.png",
+      "out": "public/img/delivery/page16.webp",
+      "before": 77584,
+      "after": 14880
+    },
+    {
+      "source": "public/img/delivery/page17.png",
+      "out": "public/img/delivery/page17.webp",
+      "before": 42320,
+      "after": 10930
+    },
+    {
+      "source": "public/img/delivery/page18.png",
+      "out": "public/img/delivery/page18.webp",
+      "before": 155727,
+      "after": 27326
+    },
+    {
+      "source": "public/img/delivery/page19.png",
+      "out": "public/img/delivery/page19.webp",
+      "before": 54487,
+      "after": 14422
+    },
+    {
+      "source": "public/img/delivery/page2.png",
+      "out": "public/img/delivery/page2.webp",
+      "before": 87261,
+      "after": 37554
+    },
+    {
+      "source": "public/img/delivery/page3.png",
+      "out": "public/img/delivery/page3.webp",
+      "before": 88056,
+      "after": 39526
+    },
+    {
+      "source": "public/img/delivery/page4.png",
+      "out": "public/img/delivery/page4.webp",
+      "before": 94601,
+      "after": 44274
+    },
+    {
+      "source": "public/img/delivery/page5.png",
+      "out": "public/img/delivery/page5.webp",
+      "before": 116569,
+      "after": 48638
+    },
+    {
+      "source": "public/img/delivery/page6.png",
+      "out": "public/img/delivery/page6.webp",
+      "before": 71677,
+      "after": 28110
+    },
+    {
+      "source": "public/img/delivery/page7.png",
+      "out": "public/img/delivery/page7.webp",
+      "before": 88867,
+      "after": 41452
+    },
+    {
+      "source": "public/img/delivery/page8.png",
+      "out": "public/img/delivery/page8.webp",
+      "before": 110629,
+      "after": 39276
+    },
+    {
+      "source": "public/img/delivery/page9.png",
+      "out": "public/img/delivery/page9.webp",
+      "before": 149293,
+      "after": 36478
+    },
+    {
+      "source": "public/img/deploy-app-github.png",
+      "out": "public/img/deploy-app-github.webp",
+      "before": 1934409,
+      "after": 124680
+    },
+    {
+      "source": "public/img/deploy1.png",
+      "out": "public/img/deploy1.webp",
+      "before": 149940,
+      "after": 19570
+    },
+    {
+      "source": "public/img/deploy2.png",
+      "out": "public/img/deploy2.webp",
+      "before": 57289,
+      "after": 25600
+    },
+    {
+      "source": "public/img/digitalWallet/page1.png",
+      "out": "public/img/digitalWallet/page1.webp",
+      "before": 166957,
+      "after": 17190
+    },
+    {
+      "source": "public/img/digitalWallet/page2.png",
+      "out": "public/img/digitalWallet/page2.webp",
+      "before": 121454,
+      "after": 11228
+    },
+    {
+      "source": "public/img/digitalWallet/page3.png",
+      "out": "public/img/digitalWallet/page3.webp",
+      "before": 113853,
+      "after": 11454
+    },
+    {
+      "source": "public/img/digitalWallet/page4.png",
+      "out": "public/img/digitalWallet/page4.webp",
+      "before": 100763,
+      "after": 10866
+    },
+    {
+      "source": "public/img/digitalWallet/page5.png",
+      "out": "public/img/digitalWallet/page5.webp",
+      "before": 97393,
+      "after": 11078
+    },
+    {
+      "source": "public/img/digitalWallet/page6.png",
+      "out": "public/img/digitalWallet/page6.webp",
+      "before": 129713,
+      "after": 12004
+    },
+    {
+      "source": "public/img/digitalWallet/page7.png",
+      "out": "public/img/digitalWallet/page7.webp",
+      "before": 108465,
+      "after": 10460
+    },
+    {
+      "source": "public/img/digitalWallet/page8.png",
+      "out": "public/img/digitalWallet/page8.webp",
+      "before": 134565,
+      "after": 13904
+    },
+    {
+      "source": "public/img/ecomerce/admin0.png",
+      "out": "public/img/ecomerce/admin0.webp",
+      "before": 196540,
+      "after": 43262
+    },
+    {
+      "source": "public/img/ecomerce/admin1.png",
+      "out": "public/img/ecomerce/admin1.webp",
+      "before": 197820,
+      "after": 72948
+    },
+    {
+      "source": "public/img/ecomerce/admin2.png",
+      "out": "public/img/ecomerce/admin2.webp",
+      "before": 102809,
+      "after": 30332
+    },
+    {
+      "source": "public/img/ecomerce/admin3.png",
+      "out": "public/img/ecomerce/admin3.webp",
+      "before": 90235,
+      "after": 24618
+    },
+    {
+      "source": "public/img/ecomerce/admin4.png",
+      "out": "public/img/ecomerce/admin4.webp",
+      "before": 148137,
+      "after": 26182
+    },
+    {
+      "source": "public/img/ecomerce/admin5.png",
+      "out": "public/img/ecomerce/admin5.webp",
+      "before": 174585,
+      "after": 29164
+    },
+    {
+      "source": "public/img/ecomerce/analiticas.jpg",
+      "out": "public/img/ecomerce/analiticas.webp",
+      "before": 63734,
+      "after": 18790
+    },
+    {
+      "source": "public/img/ecomerce/analiticas2.jpg",
+      "out": "public/img/ecomerce/analiticas2.webp",
+      "before": 59711,
+      "after": 18160
+    },
+    {
+      "source": "public/img/ecomerce/analiticas3.jpg",
+      "out": "public/img/ecomerce/analiticas3.webp",
+      "before": 19697,
+      "after": 5044
+    },
+    {
+      "source": "public/img/ecomerce/carrito1.png",
+      "out": "public/img/ecomerce/carrito1.webp",
+      "before": 1199421,
+      "after": 56680
+    },
+    {
+      "source": "public/img/ecomerce/carrito2.png",
+      "out": "public/img/ecomerce/carrito2.webp",
+      "before": 103768,
+      "after": 24748
+    },
+    {
+      "source": "public/img/ecomerce/carrito3.png",
+      "out": "public/img/ecomerce/carrito3.webp",
+      "before": 117446,
+      "after": 30132
+    },
+    {
+      "source": "public/img/ecomerce/carrito4.png",
+      "out": "public/img/ecomerce/carrito4.webp",
+      "before": 143704,
+      "after": 28124
+    },
+    {
+      "source": "public/img/ecomerce/carrito5.png",
+      "out": "public/img/ecomerce/carrito5.webp",
+      "before": 63337,
+      "after": 17562
+    },
+    {
+      "source": "public/img/ecomerce/landing1.png",
+      "out": "public/img/ecomerce/landing1.webp",
+      "before": 2084719,
+      "after": 122632
+    },
+    {
+      "source": "public/img/ecomerce/landing2.png",
+      "out": "public/img/ecomerce/landing2.webp",
+      "before": 1150813,
+      "after": 74044
+    },
+    {
+      "source": "public/img/ecomerce/landing3.png",
+      "out": "public/img/ecomerce/landing3.webp",
+      "before": 713081,
+      "after": 56594
+    },
+    {
+      "source": "public/img/ecomerce/user1.png",
+      "out": "public/img/ecomerce/user1.webp",
+      "before": 73483,
+      "after": 19242
+    },
+    {
+      "source": "public/img/ecomerce/user2.png",
+      "out": "public/img/ecomerce/user2.webp",
+      "before": 129558,
+      "after": 33812
+    },
+    {
+      "source": "public/img/ecomerce/user3.png",
+      "out": "public/img/ecomerce/user3.webp",
+      "before": 147376,
+      "after": 34252
+    },
+    {
+      "source": "public/img/ecomerce/user4.png",
+      "out": "public/img/ecomerce/user4.webp",
+      "before": 305298,
+      "after": 24090
+    },
+    {
+      "source": "public/img/header.png",
+      "out": "public/img/header.webp",
+      "before": 962330,
+      "after": 54494
+    },
+    {
+      "source": "public/img/hero.png",
+      "out": "public/img/hero.webp",
+      "before": 1654778,
+      "after": 118572
+    },
+    {
+      "source": "public/img/infra-github.png",
+      "out": "public/img/infra-github.webp",
+      "before": 2909160,
+      "after": 224648
+    },
+    {
+      "source": "public/img/inteligenciaComercial/page1.png",
+      "out": "public/img/inteligenciaComercial/page1.webp",
+      "before": 1531886,
+      "after": 91798
+    },
+    {
+      "source": "public/img/juegos/page1.png",
+      "out": "public/img/juegos/page1.webp",
+      "before": 659024,
+      "after": 39716
+    },
+    {
+      "source": "public/img/juegos/page2.png",
+      "out": "public/img/juegos/page2.webp",
+      "before": 1437698,
+      "after": 68442
+    },
+    {
+      "source": "public/img/juegos/page3.png",
+      "out": "public/img/juegos/page3.webp",
+      "before": 932915,
+      "after": 68408
+    },
+    {
+      "source": "public/img/juegos/page4.png",
+      "out": "public/img/juegos/page4.webp",
+      "before": 1393683,
+      "after": 121646
+    },
+    {
+      "source": "public/img/juegos/page5.png",
+      "out": "public/img/juegos/page5.webp",
+      "before": 415575,
+      "after": 43328
+    },
+    {
+      "source": "public/img/keycloak.png",
+      "out": "public/img/keycloak.webp",
+      "before": 2678254,
+      "after": 128726
+    },
+    {
+      "source": "public/img/newPortfolio/page1.png",
+      "out": "public/img/newPortfolio/page1.webp",
+      "before": 1788299,
+      "after": 30638
+    },
+    {
+      "source": "public/img/newPortfolio/page2.png",
+      "out": "public/img/newPortfolio/page2.webp",
+      "before": 1380544,
+      "after": 42592
+    },
+    {
+      "source": "public/img/newPortfolio/page3.png",
+      "out": "public/img/newPortfolio/page3.webp",
+      "before": 605185,
+      "after": 56060
+    },
+    {
+      "source": "public/img/newPortfolio/page4.png",
+      "out": "public/img/newPortfolio/page4.webp",
+      "before": 1663678,
+      "after": 66316
+    },
+    {
+      "source": "public/img/newPortfolio/page5.png",
+      "out": "public/img/newPortfolio/page5.webp",
+      "before": 1842601,
+      "after": 29184
+    },
+    {
+      "source": "public/img/newPortfolio/page6.png",
+      "out": "public/img/newPortfolio/page6.webp",
+      "before": 69238,
+      "after": 17204
+    },
+    {
+      "source": "public/img/newPortfolio/page7.png",
+      "out": "public/img/newPortfolio/page7.webp",
+      "before": 72587,
+      "after": 32212
+    },
+    {
+      "source": "public/img/newPortfolio/page8.png",
+      "out": "public/img/newPortfolio/page8.webp",
+      "before": 438982,
+      "after": 52668
+    },
+    {
+      "source": "public/img/noticiasWebsite/page1.png",
+      "out": "public/img/noticiasWebsite/page1.webp",
+      "before": 852351,
+      "after": 102482
+    },
+    {
+      "source": "public/img/noticiasWebsite/page2.png",
+      "out": "public/img/noticiasWebsite/page2.webp",
+      "before": 2907592,
+      "after": 230576
+    },
+    {
+      "source": "public/img/noticiasWebsite/page3.png",
+      "out": "public/img/noticiasWebsite/page3.webp",
+      "before": 1219717,
+      "after": 69580
+    },
+    {
+      "source": "public/img/noticiasWebsite/page4.png",
+      "out": "public/img/noticiasWebsite/page4.webp",
+      "before": 402517,
+      "after": 49576
+    },
+    {
+      "source": "public/img/noticiasWebsite/page5.png",
+      "out": "public/img/noticiasWebsite/page5.webp",
+      "before": 536961,
+      "after": 69228
+    },
+    {
+      "source": "public/img/pizzeria/page1.png",
+      "out": "public/img/pizzeria/page1.webp",
+      "before": 439397,
+      "after": 55190
+    },
+    {
+      "source": "public/img/pizzeria/page10.png",
+      "out": "public/img/pizzeria/page10.webp",
+      "before": 42126,
+      "after": 12484
+    },
+    {
+      "source": "public/img/pizzeria/page2.png",
+      "out": "public/img/pizzeria/page2.webp",
+      "before": 269550,
+      "after": 43636
+    },
+    {
+      "source": "public/img/pizzeria/page3.png",
+      "out": "public/img/pizzeria/page3.webp",
+      "before": 108768,
+      "after": 22082
+    },
+    {
+      "source": "public/img/pizzeria/page4.png",
+      "out": "public/img/pizzeria/page4.webp",
+      "before": 312749,
+      "after": 54244
+    },
+    {
+      "source": "public/img/pizzeria/page5.png",
+      "out": "public/img/pizzeria/page5.webp",
+      "before": 169247,
+      "after": 23898
+    },
+    {
+      "source": "public/img/pizzeria/page6.png",
+      "out": "public/img/pizzeria/page6.webp",
+      "before": 60756,
+      "after": 14054
+    },
+    {
+      "source": "public/img/pizzeria/page7.png",
+      "out": "public/img/pizzeria/page7.webp",
+      "before": 47004,
+      "after": 12958
+    },
+    {
+      "source": "public/img/pizzeria/page8.png",
+      "out": "public/img/pizzeria/page8.webp",
+      "before": 50970,
+      "after": 15096
+    },
+    {
+      "source": "public/img/pizzeria/page9.png",
+      "out": "public/img/pizzeria/page9.webp",
+      "before": 40252,
+      "after": 11962
+    },
+    {
+      "source": "public/img/porfolioV1/page1.png",
+      "out": "public/img/porfolioV1/page1.webp",
+      "before": 518327,
+      "after": 30558
+    },
+    {
+      "source": "public/img/porfolioV1/page2.png",
+      "out": "public/img/porfolioV1/page2.webp",
+      "before": 760368,
+      "after": 72316
+    },
+    {
+      "source": "public/img/porfolioV1/page3.png",
+      "out": "public/img/porfolioV1/page3.webp",
+      "before": 137195,
+      "after": 37386
+    },
+    {
+      "source": "public/img/porfolioV1/page4.png",
+      "out": "public/img/porfolioV1/page4.webp",
+      "before": 641249,
+      "after": 50650
+    },
+    {
+      "source": "public/img/porfolioV1/page5.png",
+      "out": "public/img/porfolioV1/page5.webp",
+      "before": 364426,
+      "after": 62780
+    },
+    {
+      "source": "public/img/porfolioV1/page6.png",
+      "out": "public/img/porfolioV1/page6.webp",
+      "before": 58934,
+      "after": 16964
+    },
+    {
+      "source": "public/img/porfolioV1/page7.png",
+      "out": "public/img/porfolioV1/page7.webp",
+      "before": 70169,
+      "after": 17900
+    }
+  ],
+  "beforeRows": [
+    {
+      "file": "public/og-image.png",
+      "bytes": 127813,
+      "w": 1200,
+      "h": 501,
+      "format": "png"
+    },
+    {
+      "file": "public/img/analisis-retail/grafico0.png",
+      "bytes": 76086,
+      "w": 1153,
+      "h": 643,
+      "format": "png"
+    },
+    {
+      "file": "public/img/analisis-retail/grafico1.png",
+      "bytes": 39017,
+      "w": 1221,
+      "h": 698,
+      "format": "png"
+    },
+    {
+      "file": "public/img/analisis-retail/grafico2.png",
+      "bytes": 38932,
+      "w": 1230,
+      "h": 696,
+      "format": "png"
+    },
+    {
+      "file": "public/img/analisis-retail/grafico3.png",
+      "bytes": 38041,
+      "w": 1161,
+      "h": 682,
+      "format": "png"
+    },
+    {
+      "file": "public/img/analisis-retail/grafico4.png",
+      "bytes": 16948,
+      "w": 1352,
+      "h": 319,
+      "format": "png"
+    },
+    {
+      "file": "public/img/appReservasGX/page1.png",
+      "bytes": 454825,
+      "w": 1235,
+      "h": 815,
+      "format": "png"
+    },
+    {
+      "file": "public/img/appReservasGX/page2.png",
+      "bytes": 113160,
+      "w": 1208,
+      "h": 841,
+      "format": "png"
+    },
+    {
+      "file": "public/img/appReservasGX/page3.png",
+      "bytes": 437750,
+      "w": 1073,
+      "h": 770,
+      "format": "png"
+    },
+    {
+      "file": "public/img/catalogo/page0.png",
+      "bytes": 409099,
+      "w": 472,
+      "h": 802,
+      "format": "png"
+    },
+    {
+      "file": "public/img/catalogo/page1.png",
+      "bytes": 347988,
+      "w": 470,
+      "h": 835,
+      "format": "png"
+    },
+    {
+      "file": "public/img/catalogo/page2.png",
+      "bytes": 87585,
+      "w": 473,
+      "h": 839,
+      "format": "png"
+    },
+    {
+      "file": "public/img/catalogo/page3.png",
+      "bytes": 60537,
+      "w": 473,
+      "h": 838,
+      "format": "png"
+    },
+    {
+      "file": "public/img/catalogo/page4.png",
+      "bytes": 81322,
+      "w": 476,
+      "h": 840,
+      "format": "png"
+    },
+    {
+      "file": "public/img/catalogo/page5.png",
+      "bytes": 25732,
+      "w": 478,
+      "h": 833,
+      "format": "png"
+    },
+    {
+      "file": "public/img/catalogo/page6.png",
+      "bytes": 71535,
+      "w": 473,
+      "h": 835,
+      "format": "png"
+    },
+    {
+      "file": "public/img/dataAnalysis/1.png",
+      "bytes": 684380,
+      "w": 1910,
+      "h": 3422,
+      "format": "png"
+    },
+    {
+      "file": "public/img/dataAnalysis/2.png",
+      "bytes": 699438,
+      "w": 1910,
+      "h": 3110,
+      "format": "png"
+    },
+    {
+      "file": "public/img/dataAnalysis/3.png",
+      "bytes": 600223,
+      "w": 1910,
+      "h": 2652,
+      "format": "png"
+    },
+    {
+      "file": "public/img/dataAnalysis/4.png",
+      "bytes": 443758,
+      "w": 1910,
+      "h": 2367,
+      "format": "png"
+    },
+    {
+      "file": "public/img/dataAnalysis/5.png",
+      "bytes": 515159,
+      "w": 1910,
+      "h": 2710,
+      "format": "png"
+    },
+    {
+      "file": "public/img/dataAnalysis/page1.png",
+      "bytes": 64197,
+      "w": 1323,
+      "h": 743,
+      "format": "png"
+    },
+    {
+      "file": "public/img/dataAnalysis/page2.png",
+      "bytes": 78209,
+      "w": 1327,
+      "h": 738,
+      "format": "png"
+    },
+    {
+      "file": "public/img/dataAnalysis/page3.png",
+      "bytes": 72275,
+      "w": 1336,
+      "h": 746,
+      "format": "png"
+    },
+    {
+      "file": "public/img/dataAnalysis/page4.png",
+      "bytes": 131645,
+      "w": 1301,
+      "h": 728,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page1.png",
+      "bytes": 164901,
+      "w": 1919,
+      "h": 914,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page10.png",
+      "bytes": 72280,
+      "w": 1914,
+      "h": 903,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page11.png",
+      "bytes": 464644,
+      "w": 1919,
+      "h": 907,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page12.png",
+      "bytes": 96274,
+      "w": 1919,
+      "h": 908,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page13.png",
+      "bytes": 77962,
+      "w": 1919,
+      "h": 906,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page14.png",
+      "bytes": 85663,
+      "w": 1914,
+      "h": 913,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page15.png",
+      "bytes": 386851,
+      "w": 1915,
+      "h": 875,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page16.png",
+      "bytes": 77584,
+      "w": 1906,
+      "h": 876,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page17.png",
+      "bytes": 42320,
+      "w": 1903,
+      "h": 873,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page18.png",
+      "bytes": 155727,
+      "w": 1909,
+      "h": 870,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page19.png",
+      "bytes": 54487,
+      "w": 1908,
+      "h": 875,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page2.png",
+      "bytes": 87261,
+      "w": 1916,
+      "h": 906,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page3.png",
+      "bytes": 88056,
+      "w": 1918,
+      "h": 908,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page4.png",
+      "bytes": 94601,
+      "w": 1919,
+      "h": 910,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page5.png",
+      "bytes": 116569,
+      "w": 1910,
+      "h": 909,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page6.png",
+      "bytes": 71677,
+      "w": 1911,
+      "h": 903,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page7.png",
+      "bytes": 88867,
+      "w": 1908,
+      "h": 894,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page8.png",
+      "bytes": 110629,
+      "w": 1919,
+      "h": 915,
+      "format": "png"
+    },
+    {
+      "file": "public/img/delivery/page9.png",
+      "bytes": 149293,
+      "w": 1919,
+      "h": 912,
+      "format": "png"
+    },
+    {
+      "file": "public/img/deploy-app-github.png",
+      "bytes": 1934409,
+      "w": 1536,
+      "h": 1024,
+      "format": "png"
+    },
+    {
+      "file": "public/img/deploy1.png",
+      "bytes": 149940,
+      "w": 1350,
+      "h": 759,
+      "format": "png"
+    },
+    {
+      "file": "public/img/deploy2.png",
+      "bytes": 57289,
+      "w": 737,
+      "h": 456,
+      "format": "jpeg"
+    },
+    {
+      "file": "public/img/digitalWallet/page1.png",
+      "bytes": 166957,
+      "w": 1053,
+      "h": 732,
+      "format": "png"
+    },
+    {
+      "file": "public/img/digitalWallet/page2.png",
+      "bytes": 121454,
+      "w": 1030,
+      "h": 618,
+      "format": "png"
+    },
+    {
+      "file": "public/img/digitalWallet/page3.png",
+      "bytes": 113853,
+      "w": 1047,
+      "h": 620,
+      "format": "png"
+    },
+    {
+      "file": "public/img/digitalWallet/page4.png",
+      "bytes": 100763,
+      "w": 1043,
+      "h": 622,
+      "format": "png"
+    },
+    {
+      "file": "public/img/digitalWallet/page5.png",
+      "bytes": 97393,
+      "w": 1035,
+      "h": 606,
+      "format": "png"
+    },
+    {
+      "file": "public/img/digitalWallet/page6.png",
+      "bytes": 129713,
+      "w": 1050,
+      "h": 617,
+      "format": "png"
+    },
+    {
+      "file": "public/img/digitalWallet/page7.png",
+      "bytes": 108465,
+      "w": 1034,
+      "h": 599,
+      "format": "png"
+    },
+    {
+      "file": "public/img/digitalWallet/page8.png",
+      "bytes": 134565,
+      "w": 1047,
+      "h": 584,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/admin0.png",
+      "bytes": 196540,
+      "w": 1919,
+      "h": 950,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/admin1.png",
+      "bytes": 197820,
+      "w": 1917,
+      "h": 912,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/admin2.png",
+      "bytes": 102809,
+      "w": 1919,
+      "h": 913,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/admin3.png",
+      "bytes": 90235,
+      "w": 1916,
+      "h": 911,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/admin4.png",
+      "bytes": 148137,
+      "w": 1299,
+      "h": 793,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/admin5.png",
+      "bytes": 174585,
+      "w": 1299,
+      "h": 603,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/analiticas.jpg",
+      "bytes": 63734,
+      "w": 1299,
+      "h": 633,
+      "format": "jpeg"
+    },
+    {
+      "file": "public/img/ecomerce/analiticas2.jpg",
+      "bytes": 59711,
+      "w": 1100,
+      "h": 525,
+      "format": "jpeg"
+    },
+    {
+      "file": "public/img/ecomerce/analiticas3.jpg",
+      "bytes": 19697,
+      "w": 567,
+      "h": 274,
+      "format": "jpeg"
+    },
+    {
+      "file": "public/img/ecomerce/carrito1.png",
+      "bytes": 1199421,
+      "w": 1919,
+      "h": 905,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/carrito2.png",
+      "bytes": 103768,
+      "w": 1919,
+      "h": 911,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/carrito3.png",
+      "bytes": 117446,
+      "w": 1919,
+      "h": 903,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/carrito4.png",
+      "bytes": 143704,
+      "w": 1917,
+      "h": 911,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/carrito5.png",
+      "bytes": 63337,
+      "w": 1919,
+      "h": 910,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/landing1.png",
+      "bytes": 2084719,
+      "w": 1919,
+      "h": 908,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/landing2.png",
+      "bytes": 1150813,
+      "w": 1919,
+      "h": 906,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/landing3.png",
+      "bytes": 713081,
+      "w": 1919,
+      "h": 965,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/user1.png",
+      "bytes": 73483,
+      "w": 1919,
+      "h": 896,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/user2.png",
+      "bytes": 129558,
+      "w": 1919,
+      "h": 909,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/user3.png",
+      "bytes": 147376,
+      "w": 1918,
+      "h": 910,
+      "format": "png"
+    },
+    {
+      "file": "public/img/ecomerce/user4.png",
+      "bytes": 305298,
+      "w": 1919,
+      "h": 900,
+      "format": "png"
+    },
+    {
+      "file": "public/img/header.png",
+      "bytes": 962330,
+      "w": 1536,
+      "h": 1024,
+      "format": "png"
+    },
+    {
+      "file": "public/img/header.webp",
+      "bytes": 54494,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/hero.png",
+      "bytes": 1654778,
+      "w": 1536,
+      "h": 1024,
+      "format": "png"
+    },
+    {
+      "file": "public/img/hero.webp",
+      "bytes": 118572,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/infra-github.png",
+      "bytes": 2909160,
+      "w": 1536,
+      "h": 1024,
+      "format": "png"
+    },
+    {
+      "file": "public/img/inteligenciaComercial/page1.png",
+      "bytes": 1531886,
+      "w": 1536,
+      "h": 1024,
+      "format": "png"
+    },
+    {
+      "file": "public/img/juegos/page1.png",
+      "bytes": 659024,
+      "w": 1919,
+      "h": 910,
+      "format": "png"
+    },
+    {
+      "file": "public/img/juegos/page2.png",
+      "bytes": 1437698,
+      "w": 1919,
+      "h": 896,
+      "format": "png"
+    },
+    {
+      "file": "public/img/juegos/page3.png",
+      "bytes": 932915,
+      "w": 1919,
+      "h": 901,
+      "format": "png"
+    },
+    {
+      "file": "public/img/juegos/page4.png",
+      "bytes": 1393683,
+      "w": 1919,
+      "h": 897,
+      "format": "png"
+    },
+    {
+      "file": "public/img/juegos/page5.png",
+      "bytes": 415575,
+      "w": 1919,
+      "h": 914,
+      "format": "png"
+    },
+    {
+      "file": "public/img/keycloak.png",
+      "bytes": 2678254,
+      "w": 1536,
+      "h": 1024,
+      "format": "png"
+    },
+    {
+      "file": "public/img/newPortfolio/page1.png",
+      "bytes": 1788299,
+      "w": 1918,
+      "h": 902,
+      "format": "png"
+    },
+    {
+      "file": "public/img/newPortfolio/page2.png",
+      "bytes": 1380544,
+      "w": 1919,
+      "h": 838,
+      "format": "png"
+    },
+    {
+      "file": "public/img/newPortfolio/page3.png",
+      "bytes": 605185,
+      "w": 1919,
+      "h": 912,
+      "format": "png"
+    },
+    {
+      "file": "public/img/newPortfolio/page4.png",
+      "bytes": 1663678,
+      "w": 1918,
+      "h": 904,
+      "format": "png"
+    },
+    {
+      "file": "public/img/newPortfolio/page5.png",
+      "bytes": 1842601,
+      "w": 1919,
+      "h": 908,
+      "format": "png"
+    },
+    {
+      "file": "public/img/newPortfolio/page6.png",
+      "bytes": 69238,
+      "w": 1919,
+      "h": 906,
+      "format": "png"
+    },
+    {
+      "file": "public/img/newPortfolio/page7.png",
+      "bytes": 72587,
+      "w": 1919,
+      "h": 910,
+      "format": "png"
+    },
+    {
+      "file": "public/img/newPortfolio/page8.png",
+      "bytes": 438982,
+      "w": 1919,
+      "h": 908,
+      "format": "png"
+    },
+    {
+      "file": "public/img/noticiasWebsite/page1.png",
+      "bytes": 852351,
+      "w": 1919,
+      "h": 890,
+      "format": "png"
+    },
+    {
+      "file": "public/img/noticiasWebsite/page2.png",
+      "bytes": 2907592,
+      "w": 1919,
+      "h": 912,
+      "format": "png"
+    },
+    {
+      "file": "public/img/noticiasWebsite/page3.png",
+      "bytes": 1219717,
+      "w": 1919,
+      "h": 906,
+      "format": "png"
+    },
+    {
+      "file": "public/img/noticiasWebsite/page4.png",
+      "bytes": 402517,
+      "w": 1918,
+      "h": 913,
+      "format": "png"
+    },
+    {
+      "file": "public/img/noticiasWebsite/page5.png",
+      "bytes": 536961,
+      "w": 1919,
+      "h": 900,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page1.png",
+      "bytes": 439397,
+      "w": 1600,
+      "h": 755,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page1.webp",
+      "bytes": 55190,
+      "w": 1600,
+      "h": 755,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page10.png",
+      "bytes": 42126,
+      "w": 1600,
+      "h": 745,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page10.webp",
+      "bytes": 12484,
+      "w": 1600,
+      "h": 745,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page2.png",
+      "bytes": 269550,
+      "w": 1600,
+      "h": 754,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page2.webp",
+      "bytes": 43636,
+      "w": 1600,
+      "h": 754,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page3.png",
+      "bytes": 108768,
+      "w": 1600,
+      "h": 759,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page3.webp",
+      "bytes": 22082,
+      "w": 1600,
+      "h": 759,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page4.png",
+      "bytes": 312749,
+      "w": 1600,
+      "h": 756,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page4.webp",
+      "bytes": 54244,
+      "w": 1600,
+      "h": 756,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page5.png",
+      "bytes": 169247,
+      "w": 1600,
+      "h": 750,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page5.webp",
+      "bytes": 23898,
+      "w": 1600,
+      "h": 750,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page6.png",
+      "bytes": 60756,
+      "w": 1600,
+      "h": 763,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page6.webp",
+      "bytes": 14054,
+      "w": 1600,
+      "h": 763,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page7.png",
+      "bytes": 47004,
+      "w": 1600,
+      "h": 746,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page7.webp",
+      "bytes": 12958,
+      "w": 1600,
+      "h": 746,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page8.png",
+      "bytes": 50970,
+      "w": 1600,
+      "h": 755,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page8.webp",
+      "bytes": 15096,
+      "w": 1600,
+      "h": 755,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page9.png",
+      "bytes": 40252,
+      "w": 1600,
+      "h": 757,
+      "format": "png"
+    },
+    {
+      "file": "public/img/pizzeria/page9.webp",
+      "bytes": 11962,
+      "w": 1600,
+      "h": 757,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/porfolioV1/page1.png",
+      "bytes": 518327,
+      "w": 1919,
+      "h": 907,
+      "format": "png"
+    },
+    {
+      "file": "public/img/porfolioV1/page2.png",
+      "bytes": 760368,
+      "w": 1919,
+      "h": 911,
+      "format": "png"
+    },
+    {
+      "file": "public/img/porfolioV1/page3.png",
+      "bytes": 137195,
+      "w": 1917,
+      "h": 914,
+      "format": "png"
+    },
+    {
+      "file": "public/img/porfolioV1/page4.png",
+      "bytes": 641249,
+      "w": 1919,
+      "h": 908,
+      "format": "png"
+    },
+    {
+      "file": "public/img/porfolioV1/page5.png",
+      "bytes": 364426,
+      "w": 1919,
+      "h": 899,
+      "format": "png"
+    },
+    {
+      "file": "public/img/porfolioV1/page6.png",
+      "bytes": 58934,
+      "w": 1919,
+      "h": 902,
+      "format": "png"
+    },
+    {
+      "file": "public/img/porfolioV1/page7.png",
+      "bytes": 70169,
+      "w": 1919,
+      "h": 908,
+      "format": "png"
+    }
+  ],
+  "afterRows": [
+    {
+      "file": "public/og-image.webp",
+      "source": "public/og-image.png",
+      "beforeBytes": 127813,
+      "bytes": 29932,
+      "w": 1200,
+      "h": 501,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/analisis-retail/grafico0.webp",
+      "source": "public/img/analisis-retail/grafico0.png",
+      "beforeBytes": 76086,
+      "bytes": 42874,
+      "w": 1153,
+      "h": 643,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/analisis-retail/grafico1.webp",
+      "source": "public/img/analisis-retail/grafico1.png",
+      "beforeBytes": 39017,
+      "bytes": 21800,
+      "w": 1221,
+      "h": 698,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/analisis-retail/grafico2.webp",
+      "source": "public/img/analisis-retail/grafico2.png",
+      "beforeBytes": 38932,
+      "bytes": 14266,
+      "w": 1230,
+      "h": 696,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/analisis-retail/grafico3.webp",
+      "source": "public/img/analisis-retail/grafico3.png",
+      "beforeBytes": 38041,
+      "bytes": 17770,
+      "w": 1161,
+      "h": 682,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/analisis-retail/grafico4.webp",
+      "source": "public/img/analisis-retail/grafico4.png",
+      "beforeBytes": 16948,
+      "bytes": 8324,
+      "w": 1352,
+      "h": 319,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/appReservasGX/page1.webp",
+      "source": "public/img/appReservasGX/page1.png",
+      "beforeBytes": 454825,
+      "bytes": 48894,
+      "w": 1235,
+      "h": 815,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/appReservasGX/page2.webp",
+      "source": "public/img/appReservasGX/page2.png",
+      "beforeBytes": 113160,
+      "bytes": 35530,
+      "w": 1208,
+      "h": 841,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/appReservasGX/page3.webp",
+      "source": "public/img/appReservasGX/page3.png",
+      "beforeBytes": 437750,
+      "bytes": 68632,
+      "w": 1073,
+      "h": 770,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/catalogo/page0.webp",
+      "source": "public/img/catalogo/page0.png",
+      "beforeBytes": 409099,
+      "bytes": 15502,
+      "w": 472,
+      "h": 802,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/catalogo/page1.webp",
+      "source": "public/img/catalogo/page1.png",
+      "beforeBytes": 347988,
+      "bytes": 34006,
+      "w": 470,
+      "h": 835,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/catalogo/page2.webp",
+      "source": "public/img/catalogo/page2.png",
+      "beforeBytes": 87585,
+      "bytes": 23846,
+      "w": 473,
+      "h": 839,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/catalogo/page3.webp",
+      "source": "public/img/catalogo/page3.png",
+      "beforeBytes": 60537,
+      "bytes": 10168,
+      "w": 473,
+      "h": 838,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/catalogo/page4.webp",
+      "source": "public/img/catalogo/page4.png",
+      "beforeBytes": 81322,
+      "bytes": 22258,
+      "w": 476,
+      "h": 840,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/catalogo/page5.webp",
+      "source": "public/img/catalogo/page5.png",
+      "beforeBytes": 25732,
+      "bytes": 10640,
+      "w": 478,
+      "h": 833,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/catalogo/page6.webp",
+      "source": "public/img/catalogo/page6.png",
+      "beforeBytes": 71535,
+      "bytes": 25188,
+      "w": 473,
+      "h": 835,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/dataAnalysis/1.webp",
+      "source": "public/img/dataAnalysis/1.png",
+      "beforeBytes": 684380,
+      "bytes": 133790,
+      "w": 1600,
+      "h": 2867,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/dataAnalysis/2.webp",
+      "source": "public/img/dataAnalysis/2.png",
+      "beforeBytes": 699438,
+      "bytes": 153012,
+      "w": 1600,
+      "h": 2605,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/dataAnalysis/3.webp",
+      "source": "public/img/dataAnalysis/3.png",
+      "beforeBytes": 600223,
+      "bytes": 136146,
+      "w": 1600,
+      "h": 2222,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/dataAnalysis/4.webp",
+      "source": "public/img/dataAnalysis/4.png",
+      "beforeBytes": 443758,
+      "bytes": 106264,
+      "w": 1600,
+      "h": 1983,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/dataAnalysis/5.webp",
+      "source": "public/img/dataAnalysis/5.png",
+      "beforeBytes": 515159,
+      "bytes": 125334,
+      "w": 1600,
+      "h": 2270,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/dataAnalysis/page1.webp",
+      "source": "public/img/dataAnalysis/page1.png",
+      "beforeBytes": 64197,
+      "bytes": 44136,
+      "w": 1323,
+      "h": 743,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/dataAnalysis/page2.webp",
+      "source": "public/img/dataAnalysis/page2.png",
+      "beforeBytes": 78209,
+      "bytes": 45882,
+      "w": 1327,
+      "h": 738,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/dataAnalysis/page3.webp",
+      "source": "public/img/dataAnalysis/page3.png",
+      "beforeBytes": 72275,
+      "bytes": 44256,
+      "w": 1336,
+      "h": 746,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/dataAnalysis/page4.webp",
+      "source": "public/img/dataAnalysis/page4.png",
+      "beforeBytes": 131645,
+      "bytes": 55090,
+      "w": 1301,
+      "h": 728,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page1.webp",
+      "source": "public/img/delivery/page1.png",
+      "beforeBytes": 164901,
+      "bytes": 41776,
+      "w": 1600,
+      "h": 762,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page10.webp",
+      "source": "public/img/delivery/page10.png",
+      "beforeBytes": 72280,
+      "bytes": 29600,
+      "w": 1600,
+      "h": 755,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page11.webp",
+      "source": "public/img/delivery/page11.png",
+      "beforeBytes": 464644,
+      "bytes": 44274,
+      "w": 1600,
+      "h": 756,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page12.webp",
+      "source": "public/img/delivery/page12.png",
+      "beforeBytes": 96274,
+      "bytes": 45760,
+      "w": 1600,
+      "h": 757,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page13.webp",
+      "source": "public/img/delivery/page13.png",
+      "beforeBytes": 77962,
+      "bytes": 31202,
+      "w": 1600,
+      "h": 755,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page14.webp",
+      "source": "public/img/delivery/page14.png",
+      "beforeBytes": 85663,
+      "bytes": 32896,
+      "w": 1600,
+      "h": 763,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page15.webp",
+      "source": "public/img/delivery/page15.png",
+      "beforeBytes": 386851,
+      "bytes": 33810,
+      "w": 1600,
+      "h": 731,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page16.webp",
+      "source": "public/img/delivery/page16.png",
+      "beforeBytes": 77584,
+      "bytes": 14880,
+      "w": 1600,
+      "h": 735,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page17.webp",
+      "source": "public/img/delivery/page17.png",
+      "beforeBytes": 42320,
+      "bytes": 10930,
+      "w": 1600,
+      "h": 734,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page18.webp",
+      "source": "public/img/delivery/page18.png",
+      "beforeBytes": 155727,
+      "bytes": 27326,
+      "w": 1600,
+      "h": 729,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page19.webp",
+      "source": "public/img/delivery/page19.png",
+      "beforeBytes": 54487,
+      "bytes": 14422,
+      "w": 1600,
+      "h": 734,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page2.webp",
+      "source": "public/img/delivery/page2.png",
+      "beforeBytes": 87261,
+      "bytes": 37554,
+      "w": 1600,
+      "h": 757,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page3.webp",
+      "source": "public/img/delivery/page3.png",
+      "beforeBytes": 88056,
+      "bytes": 39526,
+      "w": 1600,
+      "h": 757,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page4.webp",
+      "source": "public/img/delivery/page4.png",
+      "beforeBytes": 94601,
+      "bytes": 44274,
+      "w": 1600,
+      "h": 759,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page5.webp",
+      "source": "public/img/delivery/page5.png",
+      "beforeBytes": 116569,
+      "bytes": 48638,
+      "w": 1600,
+      "h": 761,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page6.webp",
+      "source": "public/img/delivery/page6.png",
+      "beforeBytes": 71677,
+      "bytes": 28110,
+      "w": 1600,
+      "h": 756,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page7.webp",
+      "source": "public/img/delivery/page7.png",
+      "beforeBytes": 88867,
+      "bytes": 41452,
+      "w": 1600,
+      "h": 750,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page8.webp",
+      "source": "public/img/delivery/page8.png",
+      "beforeBytes": 110629,
+      "bytes": 39276,
+      "w": 1600,
+      "h": 763,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/delivery/page9.webp",
+      "source": "public/img/delivery/page9.png",
+      "beforeBytes": 149293,
+      "bytes": 36478,
+      "w": 1600,
+      "h": 760,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/deploy-app-github.webp",
+      "source": "public/img/deploy-app-github.png",
+      "beforeBytes": 1934409,
+      "bytes": 124680,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/deploy1.webp",
+      "source": "public/img/deploy1.png",
+      "beforeBytes": 149940,
+      "bytes": 19570,
+      "w": 1350,
+      "h": 759,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/deploy2.webp",
+      "source": "public/img/deploy2.png",
+      "beforeBytes": 57289,
+      "bytes": 25600,
+      "w": 737,
+      "h": 456,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/digitalWallet/page1.webp",
+      "source": "public/img/digitalWallet/page1.png",
+      "beforeBytes": 166957,
+      "bytes": 17190,
+      "w": 1053,
+      "h": 732,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/digitalWallet/page2.webp",
+      "source": "public/img/digitalWallet/page2.png",
+      "beforeBytes": 121454,
+      "bytes": 11228,
+      "w": 1030,
+      "h": 618,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/digitalWallet/page3.webp",
+      "source": "public/img/digitalWallet/page3.png",
+      "beforeBytes": 113853,
+      "bytes": 11454,
+      "w": 1047,
+      "h": 620,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/digitalWallet/page4.webp",
+      "source": "public/img/digitalWallet/page4.png",
+      "beforeBytes": 100763,
+      "bytes": 10866,
+      "w": 1043,
+      "h": 622,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/digitalWallet/page5.webp",
+      "source": "public/img/digitalWallet/page5.png",
+      "beforeBytes": 97393,
+      "bytes": 11078,
+      "w": 1035,
+      "h": 606,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/digitalWallet/page6.webp",
+      "source": "public/img/digitalWallet/page6.png",
+      "beforeBytes": 129713,
+      "bytes": 12004,
+      "w": 1050,
+      "h": 617,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/digitalWallet/page7.webp",
+      "source": "public/img/digitalWallet/page7.png",
+      "beforeBytes": 108465,
+      "bytes": 10460,
+      "w": 1034,
+      "h": 599,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/digitalWallet/page8.webp",
+      "source": "public/img/digitalWallet/page8.png",
+      "beforeBytes": 134565,
+      "bytes": 13904,
+      "w": 1047,
+      "h": 584,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/admin0.webp",
+      "source": "public/img/ecomerce/admin0.png",
+      "beforeBytes": 196540,
+      "bytes": 43262,
+      "w": 1600,
+      "h": 792,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/admin1.webp",
+      "source": "public/img/ecomerce/admin1.png",
+      "beforeBytes": 197820,
+      "bytes": 72948,
+      "w": 1600,
+      "h": 761,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/admin2.webp",
+      "source": "public/img/ecomerce/admin2.png",
+      "beforeBytes": 102809,
+      "bytes": 30332,
+      "w": 1600,
+      "h": 761,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/admin3.webp",
+      "source": "public/img/ecomerce/admin3.png",
+      "beforeBytes": 90235,
+      "bytes": 24618,
+      "w": 1600,
+      "h": 761,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/admin4.webp",
+      "source": "public/img/ecomerce/admin4.png",
+      "beforeBytes": 148137,
+      "bytes": 26182,
+      "w": 1299,
+      "h": 793,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/admin5.webp",
+      "source": "public/img/ecomerce/admin5.png",
+      "beforeBytes": 174585,
+      "bytes": 29164,
+      "w": 1299,
+      "h": 603,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/analiticas.webp",
+      "source": "public/img/ecomerce/analiticas.jpg",
+      "beforeBytes": 63734,
+      "bytes": 18790,
+      "w": 1299,
+      "h": 633,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/analiticas2.webp",
+      "source": "public/img/ecomerce/analiticas2.jpg",
+      "beforeBytes": 59711,
+      "bytes": 18160,
+      "w": 1100,
+      "h": 525,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/analiticas3.webp",
+      "source": "public/img/ecomerce/analiticas3.jpg",
+      "beforeBytes": 19697,
+      "bytes": 5044,
+      "w": 567,
+      "h": 274,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/carrito1.webp",
+      "source": "public/img/ecomerce/carrito1.png",
+      "beforeBytes": 1199421,
+      "bytes": 56680,
+      "w": 1600,
+      "h": 755,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/carrito2.webp",
+      "source": "public/img/ecomerce/carrito2.png",
+      "beforeBytes": 103768,
+      "bytes": 24748,
+      "w": 1600,
+      "h": 760,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/carrito3.webp",
+      "source": "public/img/ecomerce/carrito3.png",
+      "beforeBytes": 117446,
+      "bytes": 30132,
+      "w": 1600,
+      "h": 753,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/carrito4.webp",
+      "source": "public/img/ecomerce/carrito4.png",
+      "beforeBytes": 143704,
+      "bytes": 28124,
+      "w": 1600,
+      "h": 760,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/carrito5.webp",
+      "source": "public/img/ecomerce/carrito5.png",
+      "beforeBytes": 63337,
+      "bytes": 17562,
+      "w": 1600,
+      "h": 759,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/landing1.webp",
+      "source": "public/img/ecomerce/landing1.png",
+      "beforeBytes": 2084719,
+      "bytes": 122632,
+      "w": 1600,
+      "h": 757,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/landing2.webp",
+      "source": "public/img/ecomerce/landing2.png",
+      "beforeBytes": 1150813,
+      "bytes": 74044,
+      "w": 1600,
+      "h": 755,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/landing3.webp",
+      "source": "public/img/ecomerce/landing3.png",
+      "beforeBytes": 713081,
+      "bytes": 56594,
+      "w": 1600,
+      "h": 805,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/user1.webp",
+      "source": "public/img/ecomerce/user1.png",
+      "beforeBytes": 73483,
+      "bytes": 19242,
+      "w": 1600,
+      "h": 747,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/user2.webp",
+      "source": "public/img/ecomerce/user2.png",
+      "beforeBytes": 129558,
+      "bytes": 33812,
+      "w": 1600,
+      "h": 758,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/user3.webp",
+      "source": "public/img/ecomerce/user3.png",
+      "beforeBytes": 147376,
+      "bytes": 34252,
+      "w": 1600,
+      "h": 759,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/ecomerce/user4.webp",
+      "source": "public/img/ecomerce/user4.png",
+      "beforeBytes": 305298,
+      "bytes": 24090,
+      "w": 1600,
+      "h": 750,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/header.webp",
+      "source": "public/img/header.png",
+      "beforeBytes": 962330,
+      "bytes": 54494,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/hero.webp",
+      "source": "public/img/hero.png",
+      "beforeBytes": 1654778,
+      "bytes": 118572,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/infra-github.webp",
+      "source": "public/img/infra-github.png",
+      "beforeBytes": 2909160,
+      "bytes": 224648,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/inteligenciaComercial/page1.webp",
+      "source": "public/img/inteligenciaComercial/page1.png",
+      "beforeBytes": 1531886,
+      "bytes": 91798,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/juegos/page1.webp",
+      "source": "public/img/juegos/page1.png",
+      "beforeBytes": 659024,
+      "bytes": 39716,
+      "w": 1600,
+      "h": 759,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/juegos/page2.webp",
+      "source": "public/img/juegos/page2.png",
+      "beforeBytes": 1437698,
+      "bytes": 68442,
+      "w": 1600,
+      "h": 747,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/juegos/page3.webp",
+      "source": "public/img/juegos/page3.png",
+      "beforeBytes": 932915,
+      "bytes": 68408,
+      "w": 1600,
+      "h": 751,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/juegos/page4.webp",
+      "source": "public/img/juegos/page4.png",
+      "beforeBytes": 1393683,
+      "bytes": 121646,
+      "w": 1600,
+      "h": 748,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/juegos/page5.webp",
+      "source": "public/img/juegos/page5.png",
+      "beforeBytes": 415575,
+      "bytes": 43328,
+      "w": 1600,
+      "h": 762,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/keycloak.webp",
+      "source": "public/img/keycloak.png",
+      "beforeBytes": 2678254,
+      "bytes": 128726,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/newPortfolio/page1.webp",
+      "source": "public/img/newPortfolio/page1.png",
+      "beforeBytes": 1788299,
+      "bytes": 30638,
+      "w": 1600,
+      "h": 752,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/newPortfolio/page2.webp",
+      "source": "public/img/newPortfolio/page2.png",
+      "beforeBytes": 1380544,
+      "bytes": 42592,
+      "w": 1600,
+      "h": 699,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/newPortfolio/page3.webp",
+      "source": "public/img/newPortfolio/page3.png",
+      "beforeBytes": 605185,
+      "bytes": 56060,
+      "w": 1600,
+      "h": 760,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/newPortfolio/page4.webp",
+      "source": "public/img/newPortfolio/page4.png",
+      "beforeBytes": 1663678,
+      "bytes": 66316,
+      "w": 1600,
+      "h": 754,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/newPortfolio/page5.webp",
+      "source": "public/img/newPortfolio/page5.png",
+      "beforeBytes": 1842601,
+      "bytes": 29184,
+      "w": 1600,
+      "h": 757,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/newPortfolio/page6.webp",
+      "source": "public/img/newPortfolio/page6.png",
+      "beforeBytes": 69238,
+      "bytes": 17204,
+      "w": 1600,
+      "h": 755,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/newPortfolio/page7.webp",
+      "source": "public/img/newPortfolio/page7.png",
+      "beforeBytes": 72587,
+      "bytes": 32212,
+      "w": 1600,
+      "h": 759,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/newPortfolio/page8.webp",
+      "source": "public/img/newPortfolio/page8.png",
+      "beforeBytes": 438982,
+      "bytes": 52668,
+      "w": 1600,
+      "h": 757,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/noticiasWebsite/page1.webp",
+      "source": "public/img/noticiasWebsite/page1.png",
+      "beforeBytes": 852351,
+      "bytes": 102482,
+      "w": 1600,
+      "h": 742,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/noticiasWebsite/page2.webp",
+      "source": "public/img/noticiasWebsite/page2.png",
+      "beforeBytes": 2907592,
+      "bytes": 230576,
+      "w": 1600,
+      "h": 760,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/noticiasWebsite/page3.webp",
+      "source": "public/img/noticiasWebsite/page3.png",
+      "beforeBytes": 1219717,
+      "bytes": 69580,
+      "w": 1600,
+      "h": 755,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/noticiasWebsite/page4.webp",
+      "source": "public/img/noticiasWebsite/page4.png",
+      "beforeBytes": 402517,
+      "bytes": 49576,
+      "w": 1600,
+      "h": 762,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/noticiasWebsite/page5.webp",
+      "source": "public/img/noticiasWebsite/page5.png",
+      "beforeBytes": 536961,
+      "bytes": 69228,
+      "w": 1600,
+      "h": 750,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page1.webp",
+      "source": "public/img/pizzeria/page1.png",
+      "beforeBytes": 439397,
+      "bytes": 55190,
+      "w": 1600,
+      "h": 755,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page10.webp",
+      "source": "public/img/pizzeria/page10.png",
+      "beforeBytes": 42126,
+      "bytes": 12484,
+      "w": 1600,
+      "h": 745,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page2.webp",
+      "source": "public/img/pizzeria/page2.png",
+      "beforeBytes": 269550,
+      "bytes": 43636,
+      "w": 1600,
+      "h": 754,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page3.webp",
+      "source": "public/img/pizzeria/page3.png",
+      "beforeBytes": 108768,
+      "bytes": 22082,
+      "w": 1600,
+      "h": 759,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page4.webp",
+      "source": "public/img/pizzeria/page4.png",
+      "beforeBytes": 312749,
+      "bytes": 54244,
+      "w": 1600,
+      "h": 756,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page5.webp",
+      "source": "public/img/pizzeria/page5.png",
+      "beforeBytes": 169247,
+      "bytes": 23898,
+      "w": 1600,
+      "h": 750,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page6.webp",
+      "source": "public/img/pizzeria/page6.png",
+      "beforeBytes": 60756,
+      "bytes": 14054,
+      "w": 1600,
+      "h": 763,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page7.webp",
+      "source": "public/img/pizzeria/page7.png",
+      "beforeBytes": 47004,
+      "bytes": 12958,
+      "w": 1600,
+      "h": 746,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page8.webp",
+      "source": "public/img/pizzeria/page8.png",
+      "beforeBytes": 50970,
+      "bytes": 15096,
+      "w": 1600,
+      "h": 755,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/pizzeria/page9.webp",
+      "source": "public/img/pizzeria/page9.png",
+      "beforeBytes": 40252,
+      "bytes": 11962,
+      "w": 1600,
+      "h": 757,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/porfolioV1/page1.webp",
+      "source": "public/img/porfolioV1/page1.png",
+      "beforeBytes": 518327,
+      "bytes": 30558,
+      "w": 1600,
+      "h": 756,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/porfolioV1/page2.webp",
+      "source": "public/img/porfolioV1/page2.png",
+      "beforeBytes": 760368,
+      "bytes": 72316,
+      "w": 1600,
+      "h": 760,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/porfolioV1/page3.webp",
+      "source": "public/img/porfolioV1/page3.png",
+      "beforeBytes": 137195,
+      "bytes": 37386,
+      "w": 1600,
+      "h": 763,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/porfolioV1/page4.webp",
+      "source": "public/img/porfolioV1/page4.png",
+      "beforeBytes": 641249,
+      "bytes": 50650,
+      "w": 1600,
+      "h": 757,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/porfolioV1/page5.webp",
+      "source": "public/img/porfolioV1/page5.png",
+      "beforeBytes": 364426,
+      "bytes": 62780,
+      "w": 1600,
+      "h": 750,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/porfolioV1/page6.webp",
+      "source": "public/img/porfolioV1/page6.png",
+      "beforeBytes": 58934,
+      "bytes": 16964,
+      "w": 1600,
+      "h": 752,
+      "format": "webp"
+    },
+    {
+      "file": "public/img/porfolioV1/page7.webp",
+      "source": "public/img/porfolioV1/page7.png",
+      "beforeBytes": 70169,
+      "bytes": 17900,
+      "w": 1600,
+      "h": 757,
+      "format": "webp"
+    }
+  ]
+}

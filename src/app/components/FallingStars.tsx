@@ -12,23 +12,33 @@ interface Star {
   opacity: number;
 }
 
+function prefersReducedMotion() {
+  if (typeof window === "undefined") return false;
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
 export default function FallingStars() {
   const [stars, setStars] = useState<Star[]>([]);
+  const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
-    // Generar estrellas iniciales
-    const initialStars = Array.from({ length: 30 }, (_, i) => ({
+    if (prefersReducedMotion()) {
+      setEnabled(false);
+      return;
+    }
+
+    setEnabled(true);
+
+    const initialStars = Array.from({ length: 20 }, (_, i) => ({
       id: i,
       right: Math.random() * 100,
       delay: Math.random() * 2,
-      duration: 3 + Math.random() * 4, // 3-7 segundos
-      size: 1 + Math.random() * 2.5, // 1-3.5px
-      opacity: 0.4 + Math.random() * 0.6, // 0.4-1
+      duration: 3 + Math.random() * 4,
+      size: 1 + Math.random() * 2.5,
+      opacity: 0.4 + Math.random() * 0.6,
     }));
-
     setStars(initialStars);
 
-    // Agregar nuevas estrellas periódicamente
     const interval = setInterval(() => {
       setStars((prevStars) => {
         const newStar: Star = {
@@ -39,29 +49,45 @@ export default function FallingStars() {
           size: 1 + Math.random() * 2.5,
           opacity: 0.4 + Math.random() * 0.6,
         };
-        // Mantener max 50 estrellas en pantalla
-        return prevStars.length > 50
+        return prevStars.length > 35
           ? [...prevStars.slice(1), newStar]
           : [...prevStars, newStar];
       });
-    }, 600); // Nueva estrella cada 600ms
+    }, 900);
 
-    return () => clearInterval(interval);
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const onChange = () => {
+      if (mq.matches) {
+        clearInterval(interval);
+        setEnabled(false);
+        setStars([]);
+      }
+    };
+    mq.addEventListener("change", onChange);
+
+    return () => {
+      clearInterval(interval);
+      mq.removeEventListener("change", onChange);
+    };
   }, []);
 
+  if (!enabled) return null;
+
   return (
-    <div className={styles.fallingStarsContainer}>
+    <div className={styles.fallingStarsContainer} aria-hidden="true">
       {stars.map((star) => (
         <div
           key={star.id}
           className={styles.fallingStar}
-          style={{
-            right: `${star.right}%`,
-            "--delay": `${star.delay}s`,
-            "--duration": `${star.duration}s`,
-            "--size": `${star.size}px`,
-            "--opacity": star.opacity,
-          } as React.CSSProperties & Record<string, string | number>}
+          style={
+            {
+              right: `${star.right}%`,
+              "--delay": `${star.delay}s`,
+              "--duration": `${star.duration}s`,
+              "--size": `${star.size}px`,
+              "--opacity": star.opacity,
+            } as React.CSSProperties & Record<string, string | number>
+          }
         />
       ))}
     </div>

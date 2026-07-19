@@ -9,6 +9,11 @@ export const es: Translation = {
   },
   header: {
     menuToggle: "Abrir o cerrar menú",
+    backToTop: "Volver arriba",
+    skipToContent: "Saltar al contenido principal",
+    mainNav: "Navegación principal",
+    openProject: "Abrir sitio del proyecto",
+    openRepo: "Abrir repositorio en GitHub",
   },
   theme: {
     toggleAria: "Cambiar tema",
@@ -20,15 +25,18 @@ export const es: Translation = {
   },
   home: {
     subtitle: "Diseño experiencias digitales que van más allá de los límites.",
-    titleLine1: "Construyo hoy.",
-    titleLine2: "Lidero el mañana.",
+    titleLine1: "Construyendo el presente.",
+    titleLine2: "Creando el futuro.",
     cta: "Ver mi trabajo",
   },
   portfolio: {
-    selectedProjects: "Proyectos destacados",
+    pageTitle: "Proyectos",
+    development: "Proyectos Full-Stack",
+    data: "Analisis de Datos",
   },
   projectDetail: {
     description: "Descripción",
+    analytics: "Analítica",
     notFound: "Proyecto no encontrado",
     github: "GitHub",
     viewProject: "Ver proyecto",
@@ -79,34 +87,7 @@ export const es: Translation = {
         "Diseñado con foco en escalabilidad, permitiendo futuras integraciones con herramientas de Business Intelligence y pipelines de análisis avanzado."
       ]
     },
-    "2": {
-      title: "Análisis de datos de retail",
-      summary:
-      "Proyecto de análisis de datos de ventas utilizando Python y Power BI, enfocado en limpieza de datos, validación y generación de insights de negocio mediante visualizaciones interactivas.",
-      data: [
-        "KPIs de negocio:\n  • Total Revenue\n  • Total Orders\n  • Total Customers\n  • Average Order Value\n  • Evaluación rápida del desempeño general",
-        "Análisis de tendencia de ventas:\n  • Crecimiento claro entre 2010 y 2011\n  • Comportamiento estable con picos estacionales\n  • Visualización mensual para identificar patrones temporales",
-      
-        "Distribución geográfica:\n  • Alta concentración de revenue en Reino Unido\n  • Menor participación de Netherlands, EIRE, Germany y France\n  • Oportunidades de expansión a otros mercados",
-      
-        "Detección de riesgo de mercado:\n  • Fuerte dependencia de un solo país (UK)\n  • Exposición a cambios en la demanda de ese mercado",
-      
-        "Rendimiento de productos:\n  • Identificación de productos más vendidos\n  • Productos destacados como PAPER CRAFT, LITTLE BIRDIE y MEDIUM CERAMIC TOP STORAGE JAR",
-      
-        "Patrones de concentración de productos:\n  • Un grupo reducido genera gran parte de las ventas\n  • Oportunidad de optimizar inventario y marketing",
-      
-        "Análisis de dashboard interactivo:\n  • Integración de KPIs y visualizaciones en una sola vista\n  • Exploración de datos en tiempo real\n  • Mejora en la interpretación de métricas de negocio",
-      
-        "Generación de insights de negocio:\n  • Comprensión del comportamiento de ventas\n  • Apoyo a la toma de decisiones\n  • Identificación de oportunidades de crecimiento"
-      ],
-      description: [
-        "Proyecto de análisis de datos de ventas de extremo a extremo utilizando Python (Pandas) y Power BI.",
-
-        "Incluye limpieza de datos, validación de tipos y corrección de errores de modelado para asegurar cálculos precisos. Se generaron insights clave mediante dashboards interactivos, como tendencias de ventas, revenue por país y productos más vendidos.",
-        
-        "El análisis permite identificar patrones de negocio como la concentración geográfica y la distribución de la demanda, aportando valor para la toma de decisiones.",
-      ],
-    },
+  
     "3": {
       title: "E-commerce de vinos",
       summary:
@@ -266,6 +247,20 @@ export const es: Translation = {
       ],
     },
     "15": {
+      title: "Plataforma de Inteligencia Comercial con IA",
+
+      summary:
+        "Sistema de inteligencia comercial que ayuda a detectar oportunidades de crecimiento, optimizar el inventario y comprender el comportamiento de los clientes mediante análisis automatizado e IA.",
+      data: [],
+      description: [
+        "Plataforma web de Inteligencia Comercial impulsada por IA, diseñada para transformar datos de ventas, clientes y mercado en información estratégica para la toma de decisiones.",
+        "Centraliza datos de múltiples fuentes y automatiza el análisis mediante dashboards interactivos, métricas clave y reportes inteligentes que facilitan el seguimiento del desempeño del negocio.",
+        "Incluye funcionalidades como análisis de ventas y rentabilidad, segmentación de clientes, detección de anomalías, predicción de demanda, generación automática de reportes y consultas en lenguaje natural sobre los datos.",
+        "Su arquitectura permite integrar fuentes externas, como información climática, fechas especiales y datos de la competencia, enriqueciendo el análisis y proporcionando una visión más completa del negocio.",
+        "El objetivo de la plataforma es ayudar a las empresas a descubrir oportunidades de crecimiento, optimizar la planificación comercial y respaldar decisiones estratégicas mediante análisis de datos e inteligencia artificial."
+      ],
+    },
+    "16": {
       title: "Análisis de ventas de Superstore",
       summary:
       "Proyecto integral de análisis de datos desarrollado sobre el dataset Superstore Sales, cubriendo todo el ciclo analítico: limpieza de datos, modelado, análisis exploratorio, consultas SQL, dashboards y analítica avanzada.",
@@ -280,6 +275,35 @@ export const es: Translation = {
         "Identificación de oportunidades de mejora en la estrategia comercial, incluyendo el impacto de los descuentos, categorías con baja rentabilidad y patrones estacionales de ventas.",
       ],
     },
+    "17": {
+      title: "Análisis de datos de retail",
+      summary:
+      "Proyecto de análisis de datos de ventas utilizando Python y Power BI, enfocado en limpieza de datos, validación y generación de insights de negocio mediante visualizaciones interactivas.",
+      data: [
+        "KPIs de negocio:\n  • Total Revenue\n  • Total Orders\n  • Total Customers\n  • Average Order Value\n  • Evaluación rápida del desempeño general",
+        "Análisis de tendencia de ventas:\n  • Crecimiento claro entre 2010 y 2011\n  • Comportamiento estable con picos estacionales\n  • Visualización mensual para identificar patrones temporales",
+      
+        "Distribución geográfica:\n  • Alta concentración de revenue en Reino Unido\n  • Menor participación de Netherlands, EIRE, Germany y France\n  • Oportunidades de expansión a otros mercados",
+      
+        "Detección de riesgo de mercado:\n  • Fuerte dependencia de un solo país (UK)\n  • Exposición a cambios en la demanda de ese mercado",
+      
+        "Rendimiento de productos:\n  • Identificación de productos más vendidos\n  • Productos destacados como PAPER CRAFT, LITTLE BIRDIE y MEDIUM CERAMIC TOP STORAGE JAR",
+      
+        "Patrones de concentración de productos:\n  • Un grupo reducido genera gran parte de las ventas\n  • Oportunidad de optimizar inventario y marketing",
+      
+        "Análisis de dashboard interactivo:\n  • Integración de KPIs y visualizaciones en una sola vista\n  • Exploración de datos en tiempo real\n  • Mejora en la interpretación de métricas de negocio",
+      
+        "Generación de insights de negocio:\n  • Comprensión del comportamiento de ventas\n  • Apoyo a la toma de decisiones\n  • Identificación de oportunidades de crecimiento"
+      ],
+      description: [
+        "Proyecto de análisis de datos de ventas de extremo a extremo utilizando Python (Pandas) y Power BI.",
+
+        "Incluye limpieza de datos, validación de tipos y corrección de errores de modelado para asegurar cálculos precisos. Se generaron insights clave mediante dashboards interactivos, como tendencias de ventas, revenue por país y productos más vendidos.",
+        
+        "El análisis permite identificar patrones de negocio como la concentración geográfica y la distribución de la demanda, aportando valor para la toma de decisiones.",
+      ],
+    },
+   
   },
 
   about: {
@@ -355,7 +379,14 @@ export const es: Translation = {
       subject: "Asunto",
       message: "Tu mensaje",
     },
+    labels: {
+      name: "Nombre",
+      email: "Correo",
+      subject: "Asunto",
+      message: "Mensaje",
+    },
     submit: "Enviar mensaje",
+    sending: "Enviando…",
     success: "¡Mensaje enviado con éxito!",
     sendError: "No se pudo enviar el mensaje",
     errors: {

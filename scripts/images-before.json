@@ -1,0 +1,550 @@
+{
+  "total": 51702982,
+  "count": 136,
+  "files": [
+    {
+      "f": "public\\apple-touch-icon.png",
+      "b": 9002
+    },
+    {
+      "f": "public\\favicon-16.png",
+      "b": 464
+    },
+    {
+      "f": "public\\favicon-32.png",
+      "b": 1027
+    },
+    {
+      "f": "public\\icon-192.png",
+      "b": 9845
+    },
+    {
+      "f": "public\\icon-512.png",
+      "b": 77812
+    },
+    {
+      "f": "public\\img\\analisis-retail\\grafico0.png",
+      "b": 76086
+    },
+    {
+      "f": "public\\img\\analisis-retail\\grafico1.png",
+      "b": 39017
+    },
+    {
+      "f": "public\\img\\analisis-retail\\grafico2.png",
+      "b": 38932
+    },
+    {
+      "f": "public\\img\\analisis-retail\\grafico3.png",
+      "b": 38041
+    },
+    {
+      "f": "public\\img\\analisis-retail\\grafico4.png",
+      "b": 16948
+    },
+    {
+      "f": "public\\img\\appReservasGX\\page1.png",
+      "b": 454825
+    },
+    {
+      "f": "public\\img\\appReservasGX\\page2.png",
+      "b": 113160
+    },
+    {
+      "f": "public\\img\\appReservasGX\\page3.png",
+      "b": 437750
+    },
+    {
+      "f": "public\\img\\catalogo\\page0.png",
+      "b": 409099
+    },
+    {
+      "f": "public\\img\\catalogo\\page1.png",
+      "b": 347988
+    },
+    {
+      "f": "public\\img\\catalogo\\page2.png",
+      "b": 87585
+    },
+    {
+      "f": "public\\img\\catalogo\\page3.png",
+      "b": 60537
+    },
+    {
+      "f": "public\\img\\catalogo\\page4.png",
+      "b": 81322
+    },
+    {
+      "f": "public\\img\\catalogo\\page5.png",
+      "b": 25732
+    },
+    {
+      "f": "public\\img\\catalogo\\page6.png",
+      "b": 71535
+    },
+    {
+      "f": "public\\img\\dataAnalysis\\1.png",
+      "b": 684380
+    },
+    {
+      "f": "public\\img\\dataAnalysis\\2.png",
+      "b": 699438
+    },
+    {
+      "f": "public\\img\\dataAnalysis\\3.png",
+      "b": 600223
+    },
+    {
+      "f": "public\\img\\dataAnalysis\\4.png",
+      "b": 443758
+    },
+    {
+      "f": "public\\img\\dataAnalysis\\5.png",
+      "b": 515159
+    },
+    {
+      "f": "public\\img\\dataAnalysis\\page1.png",
+      "b": 64197
+    },
+    {
+      "f": "public\\img\\dataAnalysis\\page2.png",
+      "b": 78209
+    },
+    {
+      "f": "public\\img\\dataAnalysis\\page3.png",
+      "b": 72275
+    },
+    {
+      "f": "public\\img\\dataAnalysis\\page4.png",
+      "b": 131645
+    },
+    {
+      "f": "public\\img\\delivery\\page1.png",
+      "b": 164901
+    },
+    {
+      "f": "public\\img\\delivery\\page10.png",
+      "b": 72280
+    },
+    {
+      "f": "public\\img\\delivery\\page11.png",
+      "b": 464644
+    },
+    {
+      "f": "public\\img\\delivery\\page12.png",
+      "b": 96274
+    },
+    {
+      "f": "public\\img\\delivery\\page13.png",
+      "b": 77962
+    },
+    {
+      "f": "public\\img\\delivery\\page14.png",
+      "b": 85663
+    },
+    {
+      "f": "public\\img\\delivery\\page15.png",
+      "b": 386851
+    },
+    {
+      "f": "public\\img\\delivery\\page16.png",
+      "b": 77584
+    },
+    {
+      "f": "public\\img\\delivery\\page17.png",
+      "b": 42320
+    },
+    {
+      "f": "public\\img\\delivery\\page18.png",
+      "b": 155727
+    },
+    {
+      "f": "public\\img\\delivery\\page19.png",
+      "b": 54487
+    },
+    {
+      "f": "public\\img\\delivery\\page2.png",
+      "b": 87261
+    },
+    {
+      "f": "public\\img\\delivery\\page3.png",
+      "b": 88056
+    },
+    {
+      "f": "public\\img\\delivery\\page4.png",
+      "b": 94601
+    },
+    {
+      "f": "public\\img\\delivery\\page5.png",
+      "b": 116569
+    },
+    {
+      "f": "public\\img\\delivery\\page6.png",
+      "b": 71677
+    },
+    {
+      "f": "public\\img\\delivery\\page7.png",
+      "b": 88867
+    },
+    {
+      "f": "public\\img\\delivery\\page8.png",
+      "b": 110629
+    },
+    {
+      "f": "public\\img\\delivery\\page9.png",
+      "b": 149293
+    },
+    {
+      "f": "public\\img\\deploy-app-github.png",
+      "b": 1934409
+    },
+    {
+      "f": "public\\img\\deploy1.png",
+      "b": 149940
+    },
+    {
+      "f": "public\\img\\deploy2.png",
+      "b": 57289
+    },
+    {
+      "f": "public\\img\\digitalWallet\\page1.png",
+      "b": 166957
+    },
+    {
+      "f": "public\\img\\digitalWallet\\page2.png",
+      "b": 121454
+    },
+    {
+      "f": "public\\img\\digitalWallet\\page3.png",
+      "b": 113853
+    },
+    {
+      "f": "public\\img\\digitalWallet\\page4.png",
+      "b": 100763
+    },
+    {
+      "f": "public\\img\\digitalWallet\\page5.png",
+      "b": 97393
+    },
+    {
+      "f": "public\\img\\digitalWallet\\page6.png",
+      "b": 129713
+    },
+    {
+      "f": "public\\img\\digitalWallet\\page7.png",
+      "b": 108465
+    },
+    {
+      "f": "public\\img\\digitalWallet\\page8.png",
+      "b": 134565
+    },
+    {
+      "f": "public\\img\\ecomerce\\admin0.png",
+      "b": 196540
+    },
+    {
+      "f": "public\\img\\ecomerce\\admin1.png",
+      "b": 197820
+    },
+    {
+      "f": "public\\img\\ecomerce\\admin2.png",
+      "b": 102809
+    },
+    {
+      "f": "public\\img\\ecomerce\\admin3.png",
+      "b": 90235
+    },
+    {
+      "f": "public\\img\\ecomerce\\admin4.png",
+      "b": 148137
+    },
+    {
+      "f": "public\\img\\ecomerce\\admin5.png",
+      "b": 174585
+    },
+    {
+      "f": "public\\img\\ecomerce\\analiticas.jpg",
+      "b": 63734
+    },
+    {
+      "f": "public\\img\\ecomerce\\analiticas2.jpg",
+      "b": 59711
+    },
+    {
+      "f": "public\\img\\ecomerce\\analiticas3.jpg",
+      "b": 19697
+    },
+    {
+      "f": "public\\img\\ecomerce\\carrito1.png",
+      "b": 1199421
+    },
+    {
+      "f": "public\\img\\ecomerce\\carrito2.png",
+      "b": 103768
+    },
+    {
+      "f": "public\\img\\ecomerce\\carrito3.png",
+      "b": 117446
+    },
+    {
+      "f": "public\\img\\ecomerce\\carrito4.png",
+      "b": 143704
+    },
+    {
+      "f": "public\\img\\ecomerce\\carrito5.png",
+      "b": 63337
+    },
+    {
+      "f": "public\\img\\ecomerce\\landing1.png",
+      "b": 2084719
+    },
+    {
+      "f": "public\\img\\ecomerce\\landing2.png",
+      "b": 1150813
+    },
+    {
+      "f": "public\\img\\ecomerce\\landing3.png",
+      "b": 713081
+    },
+    {
+      "f": "public\\img\\ecomerce\\user1.png",
+      "b": 73483
+    },
+    {
+      "f": "public\\img\\ecomerce\\user2.png",
+      "b": 129558
+    },
+    {
+      "f": "public\\img\\ecomerce\\user3.png",
+      "b": 147376
+    },
+    {
+      "f": "public\\img\\ecomerce\\user4.png",
+      "b": 305298
+    },
+    {
+      "f": "public\\img\\header.png",
+      "b": 962330
+    },
+    {
+      "f": "public\\img\\header.webp",
+      "b": 45408
+    },
+    {
+      "f": "public\\img\\hero.png",
+      "b": 1654778
+    },
+    {
+      "f": "public\\img\\hero.webp",
+      "b": 107004
+    },
+    {
+      "f": "public\\img\\infra-github.png",
+      "b": 2909160
+    },
+    {
+      "f": "public\\img\\inteligenciaComercial\\page1.png",
+      "b": 1531886
+    },
+    {
+      "f": "public\\img\\juegos\\page1.png",
+      "b": 659024
+    },
+    {
+      "f": "public\\img\\juegos\\page2.png",
+      "b": 1437698
+    },
+    {
+      "f": "public\\img\\juegos\\page3.png",
+      "b": 932915
+    },
+    {
+      "f": "public\\img\\juegos\\page4.png",
+      "b": 1393683
+    },
+    {
+      "f": "public\\img\\juegos\\page5.png",
+      "b": 415575
+    },
+    {
+      "f": "public\\img\\keycloak.png",
+      "b": 2678254
+    },
+    {
+      "f": "public\\img\\newPortfolio\\page1.png",
+      "b": 1788299
+    },
+    {
+      "f": "public\\img\\newPortfolio\\page2.png",
+      "b": 1380544
+    },
+    {
+      "f": "public\\img\\newPortfolio\\page3.png",
+      "b": 605185
+    },
+    {
+      "f": "public\\img\\newPortfolio\\page4.png",
+      "b": 1663678
+    },
+    {
+      "f": "public\\img\\newPortfolio\\page5.png",
+      "b": 1842601
+    },
+    {
+      "f": "public\\img\\newPortfolio\\page6.png",
+      "b": 69238
+    },
+    {
+      "f": "public\\img\\newPortfolio\\page7.png",
+      "b": 72587
+    },
+    {
+      "f": "public\\img\\newPortfolio\\page8.png",
+      "b": 438982
+    },
+    {
+      "f": "public\\img\\noticiasWebsite\\page1.png",
+      "b": 852351
+    },
+    {
+      "f": "public\\img\\noticiasWebsite\\page2.png",
+      "b": 2907592
+    },
+    {
+      "f": "public\\img\\noticiasWebsite\\page3.png",
+      "b": 1219717
+    },
+    {
+      "f": "public\\img\\noticiasWebsite\\page4.png",
+      "b": 402517
+    },
+    {
+      "f": "public\\img\\noticiasWebsite\\page5.png",
+      "b": 536961
+    },
+    {
+      "f": "public\\img\\owl.video.play.png",
+      "b": 4976
+    },
+    {
+      "f": "public\\img\\pizzeria\\page1.png",
+      "b": 439397
+    },
+    {
+      "f": "public\\img\\pizzeria\\page1.webp",
+      "b": 45884
+    },
+    {
+      "f": "public\\img\\pizzeria\\page10.png",
+      "b": 42126
+    },
+    {
+      "f": "public\\img\\pizzeria\\page10.webp",
+      "b": 10906
+    },
+    {
+      "f": "public\\img\\pizzeria\\page2.png",
+      "b": 269550
+    },
+    {
+      "f": "public\\img\\pizzeria\\page2.webp",
+      "b": 36848
+    },
+    {
+      "f": "public\\img\\pizzeria\\page3.png",
+      "b": 108768
+    },
+    {
+      "f": "public\\img\\pizzeria\\page3.webp",
+      "b": 19324
+    },
+    {
+      "f": "public\\img\\pizzeria\\page4.png",
+      "b": 312749
+    },
+    {
+      "f": "public\\img\\pizzeria\\page4.webp",
+      "b": 46140
+    },
+    {
+      "f": "public\\img\\pizzeria\\page5.png",
+      "b": 169247
+    },
+    {
+      "f": "public\\img\\pizzeria\\page5.webp",
+      "b": 20472
+    },
+    {
+      "f": "public\\img\\pizzeria\\page6.png",
+      "b": 60756
+    },
+    {
+      "f": "public\\img\\pizzeria\\page6.webp",
+      "b": 12048
+    },
+    {
+      "f": "public\\img\\pizzeria\\page7.png",
+      "b": 47004
+    },
+    {
+      "f": "public\\img\\pizzeria\\page7.webp",
+      "b": 11414
+    },
+    {
+      "f": "public\\img\\pizzeria\\page8.png",
+      "b": 50970
+    },
+    {
+      "f": "public\\img\\pizzeria\\page8.webp",
+      "b": 13316
+    },
+    {
+      "f": "public\\img\\pizzeria\\page9.png",
+      "b": 40252
+    },
+    {
+      "f": "public\\img\\pizzeria\\page9.webp",
+      "b": 10418
+    },
+    {
+      "f": "public\\img\\porfolioV1\\page1.png",
+      "b": 518327
+    },
+    {
+      "f": "public\\img\\porfolioV1\\page2.png",
+      "b": 760368
+    },
+    {
+      "f": "public\\img\\porfolioV1\\page3.png",
+      "b": 137195
+    },
+    {
+      "f": "public\\img\\porfolioV1\\page4.png",
+      "b": 641249
+    },
+    {
+      "f": "public\\img\\porfolioV1\\page5.png",
+      "b": 364426
+    },
+    {
+      "f": "public\\img\\porfolioV1\\page6.png",
+      "b": 58934
+    },
+    {
+      "f": "public\\img\\porfolioV1\\page7.png",
+      "b": 70169
+    },
+    {
+      "f": "public\\og-image.optimized.png",
+      "b": 127813
+    },
+    {
+      "f": "public\\og-image.png",
+      "b": 127813
+    },
+    {
+      "f": "public\\og-image.webp",
+      "b": 44446
+    }
+  ]
+}

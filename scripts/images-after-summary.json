@@ -1,0 +1,1248 @@
+{
+  "beforeTotal": 51702982,
+  "afterTotal": 5596312,
+  "reduction": 46106670,
+  "pct": "89.2",
+  "rows": [
+    {
+      "file": "public/img/infra-github.webp",
+      "before": 2909160,
+      "after": 224648,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp",
+      "reduction": 2684512,
+      "pct": 92.27790839967551
+    },
+    {
+      "file": "public/img/noticiasWebsite/page2.webp",
+      "before": 2907592,
+      "after": 230576,
+      "w": 1600,
+      "h": 760,
+      "format": "webp",
+      "reduction": 2677016,
+      "pct": 92.06986399742468
+    },
+    {
+      "file": "public/img/keycloak.webp",
+      "before": 2678254,
+      "after": 128726,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp",
+      "reduction": 2549528,
+      "pct": 95.19365974997143
+    },
+    {
+      "file": "public/img/ecomerce/landing1.webp",
+      "before": 2084719,
+      "after": 122632,
+      "w": 1600,
+      "h": 757,
+      "format": "webp",
+      "reduction": 1962087,
+      "pct": 94.11757651750668
+    },
+    {
+      "file": "public/img/deploy-app-github.webp",
+      "before": 1934409,
+      "after": 124680,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp",
+      "reduction": 1809729,
+      "pct": 93.55462055852718
+    },
+    {
+      "file": "public/img/newPortfolio/page5.webp",
+      "before": 1842601,
+      "after": 29184,
+      "w": 1600,
+      "h": 757,
+      "format": "webp",
+      "reduction": 1813417,
+      "pct": 98.41615195042226
+    },
+    {
+      "file": "public/img/newPortfolio/page1.webp",
+      "before": 1788299,
+      "after": 30638,
+      "w": 1600,
+      "h": 752,
+      "format": "webp",
+      "reduction": 1757661,
+      "pct": 98.28675182393995
+    },
+    {
+      "file": "public/img/newPortfolio/page4.webp",
+      "before": 1663678,
+      "after": 66316,
+      "w": 1600,
+      "h": 754,
+      "format": "webp",
+      "reduction": 1597362,
+      "pct": 96.01389211133404
+    },
+    {
+      "file": "public/img/inteligenciaComercial/page1.webp",
+      "before": 1531886,
+      "after": 91798,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp",
+      "reduction": 1440088,
+      "pct": 94.00751753067787
+    },
+    {
+      "file": "public/img/juegos/page2.webp",
+      "before": 1437698,
+      "after": 68442,
+      "w": 1600,
+      "h": 747,
+      "format": "webp",
+      "reduction": 1369256,
+      "pct": 95.23947310213967
+    },
+    {
+      "file": "public/img/juegos/page4.webp",
+      "before": 1393683,
+      "after": 121646,
+      "w": 1600,
+      "h": 748,
+      "format": "webp",
+      "reduction": 1272037,
+      "pct": 91.27161628576943
+    },
+    {
+      "file": "public/img/newPortfolio/page2.webp",
+      "before": 1380544,
+      "after": 42592,
+      "w": 1600,
+      "h": 699,
+      "format": "webp",
+      "reduction": 1337952,
+      "pct": 96.91483936766956
+    },
+    {
+      "file": "public/img/noticiasWebsite/page3.webp",
+      "before": 1219717,
+      "after": 69580,
+      "w": 1600,
+      "h": 755,
+      "format": "webp",
+      "reduction": 1150137,
+      "pct": 94.2953980308547
+    },
+    {
+      "file": "public/img/ecomerce/carrito1.webp",
+      "before": 1199421,
+      "after": 56680,
+      "w": 1600,
+      "h": 755,
+      "format": "webp",
+      "reduction": 1142741,
+      "pct": 95.27438655818099
+    },
+    {
+      "file": "public/img/ecomerce/landing2.webp",
+      "before": 1150813,
+      "after": 74044,
+      "w": 1600,
+      "h": 755,
+      "format": "webp",
+      "reduction": 1076769,
+      "pct": 93.56593990509319
+    },
+    {
+      "file": "public/img/juegos/page3.webp",
+      "before": 932915,
+      "after": 68408,
+      "w": 1600,
+      "h": 751,
+      "format": "webp",
+      "reduction": 864507,
+      "pct": 92.6672848008661
+    },
+    {
+      "file": "public/img/noticiasWebsite/page1.webp",
+      "before": 852351,
+      "after": 102482,
+      "w": 1600,
+      "h": 742,
+      "format": "webp",
+      "reduction": 749869,
+      "pct": 87.9765495670211
+    },
+    {
+      "file": "public/img/porfolioV1/page2.webp",
+      "before": 760368,
+      "after": 72316,
+      "w": 1600,
+      "h": 760,
+      "format": "webp",
+      "reduction": 688052,
+      "pct": 90.48934200281968
+    },
+    {
+      "file": "public/img/ecomerce/landing3.webp",
+      "before": 713081,
+      "after": 56594,
+      "w": 1600,
+      "h": 805,
+      "format": "webp",
+      "reduction": 656487,
+      "pct": 92.06345422189064
+    },
+    {
+      "file": "public/img/dataAnalysis/2.webp",
+      "before": 699438,
+      "after": 153012,
+      "w": 1600,
+      "h": 2605,
+      "format": "webp",
+      "reduction": 546426,
+      "pct": 78.12357921645663
+    },
+    {
+      "file": "public/img/dataAnalysis/1.webp",
+      "before": 684380,
+      "after": 133790,
+      "w": 1600,
+      "h": 2867,
+      "format": "webp",
+      "reduction": 550590,
+      "pct": 80.45091908004325
+    },
+    {
+      "file": "public/img/juegos/page1.webp",
+      "before": 659024,
+      "after": 39716,
+      "w": 1600,
+      "h": 759,
+      "format": "webp",
+      "reduction": 619308,
+      "pct": 93.97351234552914
+    },
+    {
+      "file": "public/img/porfolioV1/page4.webp",
+      "before": 641249,
+      "after": 50650,
+      "w": 1600,
+      "h": 757,
+      "format": "webp",
+      "reduction": 590599,
+      "pct": 92.10135220483775
+    },
+    {
+      "file": "public/img/newPortfolio/page3.webp",
+      "before": 605185,
+      "after": 56060,
+      "w": 1600,
+      "h": 760,
+      "format": "webp",
+      "reduction": 549125,
+      "pct": 90.73671687170038
+    },
+    {
+      "file": "public/img/dataAnalysis/3.webp",
+      "before": 600223,
+      "after": 136146,
+      "w": 1600,
+      "h": 2222,
+      "format": "webp",
+      "reduction": 464077,
+      "pct": 77.31743035505137
+    },
+    {
+      "file": "public/img/noticiasWebsite/page5.webp",
+      "before": 536961,
+      "after": 69228,
+      "w": 1600,
+      "h": 750,
+      "format": "webp",
+      "reduction": 467733,
+      "pct": 87.10744355735332
+    },
+    {
+      "file": "public/img/porfolioV1/page1.webp",
+      "before": 518327,
+      "after": 30558,
+      "w": 1600,
+      "h": 756,
+      "format": "webp",
+      "reduction": 487769,
+      "pct": 94.10449388127572
+    },
+    {
+      "file": "public/img/dataAnalysis/5.webp",
+      "before": 515159,
+      "after": 125334,
+      "w": 1600,
+      "h": 2270,
+      "format": "webp",
+      "reduction": 389825,
+      "pct": 75.67081231231523
+    },
+    {
+      "file": "public/img/delivery/page11.webp",
+      "before": 464644,
+      "after": 44274,
+      "w": 1600,
+      "h": 756,
+      "format": "webp",
+      "reduction": 420370,
+      "pct": 90.47141467446045
+    },
+    {
+      "file": "public/img/appReservasGX/page1.webp",
+      "before": 454825,
+      "after": 48894,
+      "w": 1235,
+      "h": 815,
+      "format": "webp",
+      "reduction": 405931,
+      "pct": 89.24993129225527
+    },
+    {
+      "file": "public/img/dataAnalysis/4.webp",
+      "before": 443758,
+      "after": 106264,
+      "w": 1600,
+      "h": 1983,
+      "format": "webp",
+      "reduction": 337494,
+      "pct": 76.05361480807107
+    },
+    {
+      "file": "public/img/newPortfolio/page8.webp",
+      "before": 438982,
+      "after": 52668,
+      "w": 1600,
+      "h": 757,
+      "format": "webp",
+      "reduction": 386314,
+      "pct": 88.00224154976742
+    },
+    {
+      "file": "public/img/appReservasGX/page3.webp",
+      "before": 437750,
+      "after": 68632,
+      "w": 1073,
+      "h": 770,
+      "format": "webp",
+      "reduction": 369118,
+      "pct": 84.32164477441462
+    },
+    {
+      "file": "public/img/juegos/page5.webp",
+      "before": 415575,
+      "after": 43328,
+      "w": 1600,
+      "h": 762,
+      "format": "webp",
+      "reduction": 372247,
+      "pct": 89.573963785117
+    },
+    {
+      "file": "public/img/catalogo/page0.webp",
+      "before": 409099,
+      "after": 15502,
+      "w": 472,
+      "h": 802,
+      "format": "webp",
+      "reduction": 393597,
+      "pct": 96.2106971662116
+    },
+    {
+      "file": "public/img/noticiasWebsite/page4.webp",
+      "before": 402517,
+      "after": 49576,
+      "w": 1600,
+      "h": 762,
+      "format": "webp",
+      "reduction": 352941,
+      "pct": 87.68350156639347
+    },
+    {
+      "file": "public/img/delivery/page15.webp",
+      "before": 386851,
+      "after": 33810,
+      "w": 1600,
+      "h": 731,
+      "format": "webp",
+      "reduction": 353041,
+      "pct": 91.2602009559236
+    },
+    {
+      "file": "public/img/porfolioV1/page5.webp",
+      "before": 364426,
+      "after": 62780,
+      "w": 1600,
+      "h": 750,
+      "format": "webp",
+      "reduction": 301646,
+      "pct": 82.77290862891232
+    },
+    {
+      "file": "public/img/catalogo/page1.webp",
+      "before": 347988,
+      "after": 34006,
+      "w": 470,
+      "h": 835,
+      "format": "webp",
+      "reduction": 313982,
+      "pct": 90.22782394795222
+    },
+    {
+      "file": "public/img/ecomerce/user4.webp",
+      "before": 305298,
+      "after": 24090,
+      "w": 1600,
+      "h": 750,
+      "format": "webp",
+      "reduction": 281208,
+      "pct": 92.10934889845332
+    },
+    {
+      "file": "public/img/ecomerce/admin1.webp",
+      "before": 197820,
+      "after": 72948,
+      "w": 1600,
+      "h": 761,
+      "format": "webp",
+      "reduction": 124872,
+      "pct": 63.12405216863816
+    },
+    {
+      "file": "public/img/ecomerce/admin0.webp",
+      "before": 196540,
+      "after": 43262,
+      "w": 1600,
+      "h": 792,
+      "format": "webp",
+      "reduction": 153278,
+      "pct": 77.98819578711714
+    },
+    {
+      "file": "public/img/ecomerce/admin5.webp",
+      "before": 174585,
+      "after": 29164,
+      "w": 1299,
+      "h": 603,
+      "format": "webp",
+      "reduction": 145421,
+      "pct": 83.29524300484005
+    },
+    {
+      "file": "public/img/digitalWallet/page1.webp",
+      "before": 166957,
+      "after": 17190,
+      "w": 1053,
+      "h": 732,
+      "format": "webp",
+      "reduction": 149767,
+      "pct": 89.70393574393407
+    },
+    {
+      "file": "public/img/delivery/page1.webp",
+      "before": 164901,
+      "after": 41776,
+      "w": 1600,
+      "h": 762,
+      "format": "webp",
+      "reduction": 123125,
+      "pct": 74.66601172824907
+    },
+    {
+      "file": "public/img/delivery/page18.webp",
+      "before": 155727,
+      "after": 27326,
+      "w": 1600,
+      "h": 729,
+      "format": "webp",
+      "reduction": 128401,
+      "pct": 82.45262542783203
+    },
+    {
+      "file": "public/img/deploy1.webp",
+      "before": 149940,
+      "after": 19570,
+      "w": 1350,
+      "h": 759,
+      "format": "webp",
+      "reduction": 130370,
+      "pct": 86.94811257836467
+    },
+    {
+      "file": "public/img/delivery/page9.webp",
+      "before": 149293,
+      "after": 36478,
+      "w": 1600,
+      "h": 760,
+      "format": "webp",
+      "reduction": 112815,
+      "pct": 75.56616854105684
+    },
+    {
+      "file": "public/img/ecomerce/admin4.webp",
+      "before": 148137,
+      "after": 26182,
+      "w": 1299,
+      "h": 793,
+      "format": "webp",
+      "reduction": 121955,
+      "pct": 82.32582001795635
+    },
+    {
+      "file": "public/img/ecomerce/user3.webp",
+      "before": 147376,
+      "after": 34252,
+      "w": 1600,
+      "h": 759,
+      "format": "webp",
+      "reduction": 113124,
+      "pct": 76.7587666919987
+    },
+    {
+      "file": "public/img/ecomerce/carrito4.webp",
+      "before": 143704,
+      "after": 28124,
+      "w": 1600,
+      "h": 760,
+      "format": "webp",
+      "reduction": 115580,
+      "pct": 80.42921560986473
+    },
+    {
+      "file": "public/img/porfolioV1/page3.webp",
+      "before": 137195,
+      "after": 37386,
+      "w": 1600,
+      "h": 763,
+      "format": "webp",
+      "reduction": 99809,
+      "pct": 72.74973577754291
+    },
+    {
+      "file": "public/img/digitalWallet/page8.webp",
+      "before": 134565,
+      "after": 13904,
+      "w": 1047,
+      "h": 584,
+      "format": "webp",
+      "reduction": 120661,
+      "pct": 89.66744695871883
+    },
+    {
+      "file": "public/img/dataAnalysis/page4.webp",
+      "before": 131645,
+      "after": 55090,
+      "w": 1301,
+      "h": 728,
+      "format": "webp",
+      "reduction": 76555,
+      "pct": 58.152607391089674
+    },
+    {
+      "file": "public/img/digitalWallet/page6.webp",
+      "before": 129713,
+      "after": 12004,
+      "w": 1050,
+      "h": 617,
+      "format": "webp",
+      "reduction": 117709,
+      "pct": 90.74572325056084
+    },
+    {
+      "file": "public/img/ecomerce/user2.webp",
+      "before": 129558,
+      "after": 33812,
+      "w": 1600,
+      "h": 758,
+      "format": "webp",
+      "reduction": 95746,
+      "pct": 73.90203615369177
+    },
+    {
+      "file": "public/og-image.png",
+      "before": 127813,
+      "after": 156764,
+      "w": 1200,
+      "h": 501,
+      "format": "png",
+      "reduction": -28951,
+      "pct": -22.651060533748524
+    },
+    {
+      "file": "public/og-image.optimized.png (removed)",
+      "before": 127813,
+      "after": 0,
+      "w": "-",
+      "h": "-",
+      "format": "removed",
+      "reduction": 127813,
+      "pct": 100
+    },
+    {
+      "file": "public/img/digitalWallet/page2.webp",
+      "before": 121454,
+      "after": 11228,
+      "w": 1030,
+      "h": 618,
+      "format": "webp",
+      "reduction": 110226,
+      "pct": 90.75534770365735
+    },
+    {
+      "file": "public/img/ecomerce/carrito3.webp",
+      "before": 117446,
+      "after": 30132,
+      "w": 1600,
+      "h": 753,
+      "format": "webp",
+      "reduction": 87314,
+      "pct": 74.34395381707337
+    },
+    {
+      "file": "public/img/delivery/page5.webp",
+      "before": 116569,
+      "after": 48638,
+      "w": 1600,
+      "h": 761,
+      "format": "webp",
+      "reduction": 67931,
+      "pct": 58.27535622678413
+    },
+    {
+      "file": "public/img/digitalWallet/page3.webp",
+      "before": 113853,
+      "after": 11454,
+      "w": 1047,
+      "h": 620,
+      "format": "webp",
+      "reduction": 102399,
+      "pct": 89.93965903401755
+    },
+    {
+      "file": "public/img/appReservasGX/page2.webp",
+      "before": 113160,
+      "after": 35530,
+      "w": 1208,
+      "h": 841,
+      "format": "webp",
+      "reduction": 77630,
+      "pct": 68.60197949805584
+    },
+    {
+      "file": "public/img/delivery/page8.webp",
+      "before": 110629,
+      "after": 39276,
+      "w": 1600,
+      "h": 763,
+      "format": "webp",
+      "reduction": 71353,
+      "pct": 64.49755489067061
+    },
+    {
+      "file": "public/img/digitalWallet/page7.webp",
+      "before": 108465,
+      "after": 10460,
+      "w": 1034,
+      "h": 599,
+      "format": "webp",
+      "reduction": 98005,
+      "pct": 90.35633614530033
+    },
+    {
+      "file": "public/img/hero.webp",
+      "before": 107004,
+      "after": 118572,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp",
+      "reduction": -11568,
+      "pct": -10.81081081081081
+    },
+    {
+      "file": "public/img/ecomerce/carrito2.webp",
+      "before": 103768,
+      "after": 24748,
+      "w": 1600,
+      "h": 760,
+      "format": "webp",
+      "reduction": 79020,
+      "pct": 76.15064374373603
+    },
+    {
+      "file": "public/img/ecomerce/admin2.webp",
+      "before": 102809,
+      "after": 30332,
+      "w": 1600,
+      "h": 761,
+      "format": "webp",
+      "reduction": 72477,
+      "pct": 70.49674639379822
+    },
+    {
+      "file": "public/img/digitalWallet/page4.webp",
+      "before": 100763,
+      "after": 10866,
+      "w": 1043,
+      "h": 622,
+      "format": "webp",
+      "reduction": 89897,
+      "pct": 89.21627978523863
+    },
+    {
+      "file": "public/img/digitalWallet/page5.webp",
+      "before": 97393,
+      "after": 11078,
+      "w": 1035,
+      "h": 606,
+      "format": "webp",
+      "reduction": 86315,
+      "pct": 88.62546589590627
+    },
+    {
+      "file": "public/img/delivery/page12.webp",
+      "before": 96274,
+      "after": 45760,
+      "w": 1600,
+      "h": 757,
+      "format": "webp",
+      "reduction": 50514,
+      "pct": 52.46899474416769
+    },
+    {
+      "file": "public/img/delivery/page4.webp",
+      "before": 94601,
+      "after": 44274,
+      "w": 1600,
+      "h": 759,
+      "format": "webp",
+      "reduction": 50327,
+      "pct": 53.19922622382427
+    },
+    {
+      "file": "public/img/ecomerce/admin3.webp",
+      "before": 90235,
+      "after": 24618,
+      "w": 1600,
+      "h": 761,
+      "format": "webp",
+      "reduction": 65617,
+      "pct": 72.71790325261817
+    },
+    {
+      "file": "public/img/delivery/page7.webp",
+      "before": 88867,
+      "after": 41452,
+      "w": 1600,
+      "h": 750,
+      "format": "webp",
+      "reduction": 47415,
+      "pct": 53.355013672116755
+    },
+    {
+      "file": "public/img/delivery/page3.webp",
+      "before": 88056,
+      "after": 39526,
+      "w": 1600,
+      "h": 757,
+      "format": "webp",
+      "reduction": 48530,
+      "pct": 55.11265558281093
+    },
+    {
+      "file": "public/img/catalogo/page2.webp",
+      "before": 87585,
+      "after": 23846,
+      "w": 473,
+      "h": 839,
+      "format": "webp",
+      "reduction": 63739,
+      "pct": 72.77387680538905
+    },
+    {
+      "file": "public/img/delivery/page2.webp",
+      "before": 87261,
+      "after": 37554,
+      "w": 1600,
+      "h": 757,
+      "format": "webp",
+      "reduction": 49707,
+      "pct": 56.96359198267267
+    },
+    {
+      "file": "public/img/delivery/page14.webp",
+      "before": 85663,
+      "after": 32896,
+      "w": 1600,
+      "h": 763,
+      "format": "webp",
+      "reduction": 52767,
+      "pct": 61.598356349882685
+    },
+    {
+      "file": "public/img/catalogo/page4.webp",
+      "before": 81322,
+      "after": 22258,
+      "w": 476,
+      "h": 840,
+      "format": "webp",
+      "reduction": 59064,
+      "pct": 72.62979267602863
+    },
+    {
+      "file": "public/img/dataAnalysis/page2.webp",
+      "before": 78209,
+      "after": 45882,
+      "w": 1327,
+      "h": 738,
+      "format": "webp",
+      "reduction": 32327,
+      "pct": 41.33411755680293
+    },
+    {
+      "file": "public/img/delivery/page13.webp",
+      "before": 77962,
+      "after": 31202,
+      "w": 1600,
+      "h": 755,
+      "format": "webp",
+      "reduction": 46760,
+      "pct": 59.97793796978015
+    },
+    {
+      "file": "public/icon-512.png",
+      "before": 77812,
+      "after": 77812,
+      "w": 512,
+      "h": 512,
+      "format": "png",
+      "reduction": 0,
+      "pct": 0
+    },
+    {
+      "file": "public/img/delivery/page16.webp",
+      "before": 77584,
+      "after": 14880,
+      "w": 1600,
+      "h": 735,
+      "format": "webp",
+      "reduction": 62704,
+      "pct": 80.82078779129718
+    },
+    {
+      "file": "public/img/analisis-retail/grafico0.webp",
+      "before": 76086,
+      "after": 42874,
+      "w": 1153,
+      "h": 643,
+      "format": "webp",
+      "reduction": 33212,
+      "pct": 43.65060589333123
+    },
+    {
+      "file": "public/img/ecomerce/user1.webp",
+      "before": 73483,
+      "after": 19242,
+      "w": 1600,
+      "h": 747,
+      "format": "webp",
+      "reduction": 54241,
+      "pct": 73.81435161874175
+    },
+    {
+      "file": "public/img/newPortfolio/page7.webp",
+      "before": 72587,
+      "after": 32212,
+      "w": 1600,
+      "h": 759,
+      "format": "webp",
+      "reduction": 40375,
+      "pct": 55.62290768319396
+    },
+    {
+      "file": "public/img/delivery/page10.webp",
+      "before": 72280,
+      "after": 29600,
+      "w": 1600,
+      "h": 755,
+      "format": "webp",
+      "reduction": 42680,
+      "pct": 59.04814609850582
+    },
+    {
+      "file": "public/img/dataAnalysis/page3.webp",
+      "before": 72275,
+      "after": 44256,
+      "w": 1336,
+      "h": 746,
+      "format": "webp",
+      "reduction": 28019,
+      "pct": 38.76720857834659
+    },
+    {
+      "file": "public/img/delivery/page6.webp",
+      "before": 71677,
+      "after": 28110,
+      "w": 1600,
+      "h": 756,
+      "format": "webp",
+      "reduction": 43567,
+      "pct": 60.782398816914764
+    },
+    {
+      "file": "public/img/catalogo/page6.webp",
+      "before": 71535,
+      "after": 25188,
+      "w": 473,
+      "h": 835,
+      "format": "webp",
+      "reduction": 46347,
+      "pct": 64.78926399664499
+    },
+    {
+      "file": "public/img/porfolioV1/page7.webp",
+      "before": 70169,
+      "after": 17900,
+      "w": 1600,
+      "h": 757,
+      "format": "webp",
+      "reduction": 52269,
+      "pct": 74.49015947213157
+    },
+    {
+      "file": "public/img/newPortfolio/page6.webp",
+      "before": 69238,
+      "after": 17204,
+      "w": 1600,
+      "h": 755,
+      "format": "webp",
+      "reduction": 52034,
+      "pct": 75.15237297437824
+    },
+    {
+      "file": "public/img/dataAnalysis/page1.webp",
+      "before": 64197,
+      "after": 44136,
+      "w": 1323,
+      "h": 743,
+      "format": "webp",
+      "reduction": 20061,
+      "pct": 31.249123790831344
+    },
+    {
+      "file": "public/img/ecomerce/analiticas.webp",
+      "before": 63734,
+      "after": 18790,
+      "w": 1299,
+      "h": 633,
+      "format": "webp",
+      "reduction": 44944,
+      "pct": 70.51809081494964
+    },
+    {
+      "file": "public/img/ecomerce/carrito5.webp",
+      "before": 63337,
+      "after": 17562,
+      "w": 1600,
+      "h": 759,
+      "format": "webp",
+      "reduction": 45775,
+      "pct": 72.2721316134329
+    },
+    {
+      "file": "public/img/catalogo/page3.webp",
+      "before": 60537,
+      "after": 10168,
+      "w": 473,
+      "h": 838,
+      "format": "webp",
+      "reduction": 50369,
+      "pct": 83.20366057122091
+    },
+    {
+      "file": "public/img/ecomerce/analiticas2.webp",
+      "before": 59711,
+      "after": 18160,
+      "w": 1100,
+      "h": 525,
+      "format": "webp",
+      "reduction": 41551,
+      "pct": 69.58684329520524
+    },
+    {
+      "file": "public/img/porfolioV1/page6.webp",
+      "before": 58934,
+      "after": 16964,
+      "w": 1600,
+      "h": 752,
+      "format": "webp",
+      "reduction": 41970,
+      "pct": 71.2152577459531
+    },
+    {
+      "file": "public/img/deploy2.webp",
+      "before": 57289,
+      "after": 25600,
+      "w": 737,
+      "h": 456,
+      "format": "webp",
+      "reduction": 31689,
+      "pct": 55.31428371938767
+    },
+    {
+      "file": "public/img/delivery/page19.webp",
+      "before": 54487,
+      "after": 14422,
+      "w": 1600,
+      "h": 734,
+      "format": "webp",
+      "reduction": 40065,
+      "pct": 73.5313010442858
+    },
+    {
+      "file": "public/img/pizzeria/page4.webp",
+      "before": 46140,
+      "after": 54244,
+      "w": 1600,
+      "h": 756,
+      "format": "webp",
+      "reduction": -8104,
+      "pct": -17.563935847420886
+    },
+    {
+      "file": "public/img/pizzeria/page1.webp",
+      "before": 45884,
+      "after": 55190,
+      "w": 1600,
+      "h": 755,
+      "format": "webp",
+      "reduction": -9306,
+      "pct": -20.28157963560282
+    },
+    {
+      "file": "public/img/header.webp",
+      "before": 45408,
+      "after": 54494,
+      "w": 1536,
+      "h": 1024,
+      "format": "webp",
+      "reduction": -9086,
+      "pct": -20.00968992248062
+    },
+    {
+      "file": "public/og-image.webp",
+      "before": 44446,
+      "after": 29932,
+      "w": 1200,
+      "h": 501,
+      "format": "webp",
+      "reduction": 14514,
+      "pct": 32.65535706250281
+    },
+    {
+      "file": "public/img/delivery/page17.webp",
+      "before": 42320,
+      "after": 10930,
+      "w": 1600,
+      "h": 734,
+      "format": "webp",
+      "reduction": 31390,
+      "pct": 74.17296786389413
+    },
+    {
+      "file": "public/img/analisis-retail/grafico1.webp",
+      "before": 39017,
+      "after": 21800,
+      "w": 1221,
+      "h": 698,
+      "format": "webp",
+      "reduction": 17217,
+      "pct": 44.12691903529231
+    },
+    {
+      "file": "public/img/analisis-retail/grafico2.webp",
+      "before": 38932,
+      "after": 14266,
+      "w": 1230,
+      "h": 696,
+      "format": "webp",
+      "reduction": 24666,
+      "pct": 63.35662180211651
+    },
+    {
+      "file": "public/img/analisis-retail/grafico3.webp",
+      "before": 38041,
+      "after": 17770,
+      "w": 1161,
+      "h": 682,
+      "format": "webp",
+      "reduction": 20271,
+      "pct": 53.28724271181093
+    },
+    {
+      "file": "public/img/pizzeria/page2.webp",
+      "before": 36848,
+      "after": 43636,
+      "w": 1600,
+      "h": 754,
+      "format": "webp",
+      "reduction": -6788,
+      "pct": -18.421623968736434
+    },
+    {
+      "file": "public/img/catalogo/page5.webp",
+      "before": 25732,
+      "after": 10640,
+      "w": 478,
+      "h": 833,
+      "format": "webp",
+      "reduction": 15092,
+      "pct": 58.65070729053319
+    },
+    {
+      "file": "public/img/pizzeria/page5.webp",
+      "before": 20472,
+      "after": 23898,
+      "w": 1600,
+      "h": 750,
+      "format": "webp",
+      "reduction": -3426,
+      "pct": -16.735052754982416
+    },
+    {
+      "file": "public/img/ecomerce/analiticas3.webp",
+      "before": 19697,
+      "after": 5044,
+      "w": 567,
+      "h": 274,
+      "format": "webp",
+      "reduction": 14653,
+      "pct": 74.39203939686246
+    },
+    {
+      "file": "public/img/pizzeria/page3.webp",
+      "before": 19324,
+      "after": 22082,
+      "w": 1600,
+      "h": 759,
+      "format": "webp",
+      "reduction": -2758,
+      "pct": -14.272407369074735
+    },
+    {
+      "file": "public/img/analisis-retail/grafico4.webp",
+      "before": 16948,
+      "after": 8324,
+      "w": 1352,
+      "h": 319,
+      "format": "webp",
+      "reduction": 8624,
+      "pct": 50.88506018409251
+    },
+    {
+      "file": "public/img/pizzeria/page8.webp",
+      "before": 13316,
+      "after": 15096,
+      "w": 1600,
+      "h": 755,
+      "format": "webp",
+      "reduction": -1780,
+      "pct": -13.367377590868124
+    },
+    {
+      "file": "public/img/pizzeria/page6.webp",
+      "before": 12048,
+      "after": 14054,
+      "w": 1600,
+      "h": 763,
+      "format": "webp",
+      "reduction": -2006,
+      "pct": -16.650066401062414
+    },
+    {
+      "file": "public/img/pizzeria/page7.webp",
+      "before": 11414,
+      "after": 12958,
+      "w": 1600,
+      "h": 746,
+      "format": "webp",
+      "reduction": -1544,
+      "pct": -13.527247240231288
+    },
+    {
+      "file": "public/img/pizzeria/page10.webp",
+      "before": 10906,
+      "after": 12484,
+      "w": 1600,
+      "h": 745,
+      "format": "webp",
+      "reduction": -1578,
+      "pct": -14.469099578213829
+    },
+    {
+      "file": "public/img/pizzeria/page9.webp",
+      "before": 10418,
+      "after": 11962,
+      "w": 1600,
+      "h": 757,
+      "format": "webp",
+      "reduction": -1544,
+      "pct": -14.820502975619121
+    },
+    {
+      "file": "public/icon-192.png",
+      "before": 9845,
+      "after": 9845,
+      "w": 192,
+      "h": 192,
+      "format": "png",
+      "reduction": 0,
+      "pct": 0
+    },
+    {
+      "file": "public/apple-touch-icon.png",
+      "before": 9002,
+      "after": 9002,
+      "w": 180,
+      "h": 180,
+      "format": "png",
+      "reduction": 0,
+      "pct": 0
+    },
+    {
+      "file": "public/img/owl.video.play.png",
+      "before": 4976,
+      "after": 4976,
+      "w": 80,
+      "h": 80,
+      "format": "png",
+      "reduction": 0,
+      "pct": 0
+    },
+    {
+      "file": "public/favicon-32.png",
+      "before": 1027,
+      "after": 1027,
+      "w": 32,
+      "h": 32,
+      "format": "png",
+      "reduction": 0,
+      "pct": 0
+    },
+    {
+      "file": "public/favicon-16.png",
+      "before": 464,
+      "after": 464,
+      "w": 16,
+      "h": 16,
+      "format": "png",
+      "reduction": 0,
+      "pct": 0
+    }
+  ]
+}

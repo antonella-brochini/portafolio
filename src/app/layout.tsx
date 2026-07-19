@@ -1,40 +1,49 @@
-import type { Metadata } from "next";
-import Header from "./components/header";
+import type { Metadata, Viewport } from "next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/style.css";
 import { Oxanium } from "next/font/google";
 import { ThemeProvider } from "./components/ThemeProvider";
-import { LanguageProvider } from "../context/LanguageContext";
-import { SITE_NAME, SITE_URL } from "./seo-constants";
+import {
+  OG_IMAGE,
+  SITE_KEYWORDS,
+  SITE_NAME,
+  SITE_URL,
+  seo,
+} from "./seo-constants";
 
-const defaultDescription =
-  "Portfolio de Antonella Brochini — desarrolladora full-stack de Uruguay especializada en Next.js, React y TypeScript. Creadora de OrderFlow, plataforma SaaS para restaurantes.";
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#100a1f" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+  ],
+  colorScheme: "dark light",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  applicationName: `${SITE_NAME} Portfolio`,
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/favicon-32.png"],
   },
   title: {
-    default: `${SITE_NAME} — Portfolio | Developer`,
+    default: seo.en.titleDefault,
     template: `%s | ${SITE_NAME}`,
   },
-  description: defaultDescription,
-  keywords: [
-    SITE_NAME,
-    "portfolio",
-    "desarrolladora full-stack Uruguay",
-    "full-stack developer Uruguay",
-    "Next.js",
-    "React",
-    "TypeScript",
-    "SaaS Uruguay",
-    "OrderFlow",
-    "web development",
-  ],
+  description: seo.en.description,
+  keywords: [...SITE_KEYWORDS],
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
+  category: "technology",
   formatDetection: {
     email: false,
     address: false,
@@ -42,26 +51,25 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "es_UY",
-    alternateLocale: "en_US",
-    url: SITE_URL,
+    locale: "en_US",
+    alternateLocale: ["es_UY"],
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — Portfolio`,
-    description: defaultDescription,
+    title: seo.en.title,
+    description: seo.en.description,
     images: [
       {
-        url: "/img/hero.png",
-        width: 1200,
-        height: 630,
-        alt: `${SITE_NAME} — portfolio`,
+        url: OG_IMAGE.path,
+        width: OG_IMAGE.width,
+        height: OG_IMAGE.height,
+        alt: OG_IMAGE.alt,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Portfolio`,
-    description: defaultDescription,
-    images: [`${SITE_URL}/img/hero.png`],
+    title: seo.en.title,
+    description: seo.en.description,
+    images: [OG_IMAGE.url],
   },
   robots: {
     index: true,
@@ -69,66 +77,29 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
-  },
-  alternates: {
-    canonical: SITE_URL,
   },
 };
 
 const oxanium = Oxanium({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
   display: "swap",
 });
 
+/** Root shell — locale HTML `lang` is set by the [locale] layout provider. */
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={oxanium.className} suppressHydrationWarning>
+    <html lang="en" className={oxanium.className} suppressHydrationWarning>
       <body>
-        <ThemeProvider>
-          <LanguageProvider>
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                  "@context": "https://schema.org",
-                  "@type": "Person",
-                  name: "Antonella Brochini",
-                  url: "https://www.antonellabrochini.com",
-                  jobTitle: "Full-Stack Developer",
-                  worksFor: {
-                    "@type": "Organization",
-                    name: "Freelance",
-                  },
-                  address: {
-                    "@type": "PostalAddress",
-                    addressCountry: "UY",
-                    addressRegion: "Montevideo",
-                  },
-                  sameAs: [
-                    "https://github.com/antonella-brochini",
-                    "https://www.linkedin.com/in/antonella-brochini/",
-                  ],
-                  knowsAbout: [
-                    "Next.js",
-                    "React",
-                    "TypeScript",
-                    "Prisma",
-                    "PostgreSQL",
-                    "SaaS",
-                  ],
-                }),
-              }}
-            />
-            <Header />
-            {children}
-          </LanguageProvider>
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

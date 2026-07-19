@@ -1,40 +1,44 @@
- import Link from "next/link";
+import Link from "next/link";
 import styles from "./Boton3d.module.css";
- 
+
 type BtnProps = {
   titulo: string;
   url?: string;
   className?: string;
-
 };
 
- export default function FallingStars({ titulo, url, className }: BtnProps) {
+/** Layered 3D CTA — one accessible name; faces are decorative. */
+export default function Boton3d({ titulo, url, className }: BtnProps) {
+  if (!url) return null;
 
-    const isExternal = url?.startsWith("http");
-if (!url) return null;
-  if (isExternal) {
+  const faces = (
+    <>
+      <span aria-hidden="true">{titulo}</span>
+      <span aria-hidden="true">{titulo}</span>
+      <span aria-hidden="true">{titulo}</span>
+      <span aria-hidden="true">{titulo}</span>
+    </>
+  );
+
+  const classNames = `${styles.btn3d} ${className || ""}`;
+
+  if (url.startsWith("http")) {
     return (
       <a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className={`${styles.btn3d} ${className || ""}`}
+        className={classNames}
+        aria-label={titulo}
       >
-        <span>{titulo}</span>
-        <span>{titulo}</span>
-        <span>{titulo}</span>
-        <span>{titulo}</span>
+        {faces}
       </a>
     );
   }
-    return (
- <Link href={url} className={`${styles.btn3d} ${className || ""}`}>
-            <span>{titulo}</span>
-            <span>{titulo}</span>
-            <span>{titulo}</span>
-            <span>{titulo}</span>
-          </Link>
-    )
 
-
- }
+  return (
+    <Link href={url} className={classNames} aria-label={titulo}>
+      {faces}
+    </Link>
+  );
+}

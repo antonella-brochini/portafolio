@@ -7,13 +7,19 @@ import styles from "./Titulo.module.css";
 type TituloProps = {
   children: React.ReactNode;
   className?: string;
-  /** Etiqueta semántica (p. ej. h1 en heroes para SEO). Por defecto div. */
+  id?: string;
+  /** Semantic tag (e.g. h1 for SEO). Defaults to div. */
   as?: React.ElementType;
 };
 
+/**
+ * Theme-aware title. Always renders on the server (important for H1 SEO)
+ * and upgrades styling after mount to avoid hydration flicker.
+ */
 export default function AnimatedTitle({
   children,
   className = "",
+  id,
   as: Component = "div",
 }: TituloProps) {
   const { resolvedTheme } = useTheme();
@@ -21,16 +27,18 @@ export default function AnimatedTitle({
 
   useEffect(() => setMounted(true), []);
 
-  // Evita hydration mismatch y el flash en claro
-  if (!mounted) return null; // o un placeholder
-
-  const isDark = resolvedTheme === "dark";
+  const isDark = mounted ? resolvedTheme === "dark" : true;
 
   return (
     <Component
+      id={id}
       className={`${styles.title} ${isDark ? styles.darkTitle : styles.lightTitle} ${className}`}
     >
-      {isDark ? <span className={styles.gradientText}>{children}</span> : <span>{children}</span>}
+      {isDark ? (
+        <span className={styles.gradientText}>{children}</span>
+      ) : (
+        <span>{children}</span>
+      )}
     </Component>
   );
 }

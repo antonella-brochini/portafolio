@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode } from "react";
 import styles from "./HeroReveal.module.css";
 
 interface HeroRevealProps {
@@ -8,18 +8,13 @@ interface HeroRevealProps {
   className?: string;
 }
 
+/**
+ * CSS-driven reveal — content stays in the first paint (better LCP / SEO)
+ * instead of waiting for a client mount to become visible.
+ */
 export default function HeroReveal({ children, className }: HeroRevealProps) {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    setVisible(true);
-  }, []);
-
   return (
-    <div
-      className={`${styles.heroReveal} ${className || ""}`.trim()}
-      data-visible={visible}
-    >
+    <div className={`${styles.heroReveal} ${className || ""}`.trim()}>
       {children}
     </div>
   );

@@ -17,7 +17,7 @@ export default function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <button className={styles.themeToggle} aria-label={t.theme.toggleAria}>
+      <button type="button" className={styles.themeToggle} aria-label={t.theme.toggleAria}>
         <FaMoon />
       </button>
     );
@@ -25,6 +25,7 @@ export default function ThemeToggle() {
 
   return (
     <button
+      type="button"
       className={styles.themeToggle}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       aria-label={t.theme.toggleAria}

@@ -5,6 +5,7 @@ import { Oxanium } from "next/font/google";
 import { ThemeProvider } from "./components/ThemeProvider";
 import {
   OG_IMAGE,
+  SITE_ICON,
   SITE_KEYWORDS,
   SITE_NAME,
   SITE_URL,
@@ -26,13 +27,20 @@ export const metadata: Metadata = {
   applicationName: `${SITE_NAME} Portfolio`,
   icons: {
     icon: [
-      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
-      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+      {
+        url: SITE_ICON.path,
+        type: SITE_ICON.type,
+        sizes: `${SITE_ICON.width}x${SITE_ICON.height}`,
+      },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
-    shortcut: ["/favicon-32.png"],
+    apple: [
+      {
+        url: SITE_ICON.path,
+        type: SITE_ICON.type,
+        sizes: `${SITE_ICON.width}x${SITE_ICON.height}`,
+      },
+    ],
+    shortcut: [SITE_ICON.path],
   },
   title: {
     default: seo.en.titleDefault,
@@ -69,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: seo.en.title,
     description: seo.en.description,
-    images: [OG_IMAGE.url],
+    images: [OG_IMAGE.path],
   },
   robots: {
     index: true,

@@ -52,6 +52,19 @@
   justify-content: space-between;
 }
 
+.logo {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo:visited,
+.logo:hover,
+.logo:focus-visible {
+  color: #fff;
+}
+
 .navLinks {
   display: flex;
   gap: 30px;

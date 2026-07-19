@@ -152,7 +152,7 @@ function ProjectSection({
         <div className="col-lg-8">
           <div className="banner_text">
             <HeroReveal className="banner_text_iner">
-              <Titulo as="h2" id={`${id}-heading`} className="pt-5">
+              <Titulo as="h2" id={`${id}-heading`} size="sm" className="pt-5">
                 {title}
               </Titulo>
             </HeroReveal>

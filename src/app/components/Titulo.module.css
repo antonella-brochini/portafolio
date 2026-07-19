@@ -7,6 +7,23 @@
   transition: transform 0.25s ease, text-shadow 0.25s ease;
 }
 
+/* ~60% del título principal; mantiene Oxanium/gradiente */
+.titleSm {
+  font-size: clamp(24px, 3.6vw, 44px);
+}
+
+/*
+  Gana especificidad frente a .banner_text_iner h1 (landing.css),
+  para que el H1 de sección coincida con Contact/About.
+*/
+:global(.banner_text_iner) .title {
+  font-size: clamp(40px, 6vw, 72px);
+}
+
+:global(.banner_text_iner) .titleSm {
+  font-size: clamp(24px, 3.6vw, 44px);
+}
+
 /* DARK MODE: gradiente en el span */
 .darkTitle .gradientText {
   background: var(--gradient);
@@ -26,6 +43,11 @@
   -webkit-text-stroke: 2px #38bdf8;
   text-shadow: 0 0 0 #9841ff;
   display: inline-block; /* clave para stroke limpio */
+}
+
+.lightTitle.titleSm span {
+  font-size: clamp(22px, 3.3vw, 40px);
+  -webkit-text-stroke: 1.5px #38bdf8;
 }
 
 /* Hover en el contenedor, afecta al span */

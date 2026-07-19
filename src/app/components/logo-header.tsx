@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SITE_NAME } from "../seo-constants";
 import { useTranslation } from "../../hooks/useTranslation";
 import { localizedPath } from "../../i18n/config";
+import styles from "./header.module.css";
 
 /** Header brand mark — locale-aware home link. */
 export default function Logo() {
@@ -13,7 +14,7 @@ export default function Logo() {
     <Link
       href={localizedPath(locale, "/")}
       aria-label={`${SITE_NAME} — Home`}
-      className="logo"
+      className={styles.logo}
     >
       <svg
         width="2.5em"

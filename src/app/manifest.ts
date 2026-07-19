@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_NAME, SITE_URL } from "./seo-constants";
+import { SITE_ICON, SITE_NAME, SITE_URL } from "./seo-constants";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
@@ -16,27 +16,16 @@ export default function manifest(): MetadataRoute.Manifest {
     categories: ["portfolio", "developer", "business"],
     icons: [
       {
-        src: "/icon-192.png",
-        sizes: "192x192",
-        type: "image/png",
+        src: SITE_ICON.path,
+        sizes: `${SITE_ICON.width}x${SITE_ICON.height}`,
+        type: SITE_ICON.type,
         purpose: "any",
       },
       {
-        src: "/icon-512.png",
-        sizes: "512x512",
-        type: "image/png",
-        purpose: "any",
-      },
-      {
-        src: "/icon-512.png",
-        sizes: "512x512",
-        type: "image/png",
+        src: SITE_ICON.path,
+        sizes: `${SITE_ICON.width}x${SITE_ICON.height}`,
+        type: SITE_ICON.type,
         purpose: "maskable",
-      },
-      {
-        src: "/apple-touch-icon.png",
-        sizes: "180x180",
-        type: "image/png",
       },
     ],
     id: SITE_URL,

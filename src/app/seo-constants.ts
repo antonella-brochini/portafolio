@@ -7,11 +7,21 @@ export const SITE_URL = "https://www.antonellabrochini.com" as const;
 
 export const SITE_NAME = "Antonella Brochini" as const;
 
+/** Brand mark for favicon / PWA: `public/icon.png`. */
+export const SITE_ICON = {
+  path: "/icon.png",
+  url: `${SITE_URL}/icon.png`,
+  width: 1254,
+  height: 1254,
+  type: "image/png",
+} as const;
+
+/** Social share image only: `public/og-image.png` (not the favicon). */
 export const OG_IMAGE = {
   path: "/og-image.png",
   url: `${SITE_URL}/og-image.png`,
   width: 1200,
-  height: 630,
+  height: 501,
   alt: `${SITE_NAME} — Software Developer & Data Analyst Portfolio`,
 } as const;
 
@@ -233,7 +243,7 @@ export function buildPageMetadata(
       card: "summary_large_image",
       title: copy.title,
       description: copy.description,
-      images: [OG_IMAGE.url],
+      images: [OG_IMAGE.path],
     },
   };
 }

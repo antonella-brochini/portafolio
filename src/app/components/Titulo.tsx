@@ -10,6 +10,8 @@ type TituloProps = {
   id?: string;
   /** Semantic tag (e.g. h1 for SEO). Defaults to div. */
   as?: React.ElementType;
+  /** Visual size; keep tag via `as` for SEO hierarchy. */
+  size?: "default" | "sm";
 };
 
 /**
@@ -21,6 +23,7 @@ export default function AnimatedTitle({
   className = "",
   id,
   as: Component = "div",
+  size = "default",
 }: TituloProps) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -32,7 +35,7 @@ export default function AnimatedTitle({
   return (
     <Component
       id={id}
-      className={`${styles.title} ${isDark ? styles.darkTitle : styles.lightTitle} ${className}`}
+      className={`${styles.title} ${size === "sm" ? styles.titleSm : ""} ${isDark ? styles.darkTitle : styles.lightTitle} ${className}`}
     >
       {isDark ? (
         <span className={styles.gradientText}>{children}</span>
